@@ -1,3 +1,5 @@
+$pipboy-default_color: rgb(18,255,21);
+
 * {
     margin: 0;
     padding: 0;
@@ -18,5 +20,5 @@
 header > a {
     font-family: "Monofonto", serif;
     font-size: 1.8em;
-    color: rgb(18,255,21);
+    color: $pipboy-default_color;
 }
