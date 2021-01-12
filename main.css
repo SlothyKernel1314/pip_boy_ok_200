@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: ShareTechMono;
+    src: url("../pip_boy_pure_css/font/share_tech_mono/ShareTechMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: Monofonto;
+    src: url("../pip_boy_pure_css/font/monofonto/monofonto.ttf");
+}
+
+header > a {
+    font-family: "Monofonto", serif;
+    font-size: 1.8em;
+    color: rgb(18,255,21);
+}
