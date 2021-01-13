@@ -23,18 +23,17 @@ $pip-boy-default_color: rgb(18,255,21);
 }
 
 body {
-    background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top;
+    background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top left;
 }
 
 .screen {
-    position: relative;
-    margin-top: 10%;
-    left: 29%;
+    margin-top: 200px;
+    margin-left: 310px;
 }
 
 header > a {
     font-family: "Monofonto", serif;
     font-size: 1.4em;
     color: $pip-boy-default_color;
-    margin-left: 2.5%;
+    margin-left: 40px;
 }
