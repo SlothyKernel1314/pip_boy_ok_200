@@ -1,4 +1,4 @@
-//How to install SASS :
+// How to install SASS :
 // https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting
 
 
@@ -6,14 +6,10 @@ $site_background_color : #10170f;
 $pip-boy-default_color: rgb(18,255,21);
 
 * {
-    margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
-    background-color: $site_background_color;
-    background-image: url("../pip_boy_pure_css/img/pip-boy_background.png");
-    background-repeat: no-repeat;
-    background-position: top;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -26,9 +22,19 @@ $pip-boy-default_color: rgb(18,255,21);
     src: url("../pip_boy_pure_css/font/monofonto/monofonto.ttf");
 }
 
+body {
+    background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top;
+}
+
+.screen {
+    position: relative;
+    margin-top: 10%;
+    left: 29%;
+}
+
 header > a {
     font-family: "Monofonto", serif;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: $pip-boy-default_color;
-    margin-left: 4%;
+    margin-left: 2.5%;
 }
