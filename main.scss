@@ -27,13 +27,32 @@ body {
 }
 
 .screen {
-    margin-top: 200px;
-    margin-left: 310px;
+    margin: 190px 300px;
 }
 
-header > a {
+header {
     font-family: "Monofonto", serif;
-    font-size: 1.4em;
-    color: $pip-boy-default_color;
     margin-left: 40px;
 }
+
+.header-top, .header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-top > a, .header-content > a {
+    font-size: 1.4em;
+    color: $pip-boy-default_color;
+}
+
+.header-top > a {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.header-content > a {
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+
