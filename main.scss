@@ -3,7 +3,7 @@
 
 
 $site_background_color : #10170f;
-$pip-boy-default_color: rgb(18,255,21);
+$pip-boy-default_color: #18dc0c;
 
 * {
     list-style: none;
@@ -27,12 +27,11 @@ body {
 }
 
 .screen {
-    margin: 190px 300px;
+    margin: 190px 340px;
 }
 
 header {
     font-family: "Monofonto", serif;
-    margin-left: 40px;
 }
 
 .header-top, .header-content {
@@ -53,6 +52,11 @@ header {
 .header-content > a {
     font-weight: lighter;
     margin-right: 10px;
+}
+
+#vault-boy-walking {
+    width: 13%;
+    height: 13%;
 }
 
 
