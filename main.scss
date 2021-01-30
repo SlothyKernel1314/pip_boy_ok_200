@@ -28,15 +28,18 @@ body {
 
 .screen {
     margin: 190px 340px;
+    position: relative;
 }
 
 header {
     font-family: "Monofonto", serif;
+    text-transform: uppercase;
 }
 
 .header-top, .header-content {
     display: flex;
     align-items: center;
+    line-height: 1.5;
 }
 
 .header-top > a, .header-content > a {
@@ -55,8 +58,10 @@ header {
 }
 
 #vault-boy-walking {
-    width: 13%;
-    height: 13%;
+    position: absolute;
+    height: 200px;
+    top: 80px;
+    left: 130px;
 }
 
 
