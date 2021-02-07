@@ -36,7 +36,7 @@ body {
 }
 
 .screen {
-    margin: 19rem 34rem;
+    margin: 19rem 36rem;
     position: relative;
 }
 
@@ -48,7 +48,6 @@ header {
 .header-top, .header-content {
     display: flex;
     align-items: center;
-    line-height: 1.5;
 }
 
 .header-top > a, .header-content > a {
@@ -58,7 +57,7 @@ header {
 
 .header-top > a {
     font-weight: bold;
-    margin-right: 5rem;
+    margin-right: 4rem;
 }
 
 .header-content > a {
@@ -71,6 +70,28 @@ header {
     height: 20rem;
     top: 8rem;
     left: 13rem;
+}
+
+.hlines-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hline-bottom {
+    position: relative;
+    border-bottom: 0.2rem solid $pip-boy-default_color;
+}
+
+.hline-bottom-left {
+    padding-bottom: 0.2rem;
+    margin-left: -6.2rem;
+    width: 6.2rem;
+}
+
+.hline-bottom-right {
+    padding-bottom: 0.2rem;
+    margin-left: 4.6rem;
+    width: 39rem;
 }
 
 
