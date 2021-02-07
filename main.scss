@@ -5,11 +5,19 @@
 $site_background_color : #10170f;
 $pip-boy-default_color: #18dc0c;
 
-* {
+*,
+*::after,
+*:before {
     list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  // 1 rem = 10 px
+  font-size: 62.5%; // 10px app / 16px default browser
 }
 
 @font-face {
@@ -24,10 +32,11 @@ $pip-boy-default_color: #18dc0c;
 
 body {
     background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top left;
+    box-sizing: border-box;
 }
 
 .screen {
-    margin: 190px 340px;
+    margin: 19rem 34rem;
     position: relative;
 }
 
@@ -43,25 +52,25 @@ header {
 }
 
 .header-top > a, .header-content > a {
-    font-size: 1.4em;
+    font-size: 2.2rem;
     color: $pip-boy-default_color;
 }
 
 .header-top > a {
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 5rem;
 }
 
 .header-content > a {
     font-weight: lighter;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 #vault-boy-walking {
     position: absolute;
-    height: 200px;
-    top: 80px;
-    left: 130px;
+    height: 20rem;
+    top: 8rem;
+    left: 13rem;
 }
 
 
