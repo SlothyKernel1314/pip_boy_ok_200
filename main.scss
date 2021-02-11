@@ -65,13 +65,6 @@ header {
     margin-right: 1rem;
 }
 
-#vault-boy-walking {
-    position: absolute;
-    height: 20rem;
-    top: 8rem;
-    left: 13rem;
-}
-
 .header-lines-container {
     display: flex;
     flex-direction: row;
@@ -80,16 +73,15 @@ header {
 .header-line-bottom {
     position: fixed;
     border-bottom: 0.2rem solid $pip-boy-default_color;
+    padding-bottom: 0.2rem;
 }
 
 .header-line-bottom-left {
-    padding-bottom: 0.2rem;
     margin-left: -6.2rem;
     width: 5.2rem;
 }
 
 .header-line-bottom-right {
-    padding-bottom: 0.2rem;
     margin-left: 5.6rem;
     width: 38rem;
 }
@@ -107,6 +99,13 @@ header {
 
 .header-line-vertical-right {
     left: 5.58rem;
+}
+
+#vault-boy-walking {
+    position: absolute;
+    height: 20rem;
+    top: 8rem;
+    left: 13rem;
 }
 
 
