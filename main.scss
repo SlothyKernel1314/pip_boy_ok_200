@@ -89,7 +89,7 @@ header {
 .header-line-vertical {
     border-left: 0.2rem solid $pip-boy-default_color;
     height: 2.3rem;
-    bottom: 2.4rem;
+    bottom: 3.4rem;
     position: absolute;
 }
 
@@ -99,6 +99,10 @@ header {
 
 .header-line-vertical-right {
     left: 5.58rem;
+}
+
+.header-content {
+    margin-top: 1rem;
 }
 
 #vault-boy-walking {
