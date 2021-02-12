@@ -5,6 +5,8 @@
 $site_background_color: #10170f;
 $pip-boy-default_color: #18dc0c;
 
+$header-top-width: 37.8rem;
+
 *,
 *::after,
 *:before {
@@ -45,13 +47,13 @@ header {
   text-transform: uppercase;
 }
 
-.header-top, .header-content {
+.header-top, .sub-header {
   display: flex;
   align-items: center;
-  width: 378px;
+  width: $header-top-width;
 }
 
-.header-top > a, .header-content > a {
+.header-top > a, .sub-header > a {
   font-size: 2.2rem;
   color: $pip-boy-default_color;
 }
@@ -61,7 +63,7 @@ header {
   margin-right: 4rem;
 }
 
-.header-content > a {
+.sub-header > a {
   font-weight: lighter;
   margin-right: 1rem;
   opacity: 0.7;
@@ -118,15 +120,12 @@ header {
   margin-left: 5.1rem;
 }
 
-.header-content {
+.sub-header {
   margin-top: 1rem;
 }
 
 #vault-boy-walking {
   position: absolute;
-  height: 20rem;
-  top: 8rem;
-  left: 13rem;
 }
 
 
