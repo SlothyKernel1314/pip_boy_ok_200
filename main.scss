@@ -2,17 +2,17 @@
 // https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting
 
 
-$site_background_color : #10170f;
+$site_background_color: #10170f;
 $pip-boy-default_color: #18dc0c;
 
 *,
 *::after,
 *:before {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
@@ -21,95 +21,112 @@ html {
 }
 
 @font-face {
-    font-family: ShareTechMono;
-    src: url("../pip_boy_pure_css/font/share_tech_mono/ShareTechMono-Regular.ttf");
+  font-family: ShareTechMono;
+  src: url("../pip_boy_pure_css/font/share_tech_mono/ShareTechMono-Regular.ttf");
 }
 
 @font-face {
-    font-family: Monofonto;
-    src: url("../pip_boy_pure_css/font/monofonto/monofonto.ttf");
+  font-family: Monofonto;
+  src: url("../pip_boy_pure_css/font/monofonto/monofonto.ttf");
 }
 
 body {
-    background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top left;
-    box-sizing: border-box;
+  background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top left;
+  box-sizing: border-box;
 }
 
 .screen {
-    margin: 19rem 36rem;
-    position: relative;
+  margin: 19rem 36rem;
+  position: relative;
 }
 
 header {
-    font-family: "Monofonto", serif;
-    text-transform: uppercase;
+  font-family: "Monofonto", serif;
+  text-transform: uppercase;
 }
 
 .header-top, .header-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 378px;
 }
 
 .header-top > a, .header-content > a {
-    font-size: 2.2rem;
-    color: $pip-boy-default_color;
+  font-size: 2.2rem;
+  color: $pip-boy-default_color;
 }
 
 .header-top > a {
-    font-weight: bold;
-    margin-right: 4rem;
+  font-weight: bold;
+  margin-right: 4rem;
 }
 
 .header-content > a {
-    font-weight: lighter;
-    margin-right: 1rem;
+  font-weight: lighter;
+  margin-right: 1rem;
+  opacity: 0.7;
 }
 
 .header-lines-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .header-line-bottom {
-    position: fixed;
-    border-bottom: 0.2rem solid $pip-boy-default_color;
-    padding-bottom: 0.2rem;
+  position: fixed;
+  border-bottom: 0.2rem solid $pip-boy-default_color;
+  padding-bottom: 0.2rem;
 }
 
 .header-line-bottom-left {
-    margin-left: -6.2rem;
-    width: 5.2rem;
+  margin-left: -6.2rem;
+  width: 5.2rem;
 }
 
 .header-line-bottom-right {
-    margin-left: 5.6rem;
-    width: 38rem;
+  margin-left: 5.6rem;
+  width: 38rem;
 }
 
 .header-line-vertical {
-    border-left: 0.2rem solid $pip-boy-default_color;
-    height: 2.3rem;
-    bottom: 3.4rem;
-    position: absolute;
+  border-left: 0.2rem solid $pip-boy-default_color;
+  height: 2.3rem;
+  bottom: 3.4rem;
+  position: absolute;
 }
 
 .header-line-vertical-left {
-    left: -1rem;
+  left: -1rem;
 }
 
 .header-line-vertical-right {
-    left: 5.58rem;
+  left: 5.58rem;
+}
+
+.header-line-hook {
+  border-bottom: 0.2rem solid $pip-boy-default_color;
+  position: absolute;
+  width: 0.7rem;
+  margin-top: -2rem;
+}
+
+.header-line-hook-left {
+  margin-left: -1rem;
+}
+
+.header-line-hook-right {
+  margin-left: 5.1rem;
 }
 
 .header-content {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #vault-boy-walking {
-    position: absolute;
-    height: 20rem;
-    top: 8rem;
-    left: 13rem;
+  position: absolute;
+  height: 20rem;
+  top: 8rem;
+  left: 13rem;
 }
 
 
