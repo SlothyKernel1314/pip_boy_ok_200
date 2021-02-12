@@ -5,7 +5,12 @@
 $site_background_color: #10170f;
 $pip-boy-default_color: #18dc0c;
 
-$header-top-width: 37.8rem;
+$header-width: 37.8; //rem
+$vault-boy-img-width: 24.2; //rem
+
+@mixin relative-center-image($parent-width, $img-width) {
+  margin-left: ((($parent-width*1rem)/2) - (($img-width*1rem)/2));
+}
 
 *,
 *::after,
@@ -45,12 +50,12 @@ body {
 header {
   font-family: "Monofonto", serif;
   text-transform: uppercase;
+  width: $header-width * 1rem;
 }
 
 .header-top, .sub-header {
   display: flex;
   align-items: center;
-  width: $header-top-width;
 }
 
 .header-top > a, .sub-header > a {
@@ -126,6 +131,7 @@ header {
 
 #vault-boy-walking {
   position: absolute;
+  @include relative-center-image($header-width, $vault-boy-img-width)
 }
 
 
