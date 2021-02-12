@@ -6,10 +6,11 @@ $site_background_color: #10170f;
 $pip-boy-default_color: #18dc0c;
 
 $header-width: 37.8; //rem
-$vault-boy-img-width: 24.2; //rem
+$vault-boy-img-width: 15; //rem
 
 @mixin relative-center-image($parent-width, $img-width) {
   margin-left: ((($parent-width*1rem)/2) - (($img-width*1rem)/2));
+  width: $img-width*1rem;
 }
 
 *,
@@ -131,7 +132,8 @@ header {
 
 #vault-boy-walking {
   position: absolute;
-  @include relative-center-image($header-width, $vault-boy-img-width)
+  @include relative-center-image($header-width, $vault-boy-img-width);
+  margin-top: 3rem;
 }
 
 
