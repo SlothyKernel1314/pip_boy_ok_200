@@ -165,13 +165,17 @@ header {
   margin-left : (($header-width*1rem) / 4) - $health-gauge-width;
 }
 
-.health-gauge-left-top {
+.health-gauge-left-top, .health-gauge-right-top {
   top: 16rem;
 }
 
-.health-gauge-left-bottom {
+.health-gauge-left-bottom, .health-gauge-right-bottom {
   top: 24rem;
 
+}
+
+.health-gauge-right-top, .health-gauge-right-bottom {
+  margin-left : ($header-width*1rem) - ($health-gauge-width *2);
 }
 /* health gauges END -------------------------------------------------------------------------------------------------*/
 
