@@ -7,7 +7,7 @@ $pip-boy-default_color: #18dc0c;
 
 $header-width: 37.8; //rem
 $health-gauge-width: 3.8; //rem
-$vault-boy-img-width: 15; //rem
+$vault-boy-img-width: 12; //rem
 
 @mixin relative-center-element($parent-width, $element-width) {
   margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
@@ -137,7 +137,7 @@ header {
 #vault-boy-walking {
   position: absolute;
   @include relative-center-element($header-width, $vault-boy-img-width);
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 /* health gauges -----------------------------------------------------------------------------------------------------*/
@@ -158,7 +158,7 @@ header {
 }
 
 .health-gauge-bottom {
-  top: 32rem;
+  top: 29rem;
 }
 
 .health-gauge-left-top, .health-gauge-left-bottom {
@@ -166,11 +166,11 @@ header {
 }
 
 .health-gauge-left-top, .health-gauge-right-top {
-  top: 16rem;
+  top: 15rem;
 }
 
 .health-gauge-left-bottom, .health-gauge-right-bottom {
-  top: 24rem;
+  top: 22rem;
 
 }
 
