@@ -53,6 +53,7 @@ header {
   font-family: "Monofonto", serif;
   text-transform: uppercase;
   width: $header-width * 1rem;
+  position: relative;
 }
 
 .header-top, .sub-header {
@@ -137,10 +138,15 @@ header {
 #vault-boy-walking {
   position: absolute;
   @include relative-center-element($header-width, $vault-boy-img-width);
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 /* health gauges -----------------------------------------------------------------------------------------------------*/
+.health-gauge-container {
+  margin-top: 2rem;
+  height: 21rem;
+}
+
 .health-gauge {
   border: 0.1rem solid $pip-boy-default_color;
   background: $pip-boy-default_color;
@@ -154,11 +160,11 @@ header {
 }
 
 .health-gauge-top {
-  top: 8rem;
+  top: 9rem;
 }
 
 .health-gauge-bottom {
-  top: 29rem;
+  top: 28rem;
 }
 
 .health-gauge-left-top, .health-gauge-left-bottom {
@@ -166,12 +172,11 @@ header {
 }
 
 .health-gauge-left-top, .health-gauge-right-top {
-  top: 15rem;
+  top: 15.5rem;
 }
 
 .health-gauge-left-bottom, .health-gauge-right-bottom {
-  top: 22rem;
-
+  top: 21.5rem;
 }
 
 .health-gauge-right-top, .health-gauge-right-bottom {
