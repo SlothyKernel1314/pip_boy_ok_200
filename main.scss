@@ -6,11 +6,12 @@ $site_background_color: #10170f;
 $pip-boy-default_color: #18dc0c;
 
 $header-width: 37.8; //rem
+$health-gauge-width: 3.8; //rem
 $vault-boy-img-width: 15; //rem
 
-@mixin relative-center-image($parent-width, $img-width) {
-  margin-left: ((($parent-width*1rem)/2) - (($img-width*1rem)/2));
-  width: $img-width*1rem;
+@mixin relative-center-element($parent-width, $element-width) {
+  margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
+  width: $element-width*1rem;
 }
 
 *,
@@ -69,15 +70,11 @@ header {
   margin-right: 4rem;
 }
 
-.sub-header > a {
-  font-weight: lighter;
-  margin-right: 1rem;
-  opacity: 0.7;
-}
-
+/* header lines ------------------------------------------------------------------------------------------------------*/
 .header-lines-container {
   display: flex;
   flex-direction: row;
+  opacity: 0.8;
 }
 
 .header-line-bottom {
@@ -125,16 +122,46 @@ header {
 .header-line-hook-right {
   margin-left: 5.1rem;
 }
+/* header lines END --------------------------------------------------------------------------------------------------*/
 
 .sub-header {
   margin-top: 1rem;
 }
 
+.sub-header > a {
+  font-weight: lighter;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
 #vault-boy-walking {
   position: absolute;
-  @include relative-center-image($header-width, $vault-boy-img-width);
+  @include relative-center-element($header-width, $vault-boy-img-width);
   margin-top: 3rem;
 }
+
+/* health gauges -----------------------------------------------------------------------------------------------------*/
+.health-gauge {
+  border: 0.1rem solid $pip-boy-default_color;
+  background: $pip-boy-default_color;
+  width: $health-gauge-width * 1rem;
+  height: 0.8rem;
+  position: absolute;
+}
+
+.health-gauge-top, .health-gauge-bottom {
+  @include relative-center-element($header-width, $health-gauge-width);
+}
+
+.health-gauge-top {
+  top: 8rem;
+}
+
+.health-gauge-bottom {
+  top: 31rem;
+}
+/* health gauges END -------------------------------------------------------------------------------------------------*/
+
 
 
 
