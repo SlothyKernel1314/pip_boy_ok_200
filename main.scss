@@ -2,8 +2,9 @@
 // https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting
 
 
-$site_background_color: #10170f;
-$pip-boy-default_color: #18dc0c;
+$pip-boy-background-color: #10170f;
+$pip-boy-secondary-color: #11291b;
+$pip-boy-primary-color: #18dc0c;
 
 $header-width: 37.8; //rem
 $health-gauge-width: 3.8; //rem
@@ -40,7 +41,7 @@ html {
 }
 
 body {
-  background: $site_background_color url("img/pip-boy_overlay.png") no-repeat fixed top left;
+  background: $pip-boy-background-color url("img/pip-boy_overlay.png") no-repeat fixed top left;
   box-sizing: border-box;
 }
 
@@ -63,7 +64,7 @@ header {
 
 .header-top > a, .sub-header > a {
   font-size: 2.2rem;
-  color: $pip-boy-default_color;
+  color: $pip-boy-primary-color;
 }
 
 .header-top > a {
@@ -80,7 +81,7 @@ header {
 
 .header-line-bottom {
   position: fixed;
-  border-bottom: 0.2rem solid $pip-boy-default_color;
+  border-bottom: 0.2rem solid $pip-boy-primary-color;
   padding-bottom: 0.2rem;
 }
 
@@ -95,7 +96,7 @@ header {
 }
 
 .header-line-vertical {
-  border-left: 0.2rem solid $pip-boy-default_color;
+  border-left: 0.2rem solid $pip-boy-primary-color;
   height: 2.3rem;
   bottom: 3.4rem;
   position: absolute;
@@ -110,7 +111,7 @@ header {
 }
 
 .header-line-hook {
-  border-bottom: 0.2rem solid $pip-boy-default_color;
+  border-bottom: 0.2rem solid $pip-boy-primary-color;
   position: absolute;
   width: 0.7rem;
   margin-top: -2rem;
@@ -148,8 +149,8 @@ header {
 }
 
 .health-gauge {
-  border: 0.1rem solid $pip-boy-default_color;
-  background: $pip-boy-default_color;
+  border: 0.1rem solid $pip-boy-primary-color;
+  background: $pip-boy-primary-color;
   width: $health-gauge-width * 1rem;
   height: 0.8rem;
   position: absolute;
@@ -183,6 +184,17 @@ header {
   margin-left : ($header-width*1rem) - ($health-gauge-width *2);
 }
 /* health gauges END -------------------------------------------------------------------------------------------------*/
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $header-width*1rem;
+}
+
+.info-icon {
+  background-color: $pip-boy-secondary-color;
+}
 
 
 
