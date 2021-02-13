@@ -158,7 +158,20 @@ header {
 }
 
 .health-gauge-bottom {
-  top: 31rem;
+  top: 32rem;
+}
+
+.health-gauge-left-top, .health-gauge-left-bottom {
+  margin-left : (($header-width*1rem) / 4) - $health-gauge-width;
+}
+
+.health-gauge-left-top {
+  top: 16rem;
+}
+
+.health-gauge-left-bottom {
+  top: 24rem;
+
 }
 /* health gauges END -------------------------------------------------------------------------------------------------*/
 
