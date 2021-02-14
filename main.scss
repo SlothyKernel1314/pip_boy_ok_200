@@ -3,8 +3,8 @@
 
 
 $pip-boy-background-color: #10170f;
-$pip-boy-secondary-color: #11291b;
 $pip-boy-primary-color: #18dc0c;
+$pip-boy-secondary-color: #11291b;
 
 $header-width: 37.8; //rem
 $health-gauge-width: 3.8; //rem
@@ -146,6 +146,7 @@ header {
 .health-gauge-container {
   margin-top: 2rem;
   height: 21rem;
+  width: $header-width;
 }
 
 .health-gauge {
@@ -194,6 +195,46 @@ header {
 
 .info-icon {
   background-color: $pip-boy-secondary-color;
+  margin-right: 0.4rem;
+}
+
+.info-icon > p {
+  color: $pip-boy-primary-color;
+}
+
+.info-icon-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.info-icon-thin {
+  width: 2.4rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-icon-large > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.info-icon-thin > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.info-icon-thin > p {
+  font-family: "Monofonto", serif;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
 }
 
 
