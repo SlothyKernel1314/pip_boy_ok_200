@@ -239,6 +239,14 @@ header {
   height: 2rem;
 }
 
+.identity-container > p {
+  font-family: "Monofonto", serif;
+  font-size: 1.6rem;
+  color: $pip-boy-primary-color;
+  text-align: center;
+  width: $header-width*1rem;
+}
+
 
 
 
