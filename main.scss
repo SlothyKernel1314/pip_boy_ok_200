@@ -251,6 +251,28 @@ header {
   width: $header-width*1rem;
 }
 
+.bottom-display {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-display p {
+  font-family: "Monofonto", serif;
+  font-size: 2rem;
+  color: $pip-boy-primary-color;
+}
+
+.side-bottom-display, .center-bottom-display {
+  background-color: $pip-boy-secondary-color;
+}
+
+.hp-container {
+  margin-right: 0.4rem;
+}
+
+.action-points-container {
+  margin-left: 0.4rem;
+}
 
 
 
