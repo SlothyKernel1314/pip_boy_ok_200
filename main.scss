@@ -10,10 +10,10 @@ $pip-boy-secondary-color: #11291b;
 
 $header-width: 37.8; //rem
 $health-gauge-width: 3.8; //rem
-$vault-boy-img-width: 12; //rem
+$vault-boy-img-width: 10.5; //rem
 
 $health-gauge-top: 8; //rem
-$health-gauges-vertical-offset: 6.5; //rem
+$health-gauges-vertical-offset: 6; //rem
 
 @mixin relative-center-element($parent-width, $element-width) {
   margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
@@ -210,6 +210,11 @@ header {
   align-items: center;
   justify-content: center;
   width: $header-width*1rem;
+  margin-top: -1rem;
+}
+
+.info-icon-web, .info-icon-engineering {
+  margin-left: 1rem;
 }
 
 .info-icon {
@@ -262,6 +267,7 @@ header {
   color: $pip-boy-primary-color;
   text-align: center;
   width: $header-width*1rem;
+  margin: 1rem;
 }
 
 .bottom-display {
