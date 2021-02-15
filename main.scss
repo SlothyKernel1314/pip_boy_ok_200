@@ -52,7 +52,7 @@ body {
 }
 
 .screen {
-  margin: 19rem 26rem;
+  margin: 15rem 26rem;
   position: relative;
   width: 58rem;
   height: 48rem;
@@ -66,12 +66,16 @@ header {
 }
 
 .header, .core-display, .bottom-display {
-  margin: 0rem 10rem
+  margin-left: 10rem;
 }
 
 .header-top, .sub-header {
   display: flex;
   align-items: center;
+}
+
+.header {
+  margin-top: 19rem;
 }
 
 .header-top > a, .sub-header > a {
