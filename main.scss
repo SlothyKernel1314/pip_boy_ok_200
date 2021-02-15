@@ -52,8 +52,10 @@ body {
 }
 
 .screen {
-  margin: 19rem 36rem;
+  margin: 19rem 26rem;
   position: relative;
+  width: 58rem;
+  height: 48rem;
 }
 
 header {
@@ -61,6 +63,10 @@ header {
   text-transform: uppercase;
   width: $header-width * 1rem;
   position: relative;
+}
+
+.header, .core-display, .bottom-display {
+  margin: 0rem 10rem
 }
 
 .header-top, .sub-header {
