@@ -32,6 +32,10 @@ html {
   font-size: 62.5%; // 10px app / 16px default browser
 }
 
+html, body {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: ShareTechMono;
   src: url("../pip_boy_pure_css/font/share_tech_mono/ShareTechMono-Regular.ttf");
@@ -241,7 +245,7 @@ header {
 
 .identity-container > p {
   font-family: "Monofonto", serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: $pip-boy-primary-color;
   text-align: center;
   width: $header-width*1rem;
