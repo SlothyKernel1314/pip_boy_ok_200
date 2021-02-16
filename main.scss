@@ -68,7 +68,7 @@ header {
   position: relative;
 }
 
-.header, .core-display, .bottom-display {
+.header, .core-display {
   margin-left: 10rem;
 }
 
@@ -185,7 +185,7 @@ header {
 }
 
 .health-gauge-bottom {
-  top: $health-gauge-top*1rem + $health-gauges-vertical-offset*3*1rem;
+  top: $health-gauge-top*1rem + $health-gauges-vertical-offset*3*1rem - 1rem;
 }
 
 .health-gauge-left-top, .health-gauge-left-bottom {
@@ -210,7 +210,7 @@ header {
   align-items: center;
   justify-content: center;
   width: $header-width*1rem;
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 .info-icon-web, .info-icon-engineering {
@@ -291,6 +291,11 @@ header {
 
 .action-points-container {
   margin-left: 0.4rem;
+}
+
+.bottom-display {
+  margin-left: 7rem;
+  width: 43rem;
 }
 
 
