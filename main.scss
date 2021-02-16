@@ -272,7 +272,9 @@ header {
 
 .bottom-display {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-left: 7rem;
+  width: 43rem;
 }
 
 .bottom-display p {
@@ -285,18 +287,20 @@ header {
   background-color: $pip-boy-secondary-color;
 }
 
+.center-bottom-display {
+  padding: 0 1rem 0 1rem;
+}
+
 .hp-container {
   margin-right: 0.4rem;
+  padding-left: 0.5rem;
 }
 
 .action-points-container {
   margin-left: 0.4rem;
+  padding-right: 0.5rem;
 }
 
-.bottom-display {
-  margin-left: 7rem;
-  width: 43rem;
-}
 
 
 
