@@ -105,13 +105,13 @@ header {
 }
 
 .header-line-bottom-left {
-  margin-left: -6.2rem;
-  width: 5.2rem;
+  margin-left: -5.7rem;
+  width: 4.7rem;
 }
 
 .header-line-bottom-right {
   margin-left: 5.6rem;
-  width: 38rem;
+  width: 37.5rem;
 }
 
 .header-line-vertical {
@@ -267,7 +267,7 @@ header {
   color: $pip-boy-primary-color;
   text-align: center;
   width: $header-width*1rem;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .bottom-display {
