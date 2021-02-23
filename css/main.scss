@@ -1,6 +1,8 @@
 // How to install SASS :
 // https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html#ws_sass_less_scss_syntax_highlighting
 
+// How to setup php project for intelliJ : https://www.jetbrains.com/help/idea/php-specific-guidelines.html
+
 // Icons : https://freeicons.io/
 
 
@@ -41,16 +43,16 @@ html, body {
 
 @font-face {
   font-family: ShareTechMono;
-  src: url("../pip_boy_pure_css/font/share_tech_mono/ShareTechMono-Regular.ttf");
+  src: url("../font/share_tech_mono/ShareTechMono-Regular.ttf");
 }
 
 @font-face {
   font-family: Monofonto;
-  src: url("../pip_boy_pure_css/font/monofonto/monofonto.ttf");
+  src: url("../font/monofonto/monofonto.ttf");
 }
 
 body {
-  background: $pip-boy-background-color url("img/pip-boy_overlay.png") no-repeat fixed top left;
+  background: $pip-boy-background-color url("../img/pip-boy_overlay.png") no-repeat fixed top left;
   box-sizing: border-box;
 }
 
