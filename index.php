@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fallout 4 Pip-Boy pure CSS version</title>
+    <title>Fallout 4 Pip-Boy browser version</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="screen">
     <div class="screen-reflection"></div>
     <?php include("header.php"); ?>
-    <section class="core-display">
+    <section class="core-display-stat-status">
         <div class="vault-boy-container">
             <img id="vault-boy-walking"
                  src="img/vault_boy_walking.gif" alt="a fallout vault boy walking">
@@ -61,18 +61,7 @@
             <p>Cyril BERTHOUT : Concepteur développeur d'applications</p>
         </div>
     </section>
-    <section class="bottom-display">
-        <div class="hp-container side-bottom-display">
-            <p>HP 1/999</p>
-        </div>
-        <div class="level-container center-bottom-display">
-            <p>LEVEL 60</p>
-            <div class="level-progress-bar"></div>
-        </div>
-        <div class="action-points-container side-bottom-display">
-            <p>AP 255/255</p>
-        </div>
-    </section>
+    <?php include("bottom.php"); ?>
 </div>
 </body>
 </html>
