@@ -194,7 +194,7 @@ header {
 
 .health-gauge {
   border: 0.1rem solid $pip-boy-primary-color;
-  background: $pip-boy-primary-color;
+  background: $pip-boy-background-color;
   width: $health-gauge-width * 1rem;
   height: 0.8rem;
   position: absolute;
@@ -226,6 +226,36 @@ header {
 
 .health-gauge-right-top, .health-gauge-right-bottom {
   margin-left : ($header-width*1rem) - ($health-gauge-width *2);
+}
+
+.health-gauge-top::before,
+.health-gauge-right-top::before,
+.health-gauge-left-bottom::before,
+.health-gauge-right-bottom::before {
+  content: '';
+  border: 0.1rem solid $pip-boy-primary-color;
+  background: $pip-boy-primary-color;
+  width: ($health-gauge-width * 1rem) * 0.95;
+  height: 0.7rem;
+  position: absolute;
+}
+
+.health-gauge-left-top::before {
+  content: '';
+  border: 0.1rem solid $pip-boy-primary-color;
+  background: $pip-boy-primary-color;
+  width: ($health-gauge-width * 1rem) * 0.4;
+  height: 0.7rem;
+  position: absolute;
+}
+
+.health-gauge-bottom::before {
+  content: '';
+  border: 0.1rem solid $pip-boy-primary-color;
+  background: $pip-boy-primary-color;
+  width: ($health-gauge-width * 1rem) * 0.6;
+  height: 0.7rem;
+  position: absolute;
 }
 /* health gauges END -------------------------------------------------------------------------------------------------*/
 
