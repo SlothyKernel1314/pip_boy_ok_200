@@ -24,7 +24,7 @@ $health-gauges-vertical-offset: 6; //rem
 
 *,
 *::after,
-*:before {
+*::before {
   list-style: none;
   text-decoration: none;
   margin: 0;
@@ -321,10 +321,19 @@ header {
 
 .level-progress-bar {
   border: 0.1rem solid $pip-boy-primary-color;
-  background-color: $pip-boy-primary-color;
+  background-color: $pip-boy-background-color;
   width: 9rem;
   height: 1.2rem;
   margin-left: 1rem;
+}
+
+.level-progress-bar::before {
+  content: '';
+  display: block;
+  border: 0.1rem solid $pip-boy-primary-color;
+  background-color: $pip-boy-primary-color;
+  width: 6.3rem;
+  height: 1.1rem;
 }
 
 .hp-container {
