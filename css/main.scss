@@ -80,7 +80,7 @@ header {
   position: relative;
 }
 
-.header, .core-display-stat-status {
+.header, .stat-status-section {
   margin-left: 10rem;
 }
 
@@ -104,7 +104,7 @@ header {
 }
 
 /* header lines ------------------------------------------------------------------------------------------------------*/
-.header-lines-container {
+.header-lines {
   display: flex;
   flex-direction: row;
   opacity: 0.8;

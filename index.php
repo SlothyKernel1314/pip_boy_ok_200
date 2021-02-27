@@ -12,7 +12,8 @@
 <div class="screen">
     <div class="screen-reflection"></div>
     <?php include("header.php"); ?>
-    <section class="core-display-stat-status">
+    <!--core display : stat-status section-->
+    <section class="stat-status-section">
         <div class="vault-boy-container">
             <img id="vault-boy-walking"
                  src="img/vault_boy_walking.gif" alt="a fallout vault boy walking">
@@ -61,8 +62,13 @@
             <p>Cyril BERTHOUT : Concepteur développeur d'applications</p>
         </div>
     </section>
+    <!--core display : stat-status section-->
+<!--    <section class="inv-section">-->
+<!--        <p>test js</p>-->
+<!--    </section>-->
     <?php include("bottom.php"); ?>
 </div>
+<script src="tabs.js"></script>
 </body>
 </html>
 

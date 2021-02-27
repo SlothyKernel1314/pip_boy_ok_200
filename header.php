@@ -1,12 +1,12 @@
 <header class="header">
     <div class="header-top">
-        <a href="#" class="header-top-active">STAT</a>
-        <a href="#">INV</a>
+        <a href="#stat-status" class="header-top-active">STAT</a>
+        <a href="#inv">INV</a>
         <a href="#">DATA</a>
         <a href="#">MAP</a>
         <a href="#">RADIO</a>
     </div>
-    <div class="header-lines-container">
+    <div class="header-lines">
         <div class="header-line-bottom header-line-bottom-left"></div>
         <div class="header-line-vertical header-line-vertical-left"></div>
         <div class="header-line-hook header-line-hook-left"></div>
