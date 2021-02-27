@@ -84,7 +84,7 @@ header {
   margin-left: 10rem;
 }
 
-.header-top, .sub-header {
+.tabs ul, .sub-tabs ul {
   display: flex;
   align-items: center;
 }
@@ -93,14 +93,18 @@ header {
   margin-top: 19rem;
 }
 
-.header-top > a, .sub-header > a {
+.tabs ul li > a, .sub-tabs ul li > a {
   font-size: 2.2rem;
   color: $pip-boy-primary-color;
 }
 
-.header-top > a {
+.tabs ul li > a {
   font-weight: bold;
   margin-right: 4rem;
+}
+
+.sub-tabs ul li > a {
+  margin-right: 0.8rem;
 }
 
 /* header lines ------------------------------------------------------------------------------------------------------*/
@@ -157,11 +161,11 @@ header {
 }
 /* header lines END --------------------------------------------------------------------------------------------------*/
 
-.sub-header {
+.sub-tabs {
   margin-top: 1rem;
 }
 
-.sub-header > a {
+.sub-tabs > a {
   font-weight: lighter;
   margin-right: 1rem;
 }

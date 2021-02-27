@@ -1,10 +1,12 @@
 <header class="header">
-    <div class="header-top">
-        <a href="#stat-status" class="header-top-active">STAT</a>
-        <a href="#inv">INV</a>
-        <a href="#">DATA</a>
-        <a href="#">MAP</a>
-        <a href="#">RADIO</a>
+    <div class="tabs">
+        <ul>
+            <li><a href="#stat-status" class="header-top-active">STAT</a></li>
+            <li><a href="#inv">INV</a></li>
+            <li><a href="#">DATA</a></li>
+            <li><a href="#">MAP</a></li>
+            <li><a href="#">RADIO</a></li>
+        </ul>
     </div>
     <div class="header-lines">
         <div class="header-line-bottom header-line-bottom-left"></div>
@@ -14,9 +16,11 @@
         <div class="header-line-vertical header-line-vertical-right"></div>
         <div class="header-line-bottom header-line-bottom-right"></div>
     </div>
-    <div class="sub-header sub-header-stat">
-        <a href="#" class="sub-header-active-tab">STATUS</a>
-        <a href="#" class="sub-header-inactive-tab-near">SPECIAL</a>
-        <a href="#" class="sub-header-inactive-tab-far">PERKS</a>
+    <div class="sub-tabs sub-header-stat">
+        <ul>
+            <li><a href="#" class="sub-header-active-tab">STATUS</a></li>
+            <li><a href="#" class="sub-header-inactive-tab-near">SPECIAL</a></li>
+            <li><a href="#" class="sub-header-inactive-tab-far">PERKS</a></li>
+        </ul>
     </div>
 </header>
