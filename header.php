@@ -1,11 +1,11 @@
 <header class="header">
-    <div class="tabs">
-        <ul>
+    <div>
+        <ul class="tabs">
             <li class="tab-active"><a href="#stat-status">STAT</a></li>
             <li><a href="#inv">INV</a></li>
-            <li><a href="#">DATA</a></li>
-            <li><a href="#">MAP</a></li>
-            <li><a href="#">RADIO</a></li>
+            <li><a href="#data">DATA</a></li>
+            <li><a href="#map">MAP</a></li>
+            <li><a href="#radio">RADIO</a></li>
         </ul>
     </div>
     <div class="header-lines">

@@ -12,9 +12,9 @@
 <div class="screen">
     <div class="screen-reflection"></div>
     <?php include("header.php"); ?>
-    <div class="sections">
+    <div class="cores-display">
         <!--core display : stat-status section------------------------------------------------------------------------->
-        <section class="section section-active" id="stat-status-section">
+        <section class="core-display core-display-active" id="stat-status-section">
             <div class="vault-boy-container">
                 <img id="vault-boy-walking"
                      src="img/vault_boy_walking.gif" alt="a fallout vault boy walking">
@@ -64,7 +64,7 @@
             </div>
         </section>
         <!--core display : stat-status section-->
-        <section class="section" id="inv-section">
+        <section class="core-display" id="inv-section">
             <p>test js</p>
         </section>
     </div>

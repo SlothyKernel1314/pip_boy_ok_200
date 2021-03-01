@@ -73,11 +73,11 @@ body {
   border-radius: 7rem;
 }
 
-.section {
+.core-display {
   display: none; //only the .section-active should be displayed
 }
 
-.section-active {
+.core-display-active {
   display: block;
 }
 
@@ -88,11 +88,11 @@ header {
   position: relative;
 }
 
-.header, .section-active {
+.header, .core-display-active {
   margin-left: 10rem;
 }
 
-.tabs ul, .sub-tabs ul {
+.tabs, .sub-tabs ul {
   display: flex;
   align-items: center;
 }
@@ -101,18 +101,23 @@ header {
   margin-top: 19rem;
 }
 
-.tabs ul li > a, .sub-tabs ul li > a {
+.tabs li > a, .sub-tabs ul li > a {
   font-size: 2.2rem;
-  color: $pip-boy-primary-color;
+  //color: $pip-boy-primary-color; TODO test
 }
 
-.tabs ul li > a {
+.tabs li > a {
   font-weight: bold;
   margin-right: 4rem;
 }
 
 .sub-tabs ul li > a {
   margin-right: 0.8rem;
+}
+
+// TEST TODO:remove
+.tab-active a {
+  color: red;
 }
 
 /* header lines ------------------------------------------------------------------------------------------------------*/
