@@ -64,13 +64,13 @@
             </div>
         </section>
         <!--core display : stat-status section-->
-    <!--    <section class="section" id="inv-section">-->
-    <!--        <p>test js</p>-->
-    <!--    </section>-->
+        <section class="section" id="inv-section">
+            <p>test js</p>
+        </section>
     </div>
     <?php include("bottom.php"); ?>
 </div>
-<script src="tabs.js"></script>
+<script src="js/tabs.js"></script>
 </body>
 </html>
 

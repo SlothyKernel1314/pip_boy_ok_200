@@ -73,6 +73,14 @@ body {
   border-radius: 7rem;
 }
 
+.section {
+  display: none; //only the .section-active should be displayed
+}
+
+.section-active {
+  display: block;
+}
+
 header {
   font-family: "Monofonto", serif;
   text-transform: uppercase;
