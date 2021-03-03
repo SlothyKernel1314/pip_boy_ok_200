@@ -1,3 +1,47 @@
+// inspiration for tab management : https://www.youtube.com/watch?v=wKatvNTAPVA
+
+var tabs = document.querySelectorAll('.tabs a')
+// TODO : for tests purposes, remove in prod
+var sections = document.querySelectorAll(".core-display")
+var current_active_section = document.querySelector('.core-display.core-display-active')
+
+/* management of tab navigation...
+... and display of section contents*/
+var displayTabs = function (a) {
+    var li = a.parentNode
+    var div = a.parentNode.parentNode.parentNode
+    var anchor = a.getAttribute('href')
+    // in case where we click on the tab that is already active
+    if (li.classList.contains('active')) {
+        return false
+    }
+    // remove .tab-active class from the previous active tab
+    div.querySelector('.tabs .tab-active').classList.remove('tab-active')
+    // add .tab-active class from the current active tab
+    li.classList.add('tab-active')
+    // remove .core-display-active class from the current active section
+    current_active_section.classList.remove('core-display-active')
+    // add .core-display-active class on the new active section
+    document.getElementById(anchor.substring(1)).classList.add('core-display-active')
+    // change current_active_session
+    current_active_section = document.querySelector('.core-display.core-display-active')
+}
+
+
+// execution of navigation tabs
+for (var i=0 ; i < tabs.length ; i++) {
+    tabs[i].addEventListener('click', function (evt) {
+        displayTabs(this)
+    })
+}
+
+// in case of page refresh (we want to keep the current display !)
+var hash = window.location.hash
+var a = document.querySelector('a[href="' + hash + '"]')
+if(a !== null && !a.classList.contains('active')) {
+    displayTabs(a)
+}
+
 // TODO : structure
 // -- STAT
 // ----- STATUS
@@ -18,31 +62,4 @@
 // TODO : favicon
 
 // TODO : hebergement
-
-var tabs = document.querySelectorAll('.tabs a')
-// TODO : for tests purposes, remove in prod
-var sections = document.querySelectorAll(".core-display")
-var current_active_section = document.querySelector('.core-display.core-display-active')
-
-for (var i=0 ; i < tabs.length ; i++) {
-    tabs[i].addEventListener('click', function (evt) {
-        var li = this.parentNode
-        var div = this.parentNode.parentNode.parentNode
-        var anchor = this.getAttribute('href')
-        // in case where we click on the tab that is already active
-        if (li.classList.contains('active')) {
-            return false
-        }
-        // remove .tab-active class from the previous active tab
-        div.querySelector('.tabs .tab-active').classList.remove('tab-active')
-        // add .tab-active class from the current active tab
-        li.classList.add('tab-active')
-        // remove .core-display-active class from the current active section
-        current_active_section.classList.remove('core-display-active')
-        // add .core-display-active class on the new active section
-        document.getElementById(anchor.substring(1)).classList.add('core-display-active')
-        // change current_active_session
-        current_active_section = document.querySelector('.core-display.core-display-active')
-    })
-}
 

@@ -103,7 +103,7 @@ header {
 
 .tabs li > a, .sub-tabs ul li > a {
   font-size: 2.2rem;
-  //color: $pip-boy-primary-color; TODO test
+  color: $pip-boy-primary-color;
 }
 
 .tabs li > a {
@@ -116,9 +116,9 @@ header {
 }
 
 // TEST TODO:remove
-.tab-active a {
-  color: red;
-}
+//.tab-active a {
+//  color: red;
+//}
 
 /* header lines ------------------------------------------------------------------------------------------------------*/
 .header-lines {
