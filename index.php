@@ -63,9 +63,13 @@
                 <p>Cyril BERTHOUT : Concepteur développeur d'applications</p>
             </div>
         </section>
-        <!--core display : stat-status section-->
+        <!--core display : inv section-->
         <section class="core-display" id="inv-section">
-            <p>test js</p>
+            <p>test js INV</p>
+        </section>
+        <!--core display : data section-->
+        <section class="core-display" id="data-section">
+            <p>test js DATA</p>
         </section>
     </div>
     <?php include("bottom.php"); ?>

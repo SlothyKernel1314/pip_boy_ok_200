@@ -20,6 +20,7 @@
 // TODO : hebergement
 
 var tabs = document.querySelectorAll('.tabs a')
+// TODO : for tests purposes, remove in prod
 var sections = document.querySelectorAll(".core-display")
 var current_active_section = document.querySelector('.core-display.core-display-active')
 
@@ -40,7 +41,8 @@ for (var i=0 ; i < tabs.length ; i++) {
         current_active_section.classList.remove('core-display-active')
         // add .core-display-active class on the new active section
         document.getElementById(anchor.substring(1)).classList.add('core-display-active')
-
+        // change current_active_session
+        current_active_section = document.querySelector('.core-display.core-display-active')
     })
 }
 

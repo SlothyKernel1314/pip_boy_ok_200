@@ -3,9 +3,9 @@
         <ul class="tabs">
             <li class="tab-active"><a href="#stat-status-section">STAT</a></li>
             <li><a href="#inv-section">INV</a></li>
-            <li><a href="#data">DATA</a></li>
-            <li><a href="#map">MAP</a></li>
-            <li><a href="#radio">RADIO</a></li>
+            <li><a href="#data-section">DATA</a></li>
+            <li><a href="#map-section">MAP</a></li>
+            <li><a href="#radio-section">RADIO</a></li>
         </ul>
     </div>
     <div class="header-lines">
