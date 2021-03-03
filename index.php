@@ -63,13 +63,37 @@
                 <p>Cyril BERTHOUT : Concepteur développeur d'applications</p>
             </div>
         </section>
-        <!--core display : inv section-->
-        <section class="core-display" id="inv-section">
-            <p>test js INV</p>
+        <!--core display : stat-special section-->
+        <section class="core-display" id="stat-special-section">
+            <p>test js STAT SPECIAL</p>
+        </section>
+        <!--core display : stat-perks section-->
+        <section class="core-display" id="stat-perks-section">
+            <p>test js STAT PERKS</p>
+        </section>
+        <!--core display : exp-jobs section-->
+        <section class="core-display" id="exp-jobs-section">
+            <p>test js EXP JOBS</p>
+        </section>
+        <!--core display : exp-studies section-->
+        <section class="core-display" id="exp-studies-section">
+            <p>test js EXP STUDIES</p>
+        </section>
+        <!--core display : exp-skills section-->
+        <section class="core-display" id="exp-skills-section">
+            <p>test js EXP SKILLS</p>
         </section>
         <!--core display : data section-->
         <section class="core-display" id="data-section">
             <p>test js DATA</p>
+        </section>
+        <!--core display : map section-->
+        <section class="core-display" id="map-section">
+            <p>test js MAP</p>
+        </section>
+        <!--core display : color section-->
+        <section class="core-display" id="color-section">
+            <p>test js COLOR</p>
         </section>
     </div>
     <?php include("bottom.php"); ?>

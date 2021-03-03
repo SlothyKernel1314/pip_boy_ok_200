@@ -92,7 +92,7 @@ header {
   margin-left: 10rem;
 }
 
-.tabs, .sub-tabs ul {
+.tabs, .sub-tabs {
   display: flex;
   align-items: center;
 }
@@ -101,7 +101,7 @@ header {
   margin-top: 19rem;
 }
 
-.tabs li > a, .sub-tabs ul li > a {
+.tabs li > a, .sub-tabs li > a {
   font-size: 2.2rem;
   color: $pip-boy-primary-color;
 }
@@ -111,7 +111,16 @@ header {
   margin-right: 4rem;
 }
 
-.sub-tabs ul li > a {
+.sub-tabs {
+  display: none; //only the .sub-tabs-active should be displayed
+}
+
+.sub-tabs-active {
+  display: flex;
+  align-items: center;
+}
+
+.sub-tabs li > a {
   margin-right: 0.8rem;
 }
 

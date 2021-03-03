@@ -48,10 +48,10 @@ if(a !== null && !a.classList.contains('active')) {
 // ----- SPECIAL
 // ----- PERKS
 // -- EXP
-// ----- (expériences prof.)
-// ----- (études)
-// ----- (compétences)
-// -- ??? (objectifs)
+// ----- JOBS
+// ----- STUDIES
+// ----- SKILLS
+// -- DATA (objectifs)
 // -- MAP : coordonnées
 // -- COLOR : changer la couleur du pip boy
 
