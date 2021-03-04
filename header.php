@@ -30,4 +30,11 @@
             <li class=""><a href="#exp-skills-section" class="sub-header-inactive-tab-far">SKILLS</a></li>
         </ul>
     </div>
+    <div>
+        <ul class="tabs sub-tabs sub-header-void">
+            <li class=""><a href="#" class="sub-header-active-tab"></a></li>
+            <li class=""><a href="#" class="sub-header-inactive-tab-near"></a></li>
+            <li class=""><a href="#" class="sub-header-inactive-tab-far"></a></li>
+        </ul>
+    </div>
 </header>
