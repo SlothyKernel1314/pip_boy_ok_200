@@ -17,6 +17,8 @@ $vault-boy-img-width: 10.5; //rem
 $health-gauge-top: 8; //rem
 $health-gauges-vertical-offset: 6; //rem
 
+$sub-header-tabs-opacity-values: (0.8, 0.5, 0.2); //rem
+
 @mixin relative-center-element($parent-width, $element-width) {
   margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
   width: $element-width*1rem;
@@ -198,15 +200,15 @@ p {
 }
 
 .sub-header-active-tab {
-  opacity: 0.8;
+  opacity: nth($sub-header-tabs-opacity-values, 1);
 }
 
 .sub-header-inactive-tab-near {
-  opacity: 0.5;
+  opacity: nth($sub-header-tabs-opacity-values, 2);
 }
 
 .sub-header-inactive-tab-far {
-  opacity: 0.2;
+  opacity: nth($sub-header-tabs-opacity-values, 3);
 }
 
 
