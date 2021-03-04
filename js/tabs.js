@@ -50,20 +50,14 @@ function switchOpacitySubTabs(a) {
     section = a.getAttribute('href').substring(1);
     switch (section) {
         case stat_tabs_ids[0]:
-            alert(section.toString());
-            break;
-        case stat_tabs_ids[1]:
-            alert(section.toString());
-            break;
-        case stat_tabs_ids[2]:
-            alert(section.toString());
-            break;
         case exp_tabs_ids[0]:
             alert(section.toString());
             break;
+        case stat_tabs_ids[1]:
         case exp_tabs_ids[1]:
             alert(section.toString());
             break;
+        case stat_tabs_ids[2]:
         case exp_tabs_ids[2]:
             alert(section.toString());
             break;
