@@ -30,7 +30,10 @@ var displayTabs = function (a) {
     document.getElementById(anchor.substring(1)).classList.add('core-display-active');
     // change current_active_session
     current_active_section = document.querySelector('.core-display.core-display-active');
-    // SUBTABS SWITCH
+}
+
+/* management of subtabs switching */
+function switchSubTabs() {
     if(stat_tabs_ids.includes(current_active_section.id)) {
         document.querySelector('.sub-tabs-active').classList.remove('sub-tabs-active');
         document.querySelector('.sub-header-stat').classList.add('sub-tabs-active');
@@ -47,6 +50,7 @@ var displayTabs = function (a) {
 for (var i=0 ; i < tabs.length ; i++) {
     tabs[i].addEventListener('click', function (evt) {
         displayTabs(this);
+        switchSubTabs();
     })
 }
 
@@ -55,6 +59,7 @@ var hash = window.location.hash;
 var a = document.querySelector('a[href="' + hash + '"]')
 if(a !== null && !a.classList.contains('active')) {
     displayTabs(a);
+    switchSubTabs();
 }
 
 // TODO : structure
