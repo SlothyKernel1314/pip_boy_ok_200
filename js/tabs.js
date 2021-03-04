@@ -3,20 +3,22 @@
 var tabs = document.querySelectorAll('.tabs a')
 // TODO : for tests purposes, remove in prod
 var sections = document.querySelectorAll(".core-display")
+// TODO : for tests purposes, remove in prod
+var lis = document.querySelectorAll('li')
 var current_active_section = document.querySelector('.core-display.core-display-active')
 
 /* management of tab navigation...
 ... and display of section contents*/
 var displayTabs = function (a) {
     var li = a.parentNode
-    var div = a.parentNode.parentNode.parentNode
     var anchor = a.getAttribute('href')
     // in case where we click on the tab that is already active
     if (li.classList.contains('active')) {
         return false
     }
     // remove .tab-active class from the previous active tab
-    div.querySelector('.tabs .tab-active').classList.remove('tab-active')
+    // div.querySelector('.tabs .tab-active').classList.remove('tab-active')
+    document.querySelector('.tabs .tab-active').classList.remove('tab-active')
     // add .tab-active class from the current active tab
     li.classList.add('tab-active')
     // remove .core-display-active class from the current active section

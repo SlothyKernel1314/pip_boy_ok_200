@@ -129,6 +129,11 @@ header {
 //  color: red;
 //}
 
+// TEST TODO:remove
+p {
+  color: $pip-boy-primary-color;
+}
+
 /* header lines ------------------------------------------------------------------------------------------------------*/
 .header-lines {
   display: flex;
