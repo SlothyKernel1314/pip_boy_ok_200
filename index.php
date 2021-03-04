@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fallout 4 Pip-Boy browser version</title>
+    <link rel="icon" type="image/png" href="img/lolo-favicon.png" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
