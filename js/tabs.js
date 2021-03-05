@@ -114,6 +114,33 @@ function displayHeaderLines(a) {
             header_line_bottom_right.style.width = "30.1rem";
             header_line_bottom_left.style.width = "13.3rem";
             break;
+        case data_tab_id:
+            // header_line_vertical_left.style.left = "7.50rem";
+            // header_line_hook_left.style.marginLeft = "7.50rem";
+            // header_line_vertical_right.style.left = "13.00rem";
+            // header_line_hook_right.style.marginLeft = "12.52rem";
+            // header_line_bottom_right.style.marginLeft = "13rem";
+            // header_line_bottom_right.style.width = "30.1rem";
+            // header_line_bottom_left.style.width = "13.3rem";
+            break;
+        case map_tab_id:
+            // header_line_vertical_left.style.left = "7.50rem";
+            // header_line_hook_left.style.marginLeft = "7.50rem";
+            // header_line_vertical_right.style.left = "13.00rem";
+            // header_line_hook_right.style.marginLeft = "12.52rem";
+            // header_line_bottom_right.style.marginLeft = "13rem";
+            // header_line_bottom_right.style.width = "30.1rem";
+            // header_line_bottom_left.style.width = "13.3rem";
+            break;
+        case color_tab_id:
+            // header_line_vertical_left.style.left = "7.50rem";
+            // header_line_hook_left.style.marginLeft = "7.50rem";
+            // header_line_vertical_right.style.left = "13.00rem";
+            // header_line_hook_right.style.marginLeft = "12.52rem";
+            // header_line_bottom_right.style.marginLeft = "13rem";
+            // header_line_bottom_right.style.width = "30.1rem";
+            // header_line_bottom_left.style.width = "13.3rem";
+            break;
     }
 }
 
