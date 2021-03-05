@@ -2,6 +2,9 @@
 
 var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perks-section'];
 var exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
+var data_tab_id = 'data-section';
+var map_tab_id = 'map-section';
+var color_tab_id = 'color-section';
 
 var header_line_bottom_left = document.querySelector('.header-line-bottom-left');
 var header_line_vertical_left = document.querySelector('.header-line-vertical-left');
