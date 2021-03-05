@@ -1,13 +1,22 @@
 // inspiration for tab management : https://www.youtube.com/watch?v=wKatvNTAPVA
 
+var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perks-section'];
+var exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
+
+var header_line_bottom_left = document.querySelector('.header-line-bottom-left');
+var header_line_vertical_left = document.querySelector('.header-line-vertical-left');
+var header_line_hook_left = document.querySelector('.header-line-hook-left');
+var header_line_hook_right = document.querySelector('.header-line-hook-right');
+var header_line_vertical_right = document.querySelector('.header-line-vertical-right');
+var header_line_bottom_right = document.querySelector('.header-line-bottom-right');
+
+
 var tabs = document.querySelectorAll('.tabs a');
 // TODO : for tests purposes, remove in prod
 var sections = document.querySelectorAll(".core-display");
 // TODO : for tests purposes, remove in prod
 var lis = document.querySelectorAll('li');
 var current_active_section = document.querySelector('.core-display.core-display-active');
-var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perks-section'];
-var exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
 
 /* management of tab navigation...
 ... and display of section contents*/
@@ -77,6 +86,34 @@ function switchOpacitySubTabs(a) {
     }
 }
 
+function displayHeaderLines(a) {
+    var section = a.getAttribute('href').substring(1);
+    switch (section) {
+        case stat_tabs_ids[0]:
+        case stat_tabs_ids[1]:
+        case stat_tabs_ids[2]:
+            header_line_vertical_left.style.left = "-1rem";
+            header_line_hook_left.style.marginLeft = "-1rem";
+            header_line_vertical_right.style.left = "5.58rem";
+            header_line_hook_right.style.marginLeft = "5.1rem";
+            header_line_bottom_right.style.marginLeft = "5.6rem";
+            header_line_bottom_right.style.width = "37.5rem";
+            header_line_bottom_left.style.width = "4.7rem";
+            break;
+        case exp_tabs_ids[0]:
+        case exp_tabs_ids[1]:
+        case exp_tabs_ids[2]:
+            header_line_vertical_left.style.left = "7.50rem";
+            header_line_hook_left.style.marginLeft = "7.50rem";
+            header_line_vertical_right.style.left = "13.00rem";
+            header_line_hook_right.style.marginLeft = "12.52rem";
+            header_line_bottom_right.style.marginLeft = "13rem";
+            header_line_bottom_right.style.width = "30.1rem";
+            header_line_bottom_left.style.width = "13.3rem";
+            break;
+    }
+}
+
 
 // execution of navigation tabs
 for (var i=0 ; i < tabs.length ; i++) {
@@ -84,6 +121,7 @@ for (var i=0 ; i < tabs.length ; i++) {
         displayTabs(this);
         switchSubTabs();
         switchOpacitySubTabs(this);
+        displayHeaderLines(this);
     })
 }
 
@@ -93,6 +131,8 @@ var a = document.querySelector('a[href="' + hash + '"]')
 if(a !== null && !a.classList.contains('active')) {
     displayTabs(a);
     switchSubTabs();
+    switchOpacitySubTabs(a);
+    displayHeaderLines(a);
 }
 
 // TODO : structure
