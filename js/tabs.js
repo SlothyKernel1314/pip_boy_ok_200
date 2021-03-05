@@ -133,13 +133,13 @@ function displayHeaderLines(a) {
             header_line_bottom_left.style.width = "29.3rem";
             break;
         case color_tab_id:
-            // header_line_vertical_left.style.left = "7.50rem";
-            // header_line_hook_left.style.marginLeft = "7.50rem";
-            // header_line_vertical_right.style.left = "13.00rem";
-            // header_line_hook_right.style.marginLeft = "12.52rem";
-            // header_line_bottom_right.style.marginLeft = "13rem";
-            // header_line_bottom_right.style.width = "30.1rem";
-            // header_line_bottom_left.style.width = "13.3rem";
+            header_line_vertical_left.style.left = "30.9rem";
+            header_line_hook_left.style.marginLeft = "30.9rem";
+            header_line_vertical_right.style.left = "38.8rem";
+            header_line_hook_right.style.marginLeft = "38.32rem";
+            header_line_bottom_right.style.marginLeft = "38.9rem";
+            header_line_bottom_right.style.width = "4.1rem";
+            header_line_bottom_left.style.width = "36.7rem";
             break;
     }
 }
