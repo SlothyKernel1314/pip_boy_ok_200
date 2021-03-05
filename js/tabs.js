@@ -115,19 +115,19 @@ function displayHeaderLines(a) {
             header_line_bottom_left.style.width = "13.3rem";
             break;
         case data_tab_id:
-            // header_line_vertical_left.style.left = "7.50rem";
-            // header_line_hook_left.style.marginLeft = "7.50rem";
-            // header_line_vertical_right.style.left = "13.00rem";
-            // header_line_hook_right.style.marginLeft = "12.52rem";
-            // header_line_bottom_right.style.marginLeft = "13rem";
-            // header_line_bottom_right.style.width = "30.1rem";
-            // header_line_bottom_left.style.width = "13.3rem";
+            header_line_vertical_left.style.left = "15rem";
+            header_line_hook_left.style.marginLeft = "15rem";
+            header_line_vertical_right.style.left = "21.7rem";
+            header_line_hook_right.style.marginLeft = "21.22rem";
+            header_line_bottom_right.style.marginLeft = "21.8rem";
+            header_line_bottom_right.style.width = "21.3rem";
+            header_line_bottom_left.style.width = "20.8rem";
             break;
         case map_tab_id:
             // header_line_vertical_left.style.left = "7.50rem";
             // header_line_hook_left.style.marginLeft = "7.50rem";
             // header_line_vertical_right.style.left = "13.00rem";
-            // header_line_hook_right.style.marginLeft = "12.52rem";
+            // header_line_hook_right.style.marginLeft = "28.72rem";
             // header_line_bottom_right.style.marginLeft = "13rem";
             // header_line_bottom_right.style.width = "30.1rem";
             // header_line_bottom_left.style.width = "13.3rem";
