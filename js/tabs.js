@@ -46,27 +46,35 @@ function switchSubTabs() {
     }
 }
 
+/* management of subtabs opacity */
 function switchOpacitySubTabs(a) {
     var section = a.getAttribute('href').substring(1);
     var current_sub_tabs_active = document.querySelector('.sub-tabs-active');
     var tabs_a = current_sub_tabs_active.querySelectorAll('li > a');
     for (var i=0 ; i < tabs.length ; i++) {
         tabs_a[i].classList.remove('sub-header-active-tab',
-            'sub-header-inactive-tab-near', 'sub-header-inactive-tab-far')
-    }
-    switch (section) {
-        case stat_tabs_ids[0]:
-        case exp_tabs_ids[0]:
-            // alert(section.toString());
-            break;
-        case stat_tabs_ids[1]:
-        case exp_tabs_ids[1]:
-            // alert(section.toString());
-            break;
-        case stat_tabs_ids[2]:
-        case exp_tabs_ids[2]:
-            // alert(section.toString());
-            break;
+            'sub-header-inactive-tab-near', 'sub-header-inactive-tab-far');
+
+        switch (section) {
+            case stat_tabs_ids[0]:
+            case exp_tabs_ids[0]:
+                tabs_a[0].classList.add('sub-header-active-tab');
+                tabs_a[1].classList.add('sub-header-inactive-tab-near');
+                tabs_a[2].classList.add('sub-header-inactive-tab-far');
+                break;
+            case stat_tabs_ids[1]:
+            case exp_tabs_ids[1]:
+                tabs_a[0].classList.add('sub-header-inactive-tab-near');
+                tabs_a[1].classList.add('sub-header-active-tab');
+                tabs_a[2].classList.add('sub-header-inactive-tab-near');
+                break;
+            case stat_tabs_ids[2]:
+            case exp_tabs_ids[2]:
+                tabs_a[0].classList.add('sub-header-inactive-tab-far');
+                tabs_a[1].classList.add('sub-header-inactive-tab-near');
+                tabs_a[2].classList.add('sub-header-active-tab');
+                break;
+        }
     }
 }
 
