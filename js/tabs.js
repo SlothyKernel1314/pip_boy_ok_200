@@ -51,10 +51,9 @@ function switchOpacitySubTabs(a) {
     var section = a.getAttribute('href').substring(1);
     var current_sub_tabs_active = document.querySelector('.sub-tabs-active');
     var tabs_a = current_sub_tabs_active.querySelectorAll('li > a');
-    for (var i=0 ; i < tabs.length ; i++) {
+    for (var i=0 ; i < tabs_a.length ; i++) {
         tabs_a[i].classList.remove('sub-header-active-tab',
             'sub-header-inactive-tab-near', 'sub-header-inactive-tab-far');
-
         switch (section) {
             case stat_tabs_ids[0]:
             case exp_tabs_ids[0]:
@@ -78,12 +77,13 @@ function switchOpacitySubTabs(a) {
     }
 }
 
+
 // execution of navigation tabs
 for (var i=0 ; i < tabs.length ; i++) {
     tabs[i].addEventListener('click', function (evt) {
         displayTabs(this);
         switchSubTabs();
-        switchOpacitySubTabs(this)
+        switchOpacitySubTabs(this);
     })
 }
 
