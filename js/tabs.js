@@ -89,57 +89,44 @@ function switchOpacitySubTabs(a) {
     }
 }
 
+/* css positioner for header lines / displayHeaderLines() refactoring */
+function positioner(pos1, pos2, pos3, pos4, pos5, pos6, pos7) {
+    header_line_vertical_left.style.left = pos1;
+    header_line_hook_left.style.marginLeft = pos2;
+    header_line_vertical_right.style.left = pos3;
+    header_line_hook_right.style.marginLeft = pos4;
+    header_line_bottom_right.style.marginLeft = pos5;
+    header_line_bottom_right.style.width = pos6;
+    header_line_bottom_left.style.width = pos7;
+}
+
+/* management of header lines display */
 function displayHeaderLines(a) {
     var section = a.getAttribute('href').substring(1);
     switch (section) {
         case stat_tabs_ids[0]:
         case stat_tabs_ids[1]:
         case stat_tabs_ids[2]:
-            header_line_vertical_left.style.left = "-1rem";
-            header_line_hook_left.style.marginLeft = "-1rem";
-            header_line_vertical_right.style.left = "5.58rem";
-            header_line_hook_right.style.marginLeft = "5.1rem";
-            header_line_bottom_right.style.marginLeft = "5.6rem";
-            header_line_bottom_right.style.width = "37.5rem";
-            header_line_bottom_left.style.width = "4.7rem";
+            positioner('-1rem', '-1rem','5.58rem', '5.1rem',
+                '5.6rem', '37.5rem', '4.7rem')
             break;
         case exp_tabs_ids[0]:
         case exp_tabs_ids[1]:
         case exp_tabs_ids[2]:
-            header_line_vertical_left.style.left = "7.50rem";
-            header_line_hook_left.style.marginLeft = "7.50rem";
-            header_line_vertical_right.style.left = "13.00rem";
-            header_line_hook_right.style.marginLeft = "12.52rem";
-            header_line_bottom_right.style.marginLeft = "13rem";
-            header_line_bottom_right.style.width = "30.1rem";
-            header_line_bottom_left.style.width = "13.3rem";
+            positioner('7.50rem', '7.50rem','13.00rem', '12.52rem',
+                '13rem', '30.1rem', '13.3rem')
             break;
         case data_tab_id:
-            header_line_vertical_left.style.left = "15rem";
-            header_line_hook_left.style.marginLeft = "15rem";
-            header_line_vertical_right.style.left = "21.7rem";
-            header_line_hook_right.style.marginLeft = "21.22rem";
-            header_line_bottom_right.style.marginLeft = "21.8rem";
-            header_line_bottom_right.style.width = "21.3rem";
-            header_line_bottom_left.style.width = "20.8rem";
+            positioner('15rem', '15rem','21.7rem', '21.22rem',
+                '21.8rem', '21.3rem', '20.8rem')
             break;
         case map_tab_id:
-            header_line_vertical_left.style.left = "23.5rem";
-            header_line_hook_left.style.marginLeft = "23.5rem";
-            header_line_vertical_right.style.left = "29rem";
-            header_line_hook_right.style.marginLeft = "28.52rem";
-            header_line_bottom_right.style.marginLeft = "29.1rem";
-            header_line_bottom_right.style.width = "14.1rem";
-            header_line_bottom_left.style.width = "29.3rem";
+            positioner('23.5rem', '23.5rem','29rem', '28.52rem',
+                '29.1rem', '14.1rem', '29.3rem')
             break;
         case color_tab_id:
-            header_line_vertical_left.style.left = "30.9rem";
-            header_line_hook_left.style.marginLeft = "30.9rem";
-            header_line_vertical_right.style.left = "38.8rem";
-            header_line_hook_right.style.marginLeft = "38.32rem";
-            header_line_bottom_right.style.marginLeft = "38.9rem";
-            header_line_bottom_right.style.width = "4.1rem";
-            header_line_bottom_left.style.width = "36.7rem";
+            positioner('30.9rem', '30.9rem','38.8rem', '38.32rem',
+                '38.9rem', '4.1rem', '36.7rem')
             break;
     }
 }
