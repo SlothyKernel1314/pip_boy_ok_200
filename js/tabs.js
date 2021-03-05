@@ -13,7 +13,6 @@ var header_line_hook_right = document.querySelector('.header-line-hook-right');
 var header_line_vertical_right = document.querySelector('.header-line-vertical-right');
 var header_line_bottom_right = document.querySelector('.header-line-bottom-right');
 
-
 var tabs = document.querySelectorAll('.tabs a');
 // TODO : for tests purposes, remove in prod
 var sections = document.querySelectorAll(".core-display");
@@ -44,6 +43,7 @@ var displayTabs = function (a) {
     current_active_section = document.querySelector('.core-display.core-display-active');
 }
 
+
 /* management of subtabs switching */
 function switchSubTabs() {
     if(stat_tabs_ids.includes(current_active_section.id)) {
@@ -57,6 +57,7 @@ function switchSubTabs() {
         document.querySelector('.sub-header-void').classList.add('sub-tabs-active');
     }
 }
+
 
 /* management of subtabs opacity */
 function switchOpacitySubTabs(a) {
@@ -89,6 +90,7 @@ function switchOpacitySubTabs(a) {
     }
 }
 
+
 /* css positioner for header lines / displayHeaderLines() refactoring */
 function positioner(pos1, pos2, pos3, pos4, pos5, pos6, pos7) {
     header_line_vertical_left.style.left = pos1;
@@ -99,6 +101,7 @@ function positioner(pos1, pos2, pos3, pos4, pos5, pos6, pos7) {
     header_line_bottom_right.style.width = pos6;
     header_line_bottom_left.style.width = pos7;
 }
+
 
 /* management of header lines display */
 function displayHeaderLines(a) {
@@ -142,6 +145,7 @@ for (var i=0 ; i < tabs.length ; i++) {
     })
 }
 
+
 // in case of page refresh (we want to keep the current display !)
 var hash = window.location.hash;
 var a = document.querySelector('a[href="' + hash + '"]')
@@ -151,6 +155,7 @@ if(a !== null && !a.classList.contains('active')) {
     switchOpacitySubTabs(a);
     displayHeaderLines(a);
 }
+
 
 // TODO : structure
 // -- STAT
