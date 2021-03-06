@@ -16,21 +16,21 @@
     <div class="cores-display">
         <!--core display : stat-status section------------------------------------------------------------------------->
         <?php include("stat_status.php"); ?>
-        <!--core display : stat-special section-->
+        <!--core display : stat-special section------------------------------------------------------------------------>
         <?php include("stat_special.php"); ?>
-        <!--core display : stat-perks section-->
+        <!--core display : stat-perks section-------------------------------------------------------------------------->
         <?php include("stat_perks.php"); ?>
-        <!--core display : exp-jobs section-->
+        <!--core display : exp-jobs section---------------------------------------------------------------------------->
         <?php include("exp_jobs.php"); ?>
-        <!--core display : exp-studies section-->
+        <!--core display : exp-studies section------------------------------------------------------------------------->
         <?php include("exp_studies.php"); ?>
-        <!--core display : exp-skills section-->
+        <!--core display : exp-skills section-------------------------------------------------------------------------->
         <?php include("exp_skills.php"); ?>
-        <!--core display : data section-->
+        <!--core display : data section-------------------------------------------------------------------------------->
         <?php include("data.php"); ?>
-        <!--core display : map section-->
+        <!--core display : map section--------------------------------------------------------------------------------->
         <?php include("map.php"); ?>
-        <!--core display : color section-->
+        <!--core display : color section------------------------------------------------------------------------------->
         <?php include("color.php"); ?>
     </div>
     <?php include("bottom.php"); ?>
