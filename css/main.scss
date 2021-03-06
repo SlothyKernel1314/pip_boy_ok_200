@@ -92,6 +92,7 @@ header {
 
 .header, .core-display-active {
   margin-left: 10rem;
+  max-width: 37.8rem;
 }
 
 .tabs, .sub-tabs {
@@ -412,6 +413,28 @@ p {
   padding-right: 0.5rem;
 }
 
+.special-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.special-attributes, .special-right-column {
+  width: 50%;
+}
+
+.special-attributes {
+  margin: 0 0.5rem 0 0;
+}
+
+.special-right-column {
+  margin: 0 0 0 0.5rem;
+}
+
+.special-attribute-box {
+  display: flex;
+  justify-content: space-between;
+
+}
 
 
 
