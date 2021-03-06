@@ -5,7 +5,6 @@
 
 // Icons : https://freeicons.io/
 
-
 $pip-boy-background-color: #10170f;
 $pip-boy-primary-color: #18dc0c;
 $pip-boy-secondary-color: #11291b;
@@ -83,8 +82,11 @@ body {
   display: block;
 }
 
-header {
+header, p {
   font-family: "Monofonto", serif;
+}
+
+header {
   text-transform: uppercase;
   width: $header-width * 1rem;
   position: relative;
@@ -131,7 +133,6 @@ header {
 //.tab-active a {
 //  color: red;
 //}
-
 // TEST TODO:remove
 p {
   color: $pip-boy-primary-color;
@@ -413,9 +414,11 @@ p {
   padding-right: 0.5rem;
 }
 
+// STAT SPECIAL SECTION ------------------------------------------------------------------------------------------------
 .special-container {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 
 .special-attributes, .special-right-column {
@@ -426,15 +429,24 @@ p {
   margin: 0 0.5rem 0 0;
 }
 
-.special-right-column {
-  margin: 0 0 0 0.5rem;
-}
-
 .special-attribute-box {
   display: flex;
   justify-content: space-between;
 
 }
+
+.special-attribute, .special-value {
+  font-size: 2rem;
+}
+
+.special-right-column {
+  margin: 0 0 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28rem;
+}
+// STAT SPECIAL SECTION END --------------------------------------------------------------------------------------------
 
 
 
