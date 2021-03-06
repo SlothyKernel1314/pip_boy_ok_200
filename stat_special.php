@@ -32,10 +32,33 @@
         </div>
         <div class="special-right-column">
             <img src="" alt="coming soon">
+            <p class="special-attribute-description-active">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
             <p class="special-attribute-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae
-                vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda
-                officia quibusdam deleniti eos cupiditate dolore doloribus!
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
+            <p class="special-attribute-description">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
+            <p class="special-attribute-description">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
+            <p class="special-attribute-description">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
+            <p class="special-attribute-description">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
+            </p>
+            <p class="special-attribute-description">
+                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                patate de forain.
             </p>
         </div>
     </div>
