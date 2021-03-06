@@ -72,6 +72,7 @@ body {
   position: absolute;
   margin: -2rem 0 0 2.2rem;
   border-radius: 7rem;
+  z-index: -99;
 }
 
 .core-display {
@@ -432,11 +433,20 @@ p {
 .special-attribute-box {
   display: flex;
   justify-content: space-between;
-
+  padding: 0 0.8rem 0 0.8rem;
 }
 
 .special-attribute, .special-value {
   font-size: 2rem;
+}
+
+.special-attribute-box:hover {
+  background-color: $pip-boy-primary-color;
+}
+
+.special-attribute-box:hover > p{
+  color: $pip-boy-secondary-color;
+  cursor: default;
 }
 
 .special-right-column {
