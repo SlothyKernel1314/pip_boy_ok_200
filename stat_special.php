@@ -31,9 +31,9 @@
             </div>
         </div>
         <div class="special-right-column">
-            <img src="" alt="coming soon">
+            <img src="/img/vault_boy_thumbs_up.gif" id="vault-boy-thumbs-up" alt="a fallout vault boy thumbs up">
             <p class="special-attribute-description-active">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
+                Suffisant pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une
                 patate de forain.
             </p>
             <p class="special-attribute-description">

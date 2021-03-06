@@ -444,6 +444,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 28rem;
 }
 
@@ -455,6 +456,12 @@ p {
 .special-attribute-description {
   display: none;
   font-size: 1.5rem;
+}
+
+#vault-boy-thumbs-up {
+  height: 60%;
+  width: 60%;
+  filter: opacity(50%);
 }
 // STAT SPECIAL SECTION END --------------------------------------------------------------------------------------------
 
