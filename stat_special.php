@@ -1,31 +1,31 @@
 <section class="core-display" id="stat-special-section">
     <div class="special-container">
         <div class="special-attributes">
-            <div class="special-attribute-box special-attribute-box-strength">
+            <div class="special-attribute-box" id="special-attribute-box-strength">
                 <p class="special-attribute">Strength</p>
                 <p class="special-value">2</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-perception">
+            <div class="special-attribute-box" id="special-attribute-box-perception">
                 <p class="special-attribute">Perception</p>
                 <p class="special-value">9</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-endurance">
+            <div class="special-attribute-box" id="special-attribute-box-endurance">
                 <p class="special-attribute">Endurance</p>
                 <p class="special-value">8</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-charisma">
+            <div class="special-attribute-box" id="special-attribute-box-charisma">
                 <p class="special-attribute">Charisma</p>
                 <p class="special-value">3</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-intelligence">
+            <div class="special-attribute-box" id="special-attribute-box-intelligence">
                 <p class="special-attribute">Intelligence</p>
                 <p class="special-value">9</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-agility">
+            <div class="special-attribute-box" id="special-attribute-box-agility">
                 <p class="special-attribute">Agility</p>
                 <p class="special-value">4</p>
             </div>
-            <div class="special-attribute-box special-attribute-box-luck">
+            <div class="special-attribute-box" id="special-attribute-box-luck">
                 <p class="special-attribute">Luck</p>
                 <p class="special-value">10</p>
             </div>
