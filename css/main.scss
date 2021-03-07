@@ -436,17 +436,17 @@ p {
   padding: 0 0.8rem 0 0.8rem;
 }
 
-.special-attribute, .special-value {
-  font-size: 2rem;
-}
-
-.special-attribute-box:hover {
+.special-attribute-box-active {
   background-color: $pip-boy-primary-color;
 }
 
-.special-attribute-box:hover > p{
+.special-attribute-box-active > p{
   color: $pip-boy-secondary-color;
   cursor: default;
+}
+
+.special-attribute, .special-value {
+  font-size: 2rem;
 }
 
 .special-right-column {
