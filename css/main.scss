@@ -436,13 +436,16 @@ p {
   padding: 0 0.8rem 0 0.8rem;
 }
 
+.special-attribute-box:hover {
+  cursor: default;
+}
+
 .special-attribute-box-active {
   background-color: $pip-boy-primary-color;
 }
 
 .special-attribute-box-active > p{
   color: $pip-boy-secondary-color;
-  cursor: default;
 }
 
 .special-attribute, .special-value {
