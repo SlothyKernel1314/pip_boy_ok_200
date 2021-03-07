@@ -34,26 +34,28 @@
             <img src="/img/vault_boy_thumbs_up.gif" id="vault-boy-thumbs-up" alt="a fallout vault boy thumbs up">
             <p class="special-attribute-description special-attribute-description-active"
                id="special-attribute-description-strength">
-                Suffisant pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une
+                Juste assez pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une
                 patate de forain.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-perception">
-                Perception Description Placeholder
+                Capable de débusquer ses propres bugs presque aussi vite qu'il ne les implémente.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-endurance">
-                Endurance Description Placeholder
+                Peut coder pendant plus de 8 heures et 12 canettes de boisson énergisante de suite.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-charisma">
-                Charisma Description Placeholder
+                Trop juste pour clamer "It's not a bug, it's a feature" tout en restant crédible,
+                préfère coder proprement.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-intelligence">
-                Intelligence Description Placeholder
+                Moins que ça, ce serait certes plus modeste, mais aussi nettement insuffisant pour
+                copy/paste Stack Overflow.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-agility">
-                Agility Description Placeholder
+                Tombe parfois de sa chaise, mais retrouve toujours son poste de travail.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-luck">
-                Luck Description Placeholder
+                N'a grillé aucun CPU depuis plus d'un an.
             </p>
         </div>
     </div>
