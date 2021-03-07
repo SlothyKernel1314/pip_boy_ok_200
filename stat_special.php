@@ -37,28 +37,22 @@
                 patate de forain.
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Perception Description Placeholder
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Endurance Description Placeholder
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Charisma Description Placeholder
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Intelligence Description Placeholder
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Agility Description Placeholder
             </p>
             <p class="special-attribute-description">
-                Suffisant pour appuyer sur le bouton ENTER et envoyer un git push --force plus destructeur qu'une
-                patate de forain.
+                Luck Description Placeholder
             </p>
         </div>
     </div>
