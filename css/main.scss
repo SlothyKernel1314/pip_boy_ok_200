@@ -424,7 +424,7 @@ p {
   padding-right: 0.5rem;
 }
 
-// STAT SPECIAL + STAT PERKS SECTION ------------------------------------------------------------------------------------------------
+// STAT SPECIAL + STAT PERKS SECTION -----------------------------------------------------------------------------------
 .special-container,
 .perk-container {
   display: flex;
@@ -482,8 +482,8 @@ p {
   height: 28rem;
 }
 
-.special-attribute-description-active.special-attribute-description-active,
-.perk-attribute-description-active.perk-attribute-description-active {
+.special-attribute-description.special-attribute-description-active,
+.perk-attribute-description.perk-attribute-description-active {
   display: block;
   font-size: 1.5rem;
 }
@@ -499,7 +499,7 @@ p {
   width: 60%;
   filter: opacity(50%);
 }
-// STAT SPECIAL + STAT PERKS SECTION END --------------------------------------------------------------------------------------------
+// STAT SPECIAL + STAT PERKS SECTION END -------------------------------------------------------------------------------
 
 
 
