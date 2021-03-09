@@ -36,7 +36,7 @@
     <?php include("bottom.php"); ?>
 </div>
 <script src="js/tabs.js"></script>
-<script src="js/special.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
 

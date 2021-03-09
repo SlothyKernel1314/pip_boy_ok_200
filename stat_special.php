@@ -7,11 +7,11 @@
             </div>
             <div class="special-attribute-box" id="special-attribute-box-perception">
                 <p class="special-attribute">Perception</p>
-                <p class="special-value">9</p>
+                <p class="special-value">8</p>
             </div>
             <div class="special-attribute-box" id="special-attribute-box-endurance">
                 <p class="special-attribute">Endurance</p>
-                <p class="special-value">8</p>
+                <p class="special-value">7</p>
             </div>
             <div class="special-attribute-box" id="special-attribute-box-charisma">
                 <p class="special-attribute">Charisma</p>
@@ -41,7 +41,7 @@
                 Capable de débusquer ses propres bugs presque aussi vite qu'il ne les implémente.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-endurance">
-                Peut coder pendant plus de 8 heures et 12 canettes de boisson énergisante de suite.
+                Peut coder pendant plus de 6 heures et 12 canettes de boisson énergisante de suite.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-charisma">
                 Trop juste pour clamer "It's not a bug, it's a feature" tout en restant crédible,
