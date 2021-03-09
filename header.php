@@ -20,7 +20,7 @@
         <ul class="tabs sub-tabs sub-header-stat sub-tabs-active">
             <li class=""><a href="#stat-status-section" class="sub-header-active-tab">STATUS</a></li>
             <li class=""><a href="#stat-special-section" class="sub-header-inactive-tab-near">SPECIAL</a></li>
-            <li class=""><a href="#stat-perks-section" class="sub-header-inactive-tab-far">PERKS</a></li>
+            <li class=""><a href="#stat-perk-section" class="sub-header-inactive-tab-far">PERKS</a></li>
         </ul>
     </div>
     <div>

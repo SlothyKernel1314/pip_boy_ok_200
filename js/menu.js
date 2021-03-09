@@ -1,15 +1,16 @@
 var special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 var special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
+var perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
+var perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
 
 var special_attribute_names = ['strength', 'perception', 'endurance',
     'charisma', 'intelligence', 'agility', 'luck'];
-
 var perk_attribute_names = ['p1', 'p2'];
 
 
-function activeBox(box, attribute_names, box_class_basename, active_box_class) {
-    for (var i=0 ; i < special_attribute_boxes.length ; i++) {
-        special_attribute_boxes[i].classList.remove(active_box_class);
+function activeBox(box, boxes, attribute_names, box_class_basename, active_box_class) {
+    for (var i=0 ; i < boxes.length ; i++) {
+        boxes[i].classList.remove(active_box_class);
     }
 
     for (var i=0 ; i < special_attribute_names.length ; i++) {
@@ -21,10 +22,10 @@ function activeBox(box, attribute_names, box_class_basename, active_box_class) {
 }
 
 
-function changeDescription(box, attribute_names, box_class_basename,
+function changeDescription(box, descriptions, attribute_names, box_class_basename,
     description_class_basename, active_description_class) {
-    for (var i=0 ; i < special_attribute_descriptions.length ; i++) {
-        special_attribute_descriptions[i].classList.remove(active_description_class);
+    for (var i=0 ; i < descriptions.length ; i++) {
+        descriptions[i].classList.remove(active_description_class);
     }
 
     for (var i=0 ; i < special_attribute_names.length ; i++) {
@@ -40,10 +41,20 @@ function changeDescription(box, attribute_names, box_class_basename,
 for (var i=0 ; i < special_attribute_boxes.length ; i++) {
     special_attribute_boxes[i].addEventListener('mouseover', function (evt) {
         // SPECIAL PAGE
-        activeBox(this, special_attribute_names, 'special-attribute-box',
+        activeBox(this, special_attribute_boxes, special_attribute_names,
+            'special-attribute-box',
             'special-attribute-box-active');
-        changeDescription(this, special_attribute_names, 'special-attribute-box',
+        changeDescription(this, special_attribute_descriptions, special_attribute_names,
+            'special-attribute-box',
             'special-attribute-description',
             'special-attribute-description-active');
+        // PERK PAGE
+        activeBox(this, perk_attribute_boxes, perk_attribute_names,
+            'perk-attribute-box',
+            'perk-attribute-box-active');
+        changeDescription(this, perk_attribute_descriptions, perk_attribute_names,
+            'perk-attribute-box',
+            'perk-attribute-description',
+            'perk-attribute-description-active');
     })
 }

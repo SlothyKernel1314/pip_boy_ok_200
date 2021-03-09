@@ -19,7 +19,7 @@
         <!--core display : stat-special section------------------------------------------------------------------------>
         <?php include("stat_special.php"); ?>
         <!--core display : stat-perks section-------------------------------------------------------------------------->
-        <?php include("stat_perks.php"); ?>
+        <?php include("stat_perk.php"); ?>
         <!--core display : exp-jobs section---------------------------------------------------------------------------->
         <?php include("exp_jobs.php"); ?>
         <!--core display : exp-studies section------------------------------------------------------------------------->

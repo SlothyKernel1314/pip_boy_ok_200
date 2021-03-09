@@ -1,7 +1,7 @@
-<section class="core-display" id="stat-perks-section">
-    <div class="perks-container">
-        <div class="perks-attributes">
-            <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-p1">
+<section class="core-display" id="stat-perk-section">
+    <div class="perk-container">
+        <div class="perk-attributes">
+            <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-p1">
                 <p class="perk-attribute">Perk 1</p>
             </div>
             <div class="perk-attribute-box" id="perk-attribute-box-p2">

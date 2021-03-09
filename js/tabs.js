@@ -1,6 +1,6 @@
 // inspiration for tab management : https://www.youtube.com/watch?v=wKatvNTAPVA
 
-var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perks-section'];
+var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
 var exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
 var data_tab_id = 'data-section';
 var map_tab_id = 'map-section';

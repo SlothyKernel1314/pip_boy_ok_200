@@ -93,7 +93,8 @@ header {
   position: relative;
 }
 
-.header, .core-display-active {
+.header,
+.core-display-active {
   margin-left: 10rem;
   max-width: 37.8rem;
 }
@@ -107,7 +108,8 @@ header {
   margin-top: 19rem;
 }
 
-.tabs li > a, .sub-tabs li > a {
+.tabs li > a,
+.sub-tabs li > a {
   font-size: 2.2rem;
   color: $pip-boy-primary-color;
 }
@@ -236,7 +238,8 @@ p {
   position: absolute;
 }
 
-.health-gauge-top, .health-gauge-bottom {
+.health-gauge-top,
+.health-gauge-bottom {
   @include relative-center-element($header-width, $health-gauge-width);
 }
 
@@ -248,19 +251,23 @@ p {
   top: $health-gauge-top*1rem + $health-gauges-vertical-offset*3*1rem - 1rem;
 }
 
-.health-gauge-left-top, .health-gauge-left-bottom {
+.health-gauge-left-top,
+.health-gauge-left-bottom {
   margin-left : (($header-width*1rem) / 4) - $health-gauge-width;
 }
 
-.health-gauge-left-top, .health-gauge-right-top {
+.health-gauge-left-top,
+.health-gauge-right-top {
   top: $health-gauge-top*1rem + $health-gauges-vertical-offset*1rem;
 }
 
-.health-gauge-left-bottom, .health-gauge-right-bottom {
+.health-gauge-left-bottom,
+.health-gauge-right-bottom {
   top: $health-gauge-top*1rem + $health-gauges-vertical-offset*2*1rem;
 }
 
-.health-gauge-right-top, .health-gauge-right-bottom {
+.health-gauge-right-top,
+.health-gauge-right-bottom {
   margin-left : ($header-width*1rem) - ($health-gauge-width *2);
 }
 
@@ -303,7 +310,8 @@ p {
   margin-top: -2rem;
 }
 
-.info-icon-web, .info-icon-engineering {
+.info-icon-web,
+.info-icon-engineering {
   margin-left: 1rem;
 }
 
@@ -375,7 +383,8 @@ p {
   color: $pip-boy-primary-color;
 }
 
-.side-bottom-display, .center-bottom-display {
+.side-bottom-display,
+.center-bottom-display {
   background-color: $pip-boy-secondary-color;
   width: 11rem;
 }
@@ -416,43 +425,55 @@ p {
 }
 
 // STAT SPECIAL + STAT PERKS SECTION ------------------------------------------------------------------------------------------------
-.special-container {
+.special-container,
+.perk-container {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
 }
 
-.special-attributes, .special-right-column {
+.special-attributes,
+.special-right-column,
+.perk-attributes,
+.perk-right-column {
   width: 50%;
 }
 
-.special-attributes {
+.special-attributes,
+.perk-attributes {
   margin: 0 0.5rem 0 0;
 }
 
-.special-attribute-box {
+.special-attribute-box,
+.perk-attribute-box {
   display: flex;
   justify-content: space-between;
   padding: 0 0.8rem 0 0.8rem;
 }
 
-.special-attribute-box:hover {
+.special-attribute-box:hover,
+.perk-attribute-box:hover {
   cursor: default;
 }
 
-.special-attribute-box-active {
+.special-attribute-box-active,
+.perk-attribute-box-active {
   background-color: $pip-boy-primary-color;
 }
 
-.special-attribute-box-active > p{
+.special-attribute-box-active > p,
+.perk-attribute-box-active > p {
   color: $pip-boy-secondary-color;
 }
 
-.special-attribute, .special-value {
+.special-attribute,
+.special-value,
+.perk-attribute {
   font-size: 2rem;
 }
 
-.special-right-column {
+.special-right-column,
+.perk-right-column {
   margin: 0 0 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -461,12 +482,14 @@ p {
   height: 28rem;
 }
 
-.special-attribute-description-active.special-attribute-description-active {
+.special-attribute-description-active.special-attribute-description-active,
+.perk-attribute-description-active.perk-attribute-description-active {
   display: block;
   font-size: 1.5rem;
 }
 
-.special-attribute-description {
+.special-attribute-description,
+.perk-attribute-description {
   display: none;
   font-size: 1.5rem;
 }
