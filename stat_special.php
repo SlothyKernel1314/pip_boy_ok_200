@@ -31,7 +31,8 @@
             </div>
         </div>
         <div class="special-right-column">
-            <img src="/img/vault_boy_thumbs_up.gif" id="vault-boy-thumbs-up" alt="a fallout vault boy thumbs up">
+            <img src="img/vault_boy_thumbs_up.gif" id="vault-boy-thumbs-up"
+                 alt="a fallout vault boy thumbs up">
             <p class="special-attribute-description special-attribute-description-active"
                id="special-attribute-description-strength">
                 Juste assez pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une
