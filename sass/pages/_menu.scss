@@ -1,0 +1,74 @@
+// menu management, common to the following pages of the site :
+// stat_special.php
+// stat_perks.php
+
+@use "../abstracts/variables" as v;
+
+.special-container,
+.perk-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.special-attributes,
+.special-right-column,
+.perk-attributes,
+.perk-right-column {
+  width: 50%;
+}
+
+.special-attributes,
+.perk-attributes {
+  margin: 0 0.5rem 0 0;
+}
+
+.special-attribute-box,
+.perk-attribute-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+.special-attribute-box:hover,
+.perk-attribute-box:hover {
+  cursor: default;
+}
+
+.special-attribute-box-active,
+.perk-attribute-box-active {
+  background-color: v.$pip-boy-primary-color;
+}
+
+.special-attribute-box-active > p,
+.perk-attribute-box-active > p {
+  color: v.$pip-boy-secondary-color;
+}
+
+.special-attribute,
+.special-value,
+.perk-attribute {
+  font-size: 2rem;
+}
+
+.special-right-column,
+.perk-right-column {
+  margin: 0 0 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 28rem;
+}
+
+.special-attribute-description.special-attribute-description-active,
+.perk-attribute-description.perk-attribute-description-active {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.special-attribute-description,
+.perk-attribute-description {
+  display: none;
+  font-size: 1.5rem;
+}

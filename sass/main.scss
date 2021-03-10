@@ -12,10 +12,15 @@
 @use "base/base";
 @use "base/typograpy";
 
+@use "components/health_gauges";
+
 @use "layout/header";
 @use "layout/screen";
 @use "layout/header_lines";
 @use "layout/sub_header";
+@use "layout/bottom_display";
+
+@use "pages/menu";
 
 
 // TEST TODO:remove
@@ -33,84 +38,9 @@ p {
   margin-top: 1rem;
 }
 
-/* health gauges -----------------------------------------------------------------------------------------------------*/
-.health-gauge-container {
-  margin-top: 2rem;
-  height: 21rem;
-  width: v.$header-width;
-}
 
-.health-gauge {
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background: v.$pip-boy-background-color;
-  width: v.$health-gauge-width * 1rem;
-  height: 0.8rem;
-  position: absolute;
-}
 
-.health-gauge-top,
-.health-gauge-bottom {
-  @include mixins.relative-center-element(v.$header-width, v.$health-gauge-width);
-}
 
-.health-gauge-top {
-  top: v.$health-gauge-top*1rem;
-}
-
-.health-gauge-bottom {
-  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*3*1rem - 1rem;
-}
-
-.health-gauge-left-top,
-.health-gauge-left-bottom {
-  margin-left : ((v.$header-width*1rem) / 4) - v.$health-gauge-width;
-}
-
-.health-gauge-left-top,
-.health-gauge-right-top {
-  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*1rem;
-}
-
-.health-gauge-left-bottom,
-.health-gauge-right-bottom {
-  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*2*1rem;
-}
-
-.health-gauge-right-top,
-.health-gauge-right-bottom {
-  margin-left : (v.$header-width*1rem) - (v.$health-gauge-width *2);
-}
-
-.health-gauge-top::before,
-.health-gauge-right-top::before,
-.health-gauge-left-bottom::before,
-.health-gauge-right-bottom::before {
-  content: '';
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background: v.$pip-boy-primary-color;
-  width: (v.$health-gauge-width * 1rem) * 0.95;
-  height: 0.7rem;
-  position: absolute;
-}
-
-.health-gauge-left-top::before {
-  content: '';
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background: v.$pip-boy-primary-color;
-  width: (v.$health-gauge-width * 1rem) * 0.4;
-  height: 0.7rem;
-  position: absolute;
-}
-
-.health-gauge-bottom::before {
-  content: '';
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background: v.$pip-boy-primary-color;
-  width: (v.$health-gauge-width * 1rem) * 0.6;
-  height: 0.7rem;
-  position: absolute;
-}
-/* health gauges END -------------------------------------------------------------------------------------------------*/
 
 .info-container {
   display: flex;
@@ -178,131 +108,9 @@ p {
   margin: 1rem 0 1rem 0;
 }
 
-.bottom-display {
-  display: flex;
-  justify-content: center;
-  margin-left: 7rem;
-  width: 43rem;
-  top: 55.5rem;
-  position: sticky;
-}
 
-.bottom-display p {
-  font-family: "Monofonto", serif;
-  font-size: 2rem;
-  color: v.$pip-boy-primary-color;
-}
 
-.side-bottom-display,
-.center-bottom-display {
-  background-color: v.$pip-boy-secondary-color;
-  width: 11rem;
-}
 
-.center-bottom-display {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem 0 1rem;
-  width: 20rem;
-}
-
-.level-progress-bar {
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background-color: v.$pip-boy-background-color;
-  width: 9rem;
-  height: 1.2rem;
-  margin-left: 1rem;
-}
-
-.level-progress-bar::before {
-  content: '';
-  display: block;
-  border: 0.1rem solid v.$pip-boy-primary-color;
-  background-color: v.$pip-boy-primary-color;
-  width: 6.3rem;
-  height: 1.1rem;
-}
-
-.hp-container {
-  margin-right: 0.4rem;
-  padding-left: 0.5rem;
-}
-
-.action-points-container {
-  text-align: right;
-  margin-left: 0.4rem;
-  padding-right: 0.5rem;
-}
-
-// STAT SPECIAL + STAT PERKS SECTION -----------------------------------------------------------------------------------
-.special-container,
-.perk-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-}
-
-.special-attributes,
-.special-right-column,
-.perk-attributes,
-.perk-right-column {
-  width: 50%;
-}
-
-.special-attributes,
-.perk-attributes {
-  margin: 0 0.5rem 0 0;
-}
-
-.special-attribute-box,
-.perk-attribute-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.8rem 0 0.8rem;
-}
-
-.special-attribute-box:hover,
-.perk-attribute-box:hover {
-  cursor: default;
-}
-
-.special-attribute-box-active,
-.perk-attribute-box-active {
-  background-color: v.$pip-boy-primary-color;
-}
-
-.special-attribute-box-active > p,
-.perk-attribute-box-active > p {
-  color: v.$pip-boy-secondary-color;
-}
-
-.special-attribute,
-.special-value,
-.perk-attribute {
-  font-size: 2rem;
-}
-
-.special-right-column,
-.perk-right-column {
-  margin: 0 0 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 28rem;
-}
-
-.special-attribute-description.special-attribute-description-active,
-.perk-attribute-description.perk-attribute-description-active {
-  display: block;
-  font-size: 1.5rem;
-}
-
-.special-attribute-description,
-.perk-attribute-description {
-  display: none;
-  font-size: 1.5rem;
-}
 
 #vault-boy-thumbs-up {
   height: 60%;
@@ -314,7 +122,7 @@ p {
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
   border-radius: 30px;
 }
-// STAT SPECIAL + STAT PERKS SECTION END -------------------------------------------------------------------------------
+
 
 
 

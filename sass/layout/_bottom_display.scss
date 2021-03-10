@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as v;
+
+.bottom-display {
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+  width: 43rem;
+  top: 55.5rem;
+  position: sticky;
+}
+
+.bottom-display p {
+  font-family: "Monofonto", serif;
+  font-size: 2rem;
+  color: v.$pip-boy-primary-color;
+}
+
+.side-bottom-display,
+.center-bottom-display {
+  background-color: v.$pip-boy-secondary-color;
+  width: 11rem;
+}
+
+.center-bottom-display {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  width: 20rem;
+}
+
+.level-progress-bar {
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background-color: v.$pip-boy-background-color;
+  width: 9rem;
+  height: 1.2rem;
+  margin-left: 1rem;
+}
+
+.level-progress-bar::before {
+  content: '';
+  display: block;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background-color: v.$pip-boy-primary-color;
+  width: 6.3rem;
+  height: 1.1rem;
+}
+
+.hp-container {
+  margin-right: 0.4rem;
+  padding-left: 0.5rem;
+}
+
+.action-points-container {
+  text-align: right;
+  margin-left: 0.4rem;
+  padding-right: 0.5rem;
+}
