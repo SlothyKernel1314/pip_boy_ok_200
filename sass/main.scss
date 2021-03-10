@@ -21,6 +21,7 @@
 @use "layout/bottom_display";
 
 @use "pages/menu";
+@use "pages/stat_status";
 
 
 // TEST TODO:remove
@@ -37,80 +38,6 @@ p {
   @include mixins.relative-center-element(v.$header-width, v.$vault-boy-img-width);
   margin-top: 1rem;
 }
-
-
-
-
-
-.info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: v.$header-width*1rem;
-  margin-top: -2rem;
-}
-
-.info-icon-web,
-.info-icon-engineering {
-  margin-left: 1rem;
-}
-
-.info-icon {
-  background-color: v.$pip-boy-secondary-color;
-  margin-right: 0.4rem;
-}
-
-.info-icon > p {
-  color: v.$pip-boy-primary-color;
-}
-
-.info-icon-large {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4.8rem;
-  height: 4.8rem;
-}
-
-.info-icon-thin {
-  width: 2.4rem;
-  height: 4.8rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.info-icon-large > img {
-  width: 4rem;
-  height: 4rem;
-}
-
-.info-icon-thin > img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.info-icon-thin > p {
-  font-family: "Monofonto", serif;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 2rem;
-  height: 2rem;
-}
-
-.identity-container > p {
-  font-family: "Monofonto", serif;
-  font-size: 1.4rem;
-  color: v.$pip-boy-primary-color;
-  text-align: center;
-  width: v.$header-width*1rem;
-  margin: 1rem 0 1rem 0;
-}
-
-
-
-
 
 #vault-boy-thumbs-up {
   height: 60%;
