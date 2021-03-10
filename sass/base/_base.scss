@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+
+*,
+*::after,
+*::before {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // 1 rem = 10 px
+  font-size: 62.5%; // 10px app / 16px default browser
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  background: v.$pip-boy-background-color url("../img/pip-boy_overlay.png") no-repeat fixed top left;
+  box-sizing: border-box;
+}
