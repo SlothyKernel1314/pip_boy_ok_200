@@ -1,30 +1,30 @@
 // inspiration for tab management : https://www.youtube.com/watch?v=wKatvNTAPVA
 
-var stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
-var exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
-var data_tab_id = 'data-section';
-var map_tab_id = 'map-section';
-var color_tab_id = 'color-section';
+let stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
+let exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
+let data_tab_id = 'data-section';
+let map_tab_id = 'map-section';
+let color_tab_id = 'color-section';
 
-var header_line_bottom_left = document.querySelector('.header-line-bottom-left');
-var header_line_vertical_left = document.querySelector('.header-line-vertical-left');
-var header_line_hook_left = document.querySelector('.header-line-hook-left');
-var header_line_hook_right = document.querySelector('.header-line-hook-right');
-var header_line_vertical_right = document.querySelector('.header-line-vertical-right');
-var header_line_bottom_right = document.querySelector('.header-line-bottom-right');
+let header_line_bottom_left = document.querySelector('.header-line-bottom-left');
+let header_line_vertical_left = document.querySelector('.header-line-vertical-left');
+let header_line_hook_left = document.querySelector('.header-line-hook-left');
+let header_line_hook_right = document.querySelector('.header-line-hook-right');
+let header_line_vertical_right = document.querySelector('.header-line-vertical-right');
+let header_line_bottom_right = document.querySelector('.header-line-bottom-right');
 
-var tabs = document.querySelectorAll('.tabs a');
+let tabs = document.querySelectorAll('.tabs a');
 // TODO : for tests purposes, remove in prod
-var sections = document.querySelectorAll(".core-display");
+let sections = document.querySelectorAll(".core-display");
 // TODO : for tests purposes, remove in prod
-var lis = document.querySelectorAll('li');
-var current_active_section = document.querySelector('.core-display.core-display-active');
+let lis = document.querySelectorAll('li');
+let current_active_section = document.querySelector('.core-display.core-display-active');
 
 /* management of tab navigation...
 ... and display of section contents*/
-var displayTabs = function (a) {
-    var li = a.parentNode;
-    var anchor = a.getAttribute('href');
+let displayTabs = function (a) {
+    let li = a.parentNode;
+    let anchor = a.getAttribute('href');
     // in case where we click on the tab that is already active
     if (li.classList.contains('active')) {
         return false;
@@ -61,10 +61,10 @@ function switchSubTabs() {
 
 /* management of subtabs opacity */
 function switchOpacitySubTabs(a) {
-    var section = a.getAttribute('href').substring(1);
-    var current_sub_tabs_active = document.querySelector('.sub-tabs-active');
-    var tabs_a = current_sub_tabs_active.querySelectorAll('li > a');
-    for (var i=0 ; i < tabs_a.length ; i++) {
+    let section = a.getAttribute('href').substring(1);
+    let current_sub_tabs_active = document.querySelector('.sub-tabs-active');
+    let tabs_a = current_sub_tabs_active.querySelectorAll('li > a');
+    for (let i=0 ; i < tabs_a.length ; i++) {
         tabs_a[i].classList.remove('sub-header-active-tab',
             'sub-header-inactive-tab-near', 'sub-header-inactive-tab-far');
         switch (section) {
@@ -105,7 +105,7 @@ function positioner(pos1, pos2, pos3, pos4, pos5, pos6, pos7) {
 
 /* management of header lines display */
 function displayHeaderLines(a) {
-    var section = a.getAttribute('href').substring(1);
+    let section = a.getAttribute('href').substring(1);
     switch (section) {
         case stat_tabs_ids[0]:
         case stat_tabs_ids[1]:
@@ -136,7 +136,7 @@ function displayHeaderLines(a) {
 
 
 // execution of navigation tabs
-for (var i=0 ; i < tabs.length ; i++) {
+for (let i=0 ; i < tabs.length ; i++) {
     tabs[i].addEventListener('click', function (evt) {
         displayTabs(this);
         switchSubTabs();
@@ -147,8 +147,8 @@ for (var i=0 ; i < tabs.length ; i++) {
 
 
 // in case of page refresh (we want to keep the current display !)
-var hash = window.location.hash;
-var a = document.querySelector('a[href="' + hash + '"]')
+let hash = window.location.hash;
+let a = document.querySelector('a[href="' + hash + '"]')
 if(a !== null && !a.classList.contains('active')) {
     displayTabs(a);
     switchSubTabs();
