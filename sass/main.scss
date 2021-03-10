@@ -5,18 +5,7 @@
 
 // Icons : https://freeicons.io/
 
-$pip-boy-background-color: #10170f;
-$pip-boy-primary-color: #18dc0c;
-$pip-boy-secondary-color: #11291b;
-
-$header-width: 37.8; //rem
-$health-gauge-width: 3.8; //rem
-$vault-boy-img-width: 10.5; //rem
-
-$health-gauge-top: 8; //rem
-$health-gauges-vertical-offset: 6; //rem
-
-$sub-header-tabs-opacity-values: (0.8, 0.5, 0.2); //rem
+@use "utils/variables" as v;
 
 @mixin relative-center-element($parent-width, $element-width) {
   margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
@@ -53,7 +42,7 @@ html, body {
 }
 
 body {
-  background: $pip-boy-background-color url("../img/pip-boy_overlay.png") no-repeat fixed top left;
+  background: v.$pip-boy-background-color url("../img/pip-boy_overlay.png") no-repeat fixed top left;
   box-sizing: border-box;
 }
 
@@ -89,7 +78,7 @@ header, p {
 
 header {
   text-transform: uppercase;
-  width: $header-width * 1rem;
+  width: v.$header-width * 1rem;
   position: relative;
 }
 
@@ -111,7 +100,7 @@ header {
 .tabs li > a,
 .sub-tabs li > a {
   font-size: 2.2rem;
-  color: $pip-boy-primary-color;
+  color: v.$pip-boy-primary-color;
 }
 
 .tabs li > a {
@@ -138,7 +127,7 @@ header {
 //}
 // TEST TODO:remove
 p {
-  color: $pip-boy-primary-color;
+  color: v.$pip-boy-primary-color;
 }
 
 /* header lines ------------------------------------------------------------------------------------------------------*/
@@ -150,7 +139,7 @@ p {
 
 .header-line-bottom {
   position: fixed;
-  border-bottom: 0.2rem solid $pip-boy-primary-color;
+  border-bottom: 0.2rem solid v.$pip-boy-primary-color;
   padding-bottom: 0.2rem;
 }
 
@@ -165,7 +154,7 @@ p {
 }
 
 .header-line-vertical {
-  border-left: 0.2rem solid $pip-boy-primary-color;
+  border-left: 0.2rem solid v.$pip-boy-primary-color;
   height: 2.3rem;
   bottom: 3.4rem;
   position: absolute;
@@ -180,7 +169,7 @@ p {
 }
 
 .header-line-hook {
-  border-bottom: 0.2rem solid $pip-boy-primary-color;
+  border-bottom: 0.2rem solid v.$pip-boy-primary-color;
   position: absolute;
   width: 0.7rem;
   margin-top: -2rem;
@@ -205,21 +194,21 @@ p {
 }
 
 .sub-header-active-tab {
-  opacity: nth($sub-header-tabs-opacity-values, 1);
+  opacity: nth(v.$sub-header-tabs-opacity-values, 1);
 }
 
 .sub-header-inactive-tab-near {
-  opacity: nth($sub-header-tabs-opacity-values, 2);
+  opacity: nth(v.$sub-header-tabs-opacity-values, 2);
 }
 
 .sub-header-inactive-tab-far {
-  opacity: nth($sub-header-tabs-opacity-values, 3);
+  opacity: nth(v.$sub-header-tabs-opacity-values, 3);
 }
 
 
 #vault-boy-walking {
   position: absolute;
-  @include relative-center-element($header-width, $vault-boy-img-width);
+  @include relative-center-element(v.$header-width, v.$vault-boy-img-width);
   margin-top: 1rem;
 }
 
@@ -227,48 +216,48 @@ p {
 .health-gauge-container {
   margin-top: 2rem;
   height: 21rem;
-  width: $header-width;
+  width: v.$header-width;
 }
 
 .health-gauge {
-  border: 0.1rem solid $pip-boy-primary-color;
-  background: $pip-boy-background-color;
-  width: $health-gauge-width * 1rem;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background: v.$pip-boy-background-color;
+  width: v.$health-gauge-width * 1rem;
   height: 0.8rem;
   position: absolute;
 }
 
 .health-gauge-top,
 .health-gauge-bottom {
-  @include relative-center-element($header-width, $health-gauge-width);
+  @include relative-center-element(v.$header-width, v.$health-gauge-width);
 }
 
 .health-gauge-top {
-  top: $health-gauge-top*1rem;
+  top: v.$health-gauge-top*1rem;
 }
 
 .health-gauge-bottom {
-  top: $health-gauge-top*1rem + $health-gauges-vertical-offset*3*1rem - 1rem;
+  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*3*1rem - 1rem;
 }
 
 .health-gauge-left-top,
 .health-gauge-left-bottom {
-  margin-left : (($header-width*1rem) / 4) - $health-gauge-width;
+  margin-left : ((v.$header-width*1rem) / 4) - v.$health-gauge-width;
 }
 
 .health-gauge-left-top,
 .health-gauge-right-top {
-  top: $health-gauge-top*1rem + $health-gauges-vertical-offset*1rem;
+  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*1rem;
 }
 
 .health-gauge-left-bottom,
 .health-gauge-right-bottom {
-  top: $health-gauge-top*1rem + $health-gauges-vertical-offset*2*1rem;
+  top: v.$health-gauge-top*1rem + v.$health-gauges-vertical-offset*2*1rem;
 }
 
 .health-gauge-right-top,
 .health-gauge-right-bottom {
-  margin-left : ($header-width*1rem) - ($health-gauge-width *2);
+  margin-left : (v.$header-width*1rem) - (v.$health-gauge-width *2);
 }
 
 .health-gauge-top::before,
@@ -276,27 +265,27 @@ p {
 .health-gauge-left-bottom::before,
 .health-gauge-right-bottom::before {
   content: '';
-  border: 0.1rem solid $pip-boy-primary-color;
-  background: $pip-boy-primary-color;
-  width: ($health-gauge-width * 1rem) * 0.95;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background: v.$pip-boy-primary-color;
+  width: (v.$health-gauge-width * 1rem) * 0.95;
   height: 0.7rem;
   position: absolute;
 }
 
 .health-gauge-left-top::before {
   content: '';
-  border: 0.1rem solid $pip-boy-primary-color;
-  background: $pip-boy-primary-color;
-  width: ($health-gauge-width * 1rem) * 0.4;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background: v.$pip-boy-primary-color;
+  width: (v.$health-gauge-width * 1rem) * 0.4;
   height: 0.7rem;
   position: absolute;
 }
 
 .health-gauge-bottom::before {
   content: '';
-  border: 0.1rem solid $pip-boy-primary-color;
-  background: $pip-boy-primary-color;
-  width: ($health-gauge-width * 1rem) * 0.6;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background: v.$pip-boy-primary-color;
+  width: (v.$health-gauge-width * 1rem) * 0.6;
   height: 0.7rem;
   position: absolute;
 }
@@ -306,7 +295,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $header-width*1rem;
+  width: v.$header-width*1rem;
   margin-top: -2rem;
 }
 
@@ -316,12 +305,12 @@ p {
 }
 
 .info-icon {
-  background-color: $pip-boy-secondary-color;
+  background-color: v.$pip-boy-secondary-color;
   margin-right: 0.4rem;
 }
 
 .info-icon > p {
-  color: $pip-boy-primary-color;
+  color: v.$pip-boy-primary-color;
 }
 
 .info-icon-large {
@@ -362,9 +351,9 @@ p {
 .identity-container > p {
   font-family: "Monofonto", serif;
   font-size: 1.4rem;
-  color: $pip-boy-primary-color;
+  color: v.$pip-boy-primary-color;
   text-align: center;
-  width: $header-width*1rem;
+  width: v.$header-width*1rem;
   margin: 1rem 0 1rem 0;
 }
 
@@ -380,12 +369,12 @@ p {
 .bottom-display p {
   font-family: "Monofonto", serif;
   font-size: 2rem;
-  color: $pip-boy-primary-color;
+  color: v.$pip-boy-primary-color;
 }
 
 .side-bottom-display,
 .center-bottom-display {
-  background-color: $pip-boy-secondary-color;
+  background-color: v.$pip-boy-secondary-color;
   width: 11rem;
 }
 
@@ -397,8 +386,8 @@ p {
 }
 
 .level-progress-bar {
-  border: 0.1rem solid $pip-boy-primary-color;
-  background-color: $pip-boy-background-color;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background-color: v.$pip-boy-background-color;
   width: 9rem;
   height: 1.2rem;
   margin-left: 1rem;
@@ -407,8 +396,8 @@ p {
 .level-progress-bar::before {
   content: '';
   display: block;
-  border: 0.1rem solid $pip-boy-primary-color;
-  background-color: $pip-boy-primary-color;
+  border: 0.1rem solid v.$pip-boy-primary-color;
+  background-color: v.$pip-boy-primary-color;
   width: 6.3rem;
   height: 1.1rem;
 }
@@ -458,12 +447,12 @@ p {
 
 .special-attribute-box-active,
 .perk-attribute-box-active {
-  background-color: $pip-boy-primary-color;
+  background-color: v.$pip-boy-primary-color;
 }
 
 .special-attribute-box-active > p,
 .perk-attribute-box-active > p {
-  color: $pip-boy-secondary-color;
+  color: v.$pip-boy-secondary-color;
 }
 
 .special-attribute,

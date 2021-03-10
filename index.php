@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fallout 4 Pip-Boy browser version</title>
     <link rel="icon" type="image/png" href="img/lolo-favicon.png" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 <body>
 <div class="screen">
