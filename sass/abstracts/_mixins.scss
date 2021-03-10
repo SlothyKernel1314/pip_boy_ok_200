@@ -1,0 +1,4 @@
+@mixin relative-center-element($parent-width, $element-width) {
+  margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
+  width: $element-width*1rem;
+}

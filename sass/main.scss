@@ -6,25 +6,11 @@
 // Icons : https://freeicons.io/
 
 @use "abstracts/variables" as v;
+@use "abstracts/mixins";
 
 @use "base/animations";
 @use "base/base";
 @use "base/typograpy";
-
-@mixin relative-center-element($parent-width, $element-width) {
-  margin-left: ((($parent-width*1rem)/2) - (($element-width*1rem)/2));
-  width: $element-width*1rem;
-}
-
-@font-face {
-  font-family: ShareTechMono;
-  src: url("../font/share_tech_mono/ShareTechMono-Regular.ttf");
-}
-
-@font-face {
-  font-family: Monofonto;
-  src: url("../font/monofonto/monofonto.ttf");
-}
 
 .screen {
   margin: 15rem 26rem;
@@ -188,7 +174,7 @@ p {
 
 #vault-boy-walking {
   position: absolute;
-  @include relative-center-element(v.$header-width, v.$vault-boy-img-width);
+  @include mixins.relative-center-element(v.$header-width, v.$vault-boy-img-width);
   margin-top: 1rem;
 }
 
@@ -209,7 +195,7 @@ p {
 
 .health-gauge-top,
 .health-gauge-bottom {
-  @include relative-center-element(v.$header-width, v.$health-gauge-width);
+  @include mixins.relative-center-element(v.$header-width, v.$health-gauge-width);
 }
 
 .health-gauge-top {
