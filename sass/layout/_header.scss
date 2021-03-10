@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+
+header {
+  text-transform: uppercase;
+  width: v.$header-width * 1rem;
+  position: relative;
+}
+
+.header {
+  margin-left: 10rem;
+  max-width: 37.8rem;
+}
+
+.tabs, .sub-tabs {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  margin-top: 19rem;
+}
+
+.tabs li > a,
+.sub-tabs li > a {
+  font-size: 2.2rem;
+  color: v.$pip-boy-primary-color;
+}
+
+.tabs li > a {
+  font-weight: bold;
+  margin-right: 4rem;
+}
+
+.sub-tabs {
+  display: none; //only the .sub-tabs-active should be displayed
+}
+
+.sub-tabs-active {
+  display: flex;
+  align-items: center;
+}
+
+.sub-tabs li > a {
+  margin-right: 0.8rem;
+}
