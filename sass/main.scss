@@ -15,6 +15,7 @@
 @use "layout/header";
 @use "layout/screen";
 @use "layout/header_lines";
+@use "layout/sub_header";
 
 
 // TEST TODO:remove
@@ -25,28 +26,6 @@
 p {
   color: v.$pip-boy-primary-color;
 }
-
-.sub-tabs {
-  margin-top: 1rem;
-}
-
-.sub-tabs > a {
-  font-weight: lighter;
-  margin-right: 1rem;
-}
-
-.sub-header-active-tab {
-  opacity: nth(v.$sub-header-tabs-opacity-values, 1);
-}
-
-.sub-header-inactive-tab-near {
-  opacity: nth(v.$sub-header-tabs-opacity-values, 2);
-}
-
-.sub-header-inactive-tab-far {
-  opacity: nth(v.$sub-header-tabs-opacity-values, 3);
-}
-
 
 #vault-boy-walking {
   position: absolute;

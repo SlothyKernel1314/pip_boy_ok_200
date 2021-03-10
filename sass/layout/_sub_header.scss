@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as v;
+
+.sub-tabs {
+  margin-top: 1rem;
+}
+
+.sub-tabs > a {
+  font-weight: lighter;
+  margin-right: 1rem;
+}
+
+.sub-header-active-tab {
+  opacity: nth(v.$sub-header-tabs-opacity-values, 1);
+}
+
+.sub-header-inactive-tab-near {
+  opacity: nth(v.$sub-header-tabs-opacity-values, 2);
+}
+
+.sub-header-inactive-tab-far {
+  opacity: nth(v.$sub-header-tabs-opacity-values, 3);
+}
