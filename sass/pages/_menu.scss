@@ -1,4 +1,4 @@
-// menu management, common to the following pages of the site :
+// menu management (boxes, descriptions and images), common to the following pages of the site :
 // stat_special.php
 // stat_perks.php
 
@@ -62,7 +62,8 @@
 }
 
 .special-attribute-description.special-attribute-description-active,
-.perk-attribute-description.perk-attribute-description-active {
+.perk-attribute-description.perk-attribute-description-active,
+{
   display: block;
   font-size: 1.5rem;
 }
@@ -71,4 +72,16 @@
 .perk-attribute-description {
   display: none;
   font-size: 1.5rem;
+}
+
+.special-attribute-image-active {
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
+}
+
+.special-attribute-image.special-attribute-image-active {
+  display: block;
+}
+
+.special-attribute-image {
+  display: none;
 }

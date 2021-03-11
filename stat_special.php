@@ -31,8 +31,36 @@
             </div>
         </div>
         <div class="special-right-column">
-            <img src="img/vault_boy_thumbs_up.gif" id="vault-boy-thumbs-up"
-                 alt="a fallout vault boy thumbs up">
+        <!-- images --------------------------------------------------------------------------------------------------->
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image special-attribute-image-active"
+                 id="special-attribute-image-strength"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-perception"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-endurance"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-charisma"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-intelligence"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-agility"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <img src="img/special/strength.gif"
+                 class="special-attribute-image"
+                 id="special-attribute-image-luck"
+                 alt="a fallout vault boy gif from fallout representing the strength special attribute">
+            <!-- descriptions ----------------------------------------------------------------------------------------->
             <p class="special-attribute-description special-attribute-description-active"
                id="special-attribute-description-strength">
                 Juste assez pour cliquer sur ENTER et envoyer un git push --force plus destructeur qu'une
