@@ -1,10 +1,10 @@
 let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
-let perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
-let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
-
 let special_attribute_names = ['strength', 'perception', 'endurance',
     'charisma', 'intelligence', 'agility', 'luck'];
+
+let perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
+let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
 let perk_attribute_names = ['p1', 'p2', 'p3'];
 
 
@@ -30,7 +30,9 @@ function activeMenu(box, boxes, descriptions, attribute_names, box_class_basenam
 // processing execution when a mouseover is detected on a special attribute box
 for (let i=0 ; i < special_attribute_boxes.length ; i++) {
     special_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this, special_attribute_boxes, special_attribute_descriptions, special_attribute_names,
+        activeMenu(this, special_attribute_boxes,
+            special_attribute_descriptions,
+            special_attribute_names,
             'special-attribute-box',
             'special-attribute-description',
             'special-attribute-box-active',
@@ -43,7 +45,9 @@ for (let i=0 ; i < special_attribute_boxes.length ; i++) {
 // processing execution when a mouseover is detected on a perk attribute box
 for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
     perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this, perk_attribute_boxes, perk_attribute_descriptions, perk_attribute_names,
+        activeMenu(this, perk_attribute_boxes,
+            perk_attribute_descriptions,
+            perk_attribute_names,
             'perk-attribute-box',
             'perk-attribute-description',
             'perk-attribute-box-active',
