@@ -1,5 +1,6 @@
 let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
+let special_attribute_images = document.querySelectorAll('.special-attribute-image');
 let special_attribute_names = ['strength', 'perception', 'endurance',
     'charisma', 'intelligence', 'agility', 'luck'];
 
@@ -8,13 +9,19 @@ let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-des
 let perk_attribute_names = ['p1', 'p2', 'p3'];
 
 
-function activeMenu(box, boxes, descriptions, attribute_names, box_class_basename, description_class_basename,
-                    active_box_class, active_description_class) {
+function activeMenu(box,
+                    boxes, descriptions, images,
+                    attribute_names,
+                    box_class_basename, description_class_basename, image_class_basename,
+                    active_box_class, active_description_class, active_image_class) {
     for (let i=0 ; i < boxes.length ; i++) {
         boxes[i].classList.remove(active_box_class);
     }
     for (let i=0 ; i < descriptions.length ; i++) {
         descriptions[i].classList.remove(active_description_class);
+    }
+    for (let i=0 ; i < images.length ; i++) {
+        images[i].classList.remove(active_image_class);
     }
     for (let i=0 ; i < attribute_names.length ; i++) {
         if(box.id === box_class_basename + '-' + attribute_names[i] + '') {
@@ -22,6 +29,8 @@ function activeMenu(box, boxes, descriptions, attribute_names, box_class_basenam
             classList.add(active_box_class);
             document.getElementById(description_class_basename + '-' + attribute_names[i]).
             classList.add(active_description_class);
+            document.getElementById(image_class_basename + '-' + attribute_names[i]).
+            classList.add(active_image_class);
         }
     }
 }
@@ -32,25 +41,28 @@ for (let i=0 ; i < special_attribute_boxes.length ; i++) {
     special_attribute_boxes[i].addEventListener('mouseover', function (evt) {
         activeMenu(this, special_attribute_boxes,
             special_attribute_descriptions,
+            special_attribute_images,
             special_attribute_names,
             'special-attribute-box',
             'special-attribute-description',
+            'special-attribute-image',
             'special-attribute-box-active',
-            'special-attribute-description-active')
+            'special-attribute-description-active',
+            'special-attribute-image-active')
 
     })
 }
 
 
 // processing execution when a mouseover is detected on a perk attribute box
-for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
-    perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this, perk_attribute_boxes,
-            perk_attribute_descriptions,
-            perk_attribute_names,
-            'perk-attribute-box',
-            'perk-attribute-description',
-            'perk-attribute-box-active',
-            'perk-attribute-description-active')
-    })
-}
+// for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
+//     perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+//         activeMenu(this, perk_attribute_boxes,
+//             perk_attribute_descriptions,
+//             perk_attribute_names,
+//             'perk-attribute-box',
+//             'perk-attribute-description',
+//             'perk-attribute-box-active',
+//             'perk-attribute-description-active')
+//     })
+// }
