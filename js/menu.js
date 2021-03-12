@@ -1,6 +1,10 @@
 let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
 let special_attribute_images = document.querySelectorAll('.special-attribute-image');
+let special_attribute_class_basenames = ['special-attribute-box',
+    'special-attribute-description', 'special-attribute-image'];
+let special_attribute_class_active_names = ['special-attribute-box-active',
+    'special-attribute-description-active', 'special-attribute-image-active'];
 let special_attribute_names = ['strength', 'perception', 'endurance',
     'charisma', 'intelligence', 'agility', 'luck'];
 
@@ -39,16 +43,17 @@ function activeMenu(box,
 // processing execution when a mouseover is detected on a special attribute box
 for (let i=0 ; i < special_attribute_boxes.length ; i++) {
     special_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this, special_attribute_boxes,
+        activeMenu(this,
+            special_attribute_boxes,
             special_attribute_descriptions,
             special_attribute_images,
             special_attribute_names,
-            'special-attribute-box',
-            'special-attribute-description',
-            'special-attribute-image',
-            'special-attribute-box-active',
-            'special-attribute-description-active',
-            'special-attribute-image-active')
+            special_attribute_class_basenames[0],
+            special_attribute_class_basenames[1],
+            special_attribute_class_basenames[2],
+            special_attribute_class_active_names[0],
+            special_attribute_class_active_names[1],
+            special_attribute_class_active_names[2])
 
     })
 }
