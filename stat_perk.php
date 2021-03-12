@@ -1,11 +1,11 @@
 <section class="core-display" id="stat-perk-section">
     <div class="perk-container">
         <div class="perk-attributes">
-            <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-p1">
-                <p class="perk-attribute">Perk 1</p>
+            <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-chemist">
+                <p class="perk-attribute">Logique</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-p2">
-                <p class="perk-attribute">Perk 2</p>
+            <div class="perk-attribute-box" id="perk-attribute-box-cannibal">
+                <p class="perk-attribute">Analytique</p>
             </div>
             <div class="perk-attribute-box" id="perk-attribute-box-heavy-gunner">
                 <p class="perk-attribute">Chasseur de bugs</p>
@@ -13,13 +13,13 @@
         </div>
         <div class="perk-right-column">
             <!-- images ----------------------------------------------------------------------------------------------->
-            <img src="img/special/strength.gif"
+            <img src="img/perk/chemist.png"
                  class="perk-attribute-image perk-attribute-image-active"
-                 id="perk-attribute-image-p1"
+                 id="perk-attribute-image-chemist"
                  alt="">
-            <img src="img/special/charisma.gif"
+            <img src="img/perk/cannibal.png"
                  class="perk-attribute-image"
-                 id="perk-attribute-image-p2"
+                 id="perk-attribute-image-cannibal"
                  alt="">
             <img src="img/perk/heavy_gunner.png"
                  class="perk-attribute-image"
@@ -27,11 +27,12 @@
                  alt="">
             <!-- descriptions ----------------------------------------------------------------------------------------->
             <p class="perk-attribute-description perk-attribute-description-active"
-               id="perk-attribute-description-p1">
-                Perk 1 description
+               id="perk-attribute-description-chemist">
+                FATAL ERROR : Exception in thread "main" java.lang.
+                ArithmeticException: / by zero
             </p>
-            <p class="perk-attribute-description" id="perk-attribute-description-p2">
-                Perk 2 Description
+            <p class="perk-attribute-description" id="perk-attribute-description-cannibal">
+                Face à un problème complexe, il suffit de le découper pour trouver des solutions simples...
             </p>
             <p class="perk-attribute-description" id="perk-attribute-description-heavy-gunner">
                 Bon y faut expliquer. Tu vois, y'a le mauvais chasseur, y voit un bug qui bouge : y tire, y tire...
