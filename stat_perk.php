@@ -7,8 +7,8 @@
             <div class="perk-attribute-box" id="perk-attribute-box-p2">
                 <p class="perk-attribute">Perk 2</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-p3">
-                <p class="perk-attribute">Perk 3</p>
+            <div class="perk-attribute-box" id="perk-attribute-box-heavy-gunner">
+                <p class="perk-attribute">Chasseur de bugs</p>
             </div>
         </div>
         <div class="perk-right-column">
@@ -21,9 +21,9 @@
                  class="perk-attribute-image"
                  id="perk-attribute-image-p2"
                  alt="">
-            <img src="img/special/luck.gif"
+            <img src="img/perk/heavy_gunner.png"
                  class="perk-attribute-image"
-                 id="perk-attribute-image-p3"
+                 id="perk-attribute-image-heavy-gunner"
                  alt="">
             <!-- descriptions ----------------------------------------------------------------------------------------->
             <p class="perk-attribute-description perk-attribute-description-active"
@@ -33,8 +33,8 @@
             <p class="perk-attribute-description" id="perk-attribute-description-p2">
                 Perk 2 Description
             </p>
-            <p class="perk-attribute-description" id="perk-attribute-description-p3">
-                Perk 3 Description
+            <p class="perk-attribute-description" id="perk-attribute-description-heavy-gunner">
+                Bon y faut expliquer. Tu vois, y'a le mauvais chasseur, y voit un bug qui bouge : y tire, y tire...
             </p>
         </div>
     </div>

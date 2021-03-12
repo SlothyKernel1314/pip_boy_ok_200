@@ -15,7 +15,7 @@ let perk_attribute_class_basenames = ['perk-attribute-box',
     'perk-attribute-description', 'perk-attribute-image'];
 let perk_attribute_class_active_names = ['perk-attribute-box-active',
     'perk-attribute-description-active', 'perk-attribute-image-active'];
-let perk_attribute_names = ['p1', 'p2', 'p3'];
+let perk_attribute_names = ['p1', 'p2', 'heavy-gunner'];
 
 
 function activeMenu(box,
