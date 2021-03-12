@@ -12,7 +12,20 @@
             </div>
         </div>
         <div class="perk-right-column">
-            <img src="img/special/agility.gif" id="vault-boy-hoop" alt="a fallout vault boy thumbs up">
+            <!-- images ----------------------------------------------------------------------------------------------->
+            <img src="img/special/strength.gif"
+                 class="perk-attribute-image perk-attribute-image-active"
+                 id="perk-attribute-image-p1"
+                 alt="">
+            <img src="img/special/charisma.gif"
+                 class="perk-attribute-image"
+                 id="perk-attribute-image-p2"
+                 alt="">
+            <img src="img/special/luck.gif"
+                 class="perk-attribute-image"
+                 id="perk-attribute-image-p3"
+                 alt="">
+            <!-- descriptions ----------------------------------------------------------------------------------------->
             <p class="perk-attribute-description perk-attribute-description-active"
                id="perk-attribute-description-p1">
                 Perk 1 description

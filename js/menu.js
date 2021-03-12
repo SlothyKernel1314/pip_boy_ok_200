@@ -10,6 +10,11 @@ let special_attribute_names = ['strength', 'perception', 'endurance',
 
 let perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
 let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
+let perk_attribute_images = document.querySelectorAll('.perk-attribute-image');
+let perk_attribute_class_basenames = ['perk-attribute-box',
+    'perk-attribute-description', 'perk-attribute-image'];
+let perk_attribute_class_active_names = ['perk-attribute-box-active',
+    'perk-attribute-description-active', 'perk-attribute-image-active'];
 let perk_attribute_names = ['p1', 'p2', 'p3'];
 
 
@@ -60,14 +65,18 @@ for (let i=0 ; i < special_attribute_boxes.length ; i++) {
 
 
 // processing execution when a mouseover is detected on a perk attribute box
-// for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
-//     perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-//         activeMenu(this, perk_attribute_boxes,
-//             perk_attribute_descriptions,
-//             perk_attribute_names,
-//             'perk-attribute-box',
-//             'perk-attribute-description',
-//             'perk-attribute-box-active',
-//             'perk-attribute-description-active')
-//     })
-// }
+for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
+    perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+        activeMenu(this,
+            perk_attribute_boxes,
+            perk_attribute_descriptions,
+            perk_attribute_images,
+            perk_attribute_names,
+            perk_attribute_class_basenames[0],
+            perk_attribute_class_basenames[1],
+            perk_attribute_class_basenames[2],
+            perk_attribute_class_active_names[0],
+            perk_attribute_class_active_names[1],
+            perk_attribute_class_active_names[2])
+    })
+}
