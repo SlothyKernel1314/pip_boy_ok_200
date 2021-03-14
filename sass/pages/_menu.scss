@@ -53,25 +53,31 @@ div[class$="-attribute-box-active"] > p {
 
 .special-attribute-description.special-attribute-description-active,
 .perk-attribute-description.perk-attribute-description-active,
-.job-attribute-description.job-attribute-description-active {
+.job-attribute-description.job-attribute-description-active,
+.study-attribute-description.study-attribute-description-active {
   display: block;
 }
 
 .special-attribute-description.special-attribute-description-active,
 .perk-attribute-description.perk-attribute-description-active,
+.study-attribute-description.study-attribute-description-active,
 .special-attribute-description,
-.perk-attribute-description {
+.perk-attribute-description,
+.study-attribute-description {
   font-size: 1.5rem;
 }
 
 .job-attribute-description.job-attribute-description-active,
-.job-attribute-description {
+.job-attribute-description,
+.study-attribute-description.study-attribute-description-active,
+.study-attribute-description {
   font-size: 1.4rem;
 }
 
 .special-attribute-description,
 .perk-attribute-description,
-.job-attribute-description {
+.job-attribute-description,
+.study-attribute-description {
   display: none;
 }
 

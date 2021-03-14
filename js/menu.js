@@ -25,6 +25,14 @@ let job_attribute_class_active_names = ['job-attribute-box-active',
     'job-attribute-description-active'];
 let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
 
+let study_attribute_boxes = document.querySelectorAll('.study-attribute-box');
+let study_attribute_descriptions = document.querySelectorAll('.study-attribute-description');
+let study_attribute_class_basenames = ['study-attribute-box',
+    'study-attribute-description'];
+let study_attribute_class_active_names = ['study-attribute-box-active',
+    'study-attribute-description-active'];
+let study_attribute_names = ['study_1', 'study_2', 'study_3', 'study_4', 'study_5'];
+
 
 function activeMenuWithImages(box,
                     boxes, descriptions, images,
@@ -123,5 +131,20 @@ for (let i=0 ; i < job_attribute_boxes.length ; i++) {
             job_attribute_class_basenames[1],
             job_attribute_class_active_names[0],
             job_attribute_class_active_names[1])
+    })
+}
+
+
+// processing execution when a mouseover is detected on a study attribute box
+for (let i=0 ; i < study_attribute_boxes.length ; i++) {
+    study_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+        activeMenu(this,
+            study_attribute_boxes,
+            study_attribute_descriptions,
+            study_attribute_names,
+            study_attribute_class_basenames[0],
+            study_attribute_class_basenames[1],
+            study_attribute_class_active_names[0],
+            study_attribute_class_active_names[1])
     })
 }
