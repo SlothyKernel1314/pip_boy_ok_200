@@ -19,15 +19,19 @@ let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_sava
 
 let job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
 let job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
-let job_attribute_images = document.querySelectorAll('.job-attribute-image');
+// let job_attribute_images = document.querySelectorAll('.job-attribute-image');
+// let job_attribute_class_basenames = ['job-attribute-box',
+//     'job-attribute-description', 'job-attribute-image'];
 let job_attribute_class_basenames = ['job-attribute-box',
-    'job-attribute-description', 'job-attribute-image'];
+    'job-attribute-description'];
+// let job_attribute_class_active_names = ['job-attribute-box-active',
+//     'job-attribute-description-active', 'job-attribute-image-active'];
 let job_attribute_class_active_names = ['job-attribute-box-active',
-    'job-attribute-description-active', 'job-attribute-image-active'];
+    'job-attribute-description-active'];
 let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
 
 
-function activeMenu(box,
+function activeMenuWithImages(box,
                     boxes, descriptions, images,
                     attribute_names,
                     box_class_basename, description_class_basename, image_class_basename,
@@ -54,10 +58,32 @@ function activeMenu(box,
 }
 
 
+function activeMenu(box,
+                    boxes, descriptions,
+                    attribute_names,
+                    box_class_basename, description_class_basename,
+                    active_box_class, active_description_class) {
+    for (let i=0 ; i < boxes.length ; i++) {
+        boxes[i].classList.remove(active_box_class);
+    }
+    for (let i=0 ; i < descriptions.length ; i++) {
+        descriptions[i].classList.remove(active_description_class);
+    }
+    for (let i=0 ; i < attribute_names.length ; i++) {
+        if(box.id === box_class_basename + '-' + attribute_names[i] + '') {
+            document.getElementById(box_class_basename + '-' + attribute_names[i]).
+            classList.add(active_box_class);
+            document.getElementById(description_class_basename + '-' + attribute_names[i]).
+            classList.add(active_description_class);
+        }
+    }
+}
+
+
 // processing execution when a mouseover is detected on a special attribute box
 for (let i=0 ; i < special_attribute_boxes.length ; i++) {
     special_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this,
+        activeMenuWithImages(this,
             special_attribute_boxes,
             special_attribute_descriptions,
             special_attribute_images,
@@ -76,7 +102,7 @@ for (let i=0 ; i < special_attribute_boxes.length ; i++) {
 // processing execution when a mouseover is detected on a perk attribute box
 for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
     perk_attribute_boxes[i].addEventListener('mouseover', function (evt) {
-        activeMenu(this,
+        activeMenuWithImages(this,
             perk_attribute_boxes,
             perk_attribute_descriptions,
             perk_attribute_images,
@@ -97,13 +123,10 @@ for (let i=0 ; i < job_attribute_boxes.length ; i++) {
         activeMenu(this,
             job_attribute_boxes,
             job_attribute_descriptions,
-            job_attribute_images,
             job_attribute_names,
             job_attribute_class_basenames[0],
             job_attribute_class_basenames[1],
-            job_attribute_class_basenames[2],
             job_attribute_class_active_names[0],
-            job_attribute_class_active_names[1],
-            job_attribute_class_active_names[2])
+            job_attribute_class_active_names[1])
     })
 }
