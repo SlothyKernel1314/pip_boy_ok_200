@@ -1,6 +1,6 @@
 <section class="core-display" id="stat-perk-section">
     <div class="menu-container perk-container">
-        <div class="perk-attributes">
+        <div class="menu-attributes perk-attributes">
             <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-chemist">
                 <p class="perk-attribute">Logique</p>
             </div>

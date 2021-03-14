@@ -1,6 +1,6 @@
 <section class="core-display" id="stat-special-section">
     <div class="menu-container special-container">
-        <div class="special-attributes">
+        <div class="menu-attributes special-attributes">
             <div class="special-attribute-box special-attribute-box-active" id="special-attribute-box-strength">
                 <p class="special-attribute">Strength</p>
                 <p class="special-value">2</p>

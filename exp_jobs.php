@@ -1,6 +1,6 @@
 <section class="core-display" id="exp-jobs-section">
     <div class="menu-container job-container">
-        <div class="job-attributes">
+        <div class="menu-attributes job-attributes">
             <div class="job-attribute-box job-attribute-box-active" id="job-attribute-box-job_1">
                 <p class="job-attribute">DEV FULL STACK</p>
             </div>
