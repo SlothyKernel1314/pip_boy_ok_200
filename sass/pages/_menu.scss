@@ -5,7 +5,8 @@
 @use "../abstracts/variables" as v;
 
 .special-container,
-.perk-container {
+.perk-container,
+.job-container {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -14,45 +15,54 @@
 .special-attributes,
 .special-right-column,
 .perk-attributes,
-.perk-right-column {
+.perk-right-column,
+.job-attributes,
+.job-right-column {
   width: 50%;
 }
 
 .special-attributes,
-.perk-attributes {
+.perk-attributes,
+.job-attributes {
   margin: 0 0.5rem 0 0;
 }
 
 .special-attribute-box,
-.perk-attribute-box {
+.perk-attribute-box,
+.job-attribute-box {
   display: flex;
   justify-content: space-between;
   padding: 0 0.8rem 0 0.8rem;
 }
 
 .special-attribute-box:hover,
-.perk-attribute-box:hover {
+.perk-attribute-box:hover,
+.job-attribute-box:hover {
   cursor: default;
 }
 
 .special-attribute-box-active,
-.perk-attribute-box-active {
+.perk-attribute-box-active,
+.job-attribute-box-active {
   background-color: v.$pip-boy-primary-color;
 }
 
 .special-attribute-box-active > p,
-.perk-attribute-box-active > p {
+.perk-attribute-box-active > p,
+.job-attribute-box-active > p {
   color: v.$pip-boy-secondary-color;
 }
 
 .special-attribute,
 .special-value,
-.perk-attribute {
+.perk-attribute,
+.job-attribute, {
   font-size: 2rem;
 }
 
 .special-right-column,
-.perk-right-column {
+.perk-right-column,
+.job-right-column {
   margin: 0 0 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -63,28 +73,33 @@
 
 .special-attribute-description.special-attribute-description-active,
 .perk-attribute-description.perk-attribute-description-active,
+.job-attribute-description.job-attribute-description-active,
 {
   display: block;
   font-size: 1.5rem;
 }
 
 .special-attribute-description,
-.perk-attribute-description {
+.perk-attribute-description,
+.job-attribute-description {
   display: none;
   font-size: 1.5rem;
 }
 
 .special-attribute-image-active,
-.perk-attribute-image-active {
+.perk-attribute-image-active,
+.job-attribute-image-active {
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
 }
 
 .special-attribute-image.special-attribute-image-active,
-.perk-attribute-image.perk-attribute-image-active {
+.perk-attribute-image.perk-attribute-image-active,
+.job-attribute-image.job-attribute-image-active {
   display: block;
 }
 
 .special-attribute-image,
-.perk-attribute-image{
+.perk-attribute-image,
+.job-attribute-image {
   display: none;
 }

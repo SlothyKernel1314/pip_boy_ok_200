@@ -17,6 +17,15 @@ let perk_attribute_class_active_names = ['perk-attribute-box-active',
     'perk-attribute-description-active', 'perk-attribute-image-active'];
 let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_savant', 'nerd_rage', 'heavy-gunner'];
 
+let job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
+let job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
+let job_attribute_images = document.querySelectorAll('.job-attribute-image');
+let job_attribute_class_basenames = ['job-attribute-box',
+    'job-attribute-description', 'job-attribute-image'];
+let job_attribute_class_active_names = ['job-attribute-box-active',
+    'job-attribute-description-active', 'job-attribute-image-active'];
+let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
+
 
 function activeMenu(box,
                     boxes, descriptions, images,
@@ -78,5 +87,23 @@ for (let i=0 ; i < perk_attribute_boxes.length ; i++) {
             perk_attribute_class_active_names[0],
             perk_attribute_class_active_names[1],
             perk_attribute_class_active_names[2])
+    })
+}
+
+
+// processing execution when a mouseover is detected on a job attribute box
+for (let i=0 ; i < job_attribute_boxes.length ; i++) {
+    job_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+        activeMenu(this,
+            job_attribute_boxes,
+            job_attribute_descriptions,
+            job_attribute_images,
+            job_attribute_names,
+            job_attribute_class_basenames[0],
+            job_attribute_class_basenames[1],
+            job_attribute_class_basenames[2],
+            job_attribute_class_active_names[0],
+            job_attribute_class_active_names[1],
+            job_attribute_class_active_names[2])
     })
 }
