@@ -176,5 +176,7 @@ if(a !== null && !a.classList.contains('active')) {
 
 // TODO : retirer les classes inutiles
 
+// TODO : read me
+
 // TODO : hebergement
 

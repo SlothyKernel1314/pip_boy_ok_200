@@ -24,27 +24,27 @@
         <div class="menu-right-column perk-right-column">
             <!-- images ----------------------------------------------------------------------------------------------->
             <img src="img/perk/chemist.png"
-                 class="perk-attribute-image perk-attribute-image-active"
+                 class="menu-attribute-image perk-attribute-image perk-attribute-image-active"
                  id="perk-attribute-image-chemist"
                  alt="">
             <img src="img/perk/cannibal.png"
-                 class="perk-attribute-image"
+                 class="menu-attribute-image perk-attribute-image"
                  id="perk-attribute-image-cannibal"
                  alt="">
             <img src="img/perk/fortune_finder.png"
-                 class="perk-attribute-image"
+                 class="menu-attribute-image perk-attribute-image"
                  id="perk-attribute-image-fortune_finder"
                  alt="">
             <img src="img/perk/idiot_savant.png"
-                 class="perk-attribute-image"
+                 class="menu-attribute-image perk-attribute-image"
                  id="perk-attribute-image-idiot_savant"
                  alt="">
             <img src="img/perk/nerd_rage.png"
-                 class="perk-attribute-image"
+                 class="menu-attribute-image perk-attribute-image"
                  id="perk-attribute-image-nerd_rage"
                  alt="">
             <img src="img/perk/heavy_gunner.png"
-                 class="perk-attribute-image"
+                 class="menu-attribute-image perk-attribute-image"
                  id="perk-attribute-image-heavy-gunner"
                  alt="">
             <!-- descriptions ----------------------------------------------------------------------------------------->
