@@ -1,33 +1,33 @@
 <section class="core-display" id="stat-special-section">
     <div class="menu-container special-container">
         <div class="menu-attributes special-attributes">
-            <div class="menu-attribute-box special-attribute-box special-attribute-box-active" i
-                 d="special-attribute-box-strength">
-                <p class="special-attribute">Strength</p>
+            <div class="menu-attribute-box special-attribute-box special-attribute-box-active"
+                 id="special-attribute-box-strength">
+                <p class="menu-attribute special-attribute">Strength</p>
                 <p class="special-value">2</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-perception">
-                <p class="special-attribute">Perception</p>
+                <p class="menu-attribute special-attribute">Perception</p>
                 <p class="special-value">8</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-endurance">
-                <p class="special-attribute">Endurance</p>
+                <p class="menu-attribute special-attribute">Endurance</p>
                 <p class="special-value">7</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-charisma">
-                <p class="special-attribute">Charisma</p>
+                <p class="menu-attribute special-attribute">Charisma</p>
                 <p class="special-value">3</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-intelligence">
-                <p class="special-attribute">Intelligence</p>
+                <p class="menu-attribute special-attribute">Intelligence</p>
                 <p class="special-value">9</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-agility">
-                <p class="special-attribute">Agility</p>
+                <p class="menu-attribute special-attribute">Agility</p>
                 <p class="special-value">4</p>
             </div>
             <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-luck">
-                <p class="special-attribute">Luck</p>
+                <p class="menu-attribute special-attribute">Luck</p>
                 <p class="special-value">10</p>
             </div>
         </div>

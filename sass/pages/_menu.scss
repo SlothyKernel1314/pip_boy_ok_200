@@ -19,7 +19,7 @@
   margin: 0 0.5rem 0 0;
 }
 
-.menu-attribute-box{
+.menu-attribute-box {
   display: flex;
   justify-content: space-between;
   padding: 0 0.8rem 0 0.8rem;
@@ -41,10 +41,8 @@
   color: v.$pip-boy-secondary-color;
 }
 
-.special-attribute,
-.special-value,
-.perk-attribute,
-.job-attribute, {
+.menu-attribute,
+.special-value {
   font-size: 2rem;
 }
 

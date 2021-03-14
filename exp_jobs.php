@@ -2,16 +2,16 @@
     <div class="menu-container job-container">
         <div class="menu-attributes job-attributes">
             <div class="menu-attribute-box job-attribute-box job-attribute-box-active" id="job-attribute-box-job_1">
-                <p class="job-attribute">DEV FULL STACK</p>
+                <p class="menu-attribute job-attribute">DEV FULL STACK</p>
             </div>
             <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_2">
-                <p class="job-attribute">DEV BACK END</p>
+                <p class="menu-attribute job-attribute">DEV BACK END</p>
             </div>
             <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_3">
-                <p class="job-attribute">DEV BACK END</p>
+                <p class="menu-attribute job-attribute">DEV BACK END</p>
             </div>
             <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_4">
-                <p class="job-attribute">SERVICE CIVIQUE</p>
+                <p class="menu-attribute job-attribute">SERVICE CIVIQUE</p>
             </div>
         </div>
         <div class="menu-right-column job-right-column">

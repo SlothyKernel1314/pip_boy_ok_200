@@ -174,7 +174,7 @@ if(a !== null && !a.classList.contains('active')) {
 // -- détecter les formats tablettes + forcer le mode paysage
 // -- réduction du font.size adaptée aux différents formats d'écran
 
-// TODO : favicon
+// TODO : retirer les classes inutiles
 
 // TODO : hebergement
 
