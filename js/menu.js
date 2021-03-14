@@ -19,13 +19,8 @@ let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_sava
 
 let job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
 let job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
-// let job_attribute_images = document.querySelectorAll('.job-attribute-image');
-// let job_attribute_class_basenames = ['job-attribute-box',
-//     'job-attribute-description', 'job-attribute-image'];
 let job_attribute_class_basenames = ['job-attribute-box',
     'job-attribute-description'];
-// let job_attribute_class_active_names = ['job-attribute-box-active',
-//     'job-attribute-description-active', 'job-attribute-image-active'];
 let job_attribute_class_active_names = ['job-attribute-box-active',
     'job-attribute-description-active'];
 let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
