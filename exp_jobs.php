@@ -24,13 +24,25 @@
                 refactoré le code de l’existant, et renforcé la sécurité du système.
             </p>
             <p class="job-attribute-description" id="job-attribute-description-job_2">
-                Desc job 2
+                05 MARS 2018 - 27 AVRIL 2018<br />
+                Lycée Champlain – Chennevières-sur-Marne (94) : dans le cadre d’un stage
+                professionnel, j’ai participé à la conception d’une application web Java /Spring
+                destinée à gérer un questionnaire permettant de dépister le décrochage scolaire
+                de lycéens.
             </p>
             <p class="job-attribute-description" id="job-attribute-description-job_3">
-                Desc job 3
+                MAI 2017 - JUIN 2017<br />
+                Lycée Champlain – Chennevières-sur-Marne (94) : dans le cadre d’un stage
+                professionnel, j’ai participé à la conception d’une application destinée à gérer les
+                conventions de stage des élèves d’un lycée
             </p>
             <p class="job-attribute-description" id="job-attribute-description-job_4">
-                Des job 4
+                UNIS CITÉ<br />
+                MAI 2017 - JUIN 2017<br />
+                Relais Formation Emploi - Évry (91) : création d’ateliers santé sur le thème des addictions. <br />
+                Nouvelles Voies - Île-de-France : constitution et suivi de dossiers administratifs et juridiques,
+                création d’outils pédagogiques destinés à des ateliers santé.
+
             </p>
         </div>
     </div>
