@@ -1,22 +1,23 @@
 <section class="core-display" id="stat-perk-section">
     <div class="menu-container perk-container">
         <div class="menu-attributes perk-attributes">
-            <div class="perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-chemist">
+            <div class="menu-attribute-box perk-attribute-box perk-attribute-box-active"
+                 id="perk-attribute-box-chemist">
                 <p class="perk-attribute">Logique</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-cannibal">
+            <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-cannibal">
                 <p class="perk-attribute">Analytique</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-fortune_finder">
+            <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-fortune_finder">
                 <p class="perk-attribute">Curieux</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-idiot_savant">
+            <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-idiot_savant">
                 <p class="perk-attribute">Rigoureux</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-nerd_rage">
+            <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-nerd_rage">
                 <p class="perk-attribute">Toto</p>
             </div>
-            <div class="perk-attribute-box" id="perk-attribute-box-heavy-gunner">
+            <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-heavy-gunner">
                 <p class="perk-attribute">Chasseur de bugs</p>
             </div>
         </div>

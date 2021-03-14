@@ -1,16 +1,16 @@
 <section class="core-display" id="exp-jobs-section">
     <div class="menu-container job-container">
         <div class="menu-attributes job-attributes">
-            <div class="job-attribute-box job-attribute-box-active" id="job-attribute-box-job_1">
+            <div class="menu-attribute-box job-attribute-box job-attribute-box-active" id="job-attribute-box-job_1">
                 <p class="job-attribute">DEV FULL STACK</p>
             </div>
-            <div class="job-attribute-box" id="job-attribute-box-job_2">
+            <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_2">
                 <p class="job-attribute">DEV BACK END</p>
             </div>
-            <div class="job-attribute-box" id="job-attribute-box-job_3">
+            <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_3">
                 <p class="job-attribute">DEV BACK END</p>
             </div>
-            <div class="job-attribute-box" id="job-attribute-box-job_4">
+            <div class="menu-attribute-box job-attribute-box" id="job-attribute-box-job_4">
                 <p class="job-attribute">SERVICE CIVIQUE</p>
             </div>
         </div>

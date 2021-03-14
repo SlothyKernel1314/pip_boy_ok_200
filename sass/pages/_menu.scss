@@ -19,17 +19,13 @@
   margin: 0 0.5rem 0 0;
 }
 
-.special-attribute-box,
-.perk-attribute-box,
-.job-attribute-box {
+.menu-attribute-box{
   display: flex;
   justify-content: space-between;
   padding: 0 0.8rem 0 0.8rem;
 }
 
-.special-attribute-box:hover,
-.perk-attribute-box:hover,
-.job-attribute-box:hover {
+.menu-attribute-box:hover {
   cursor: default;
 }
 
