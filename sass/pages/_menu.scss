@@ -73,33 +73,39 @@
 
 .special-attribute-description.special-attribute-description-active,
 .perk-attribute-description.perk-attribute-description-active,
-.job-attribute-description.job-attribute-description-active,
-{
+.job-attribute-description.job-attribute-description-active {
   display: block;
+}
+
+.special-attribute-description.special-attribute-description-active,
+.perk-attribute-description.perk-attribute-description-active,
+.special-attribute-description,
+.perk-attribute-description {
   font-size: 1.5rem;
+}
+
+.job-attribute-description.job-attribute-description-active,
+.job-attribute-description {
+  font-size: 1.4rem;
 }
 
 .special-attribute-description,
 .perk-attribute-description,
 .job-attribute-description {
   display: none;
-  font-size: 1.5rem;
 }
 
 .special-attribute-image-active,
-.perk-attribute-image-active,
-.job-attribute-image-active {
+.perk-attribute-image-active {
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
 }
 
 .special-attribute-image.special-attribute-image-active,
-.perk-attribute-image.perk-attribute-image-active,
-.job-attribute-image.job-attribute-image-active {
+.perk-attribute-image.perk-attribute-image-active {
   display: block;
 }
 
 .special-attribute-image,
-.perk-attribute-image,
-.job-attribute-image {
+.perk-attribute-image {
   display: none;
 }
