@@ -1,6 +1,9 @@
 // menu management (boxes, descriptions and images), common to the following pages of the site :
 // stat_special.php
 // stat_perks.php
+// exp_jobs.php
+// exp_studies.php
+// stat_skills.php
 
 @use "../abstracts/variables" as v;
 
@@ -60,18 +63,13 @@ div[class$="-attribute-box-active"] > p {
 }
 
 .special-attribute-description.special-attribute-description-active,
-.perk-attribute-description.perk-attribute-description-active,
-.special-attribute-description,
-.perk-attribute-description {
+.perk-attribute-description.perk-attribute-description-active {
   font-size: 1.5rem;
 }
 
 .job-attribute-description.job-attribute-description-active,
-.job-attribute-description,
 .study-attribute-description.study-attribute-description-active,
-.study-attribute-description,
-.skill-attribute-description.skill-attribute-description-active,
-.skill-attribute-description {
+.skill-attribute-description.skill-attribute-description-active {
   font-size: 1.4rem;
 }
 
