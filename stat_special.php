@@ -1,5 +1,5 @@
 <section class="core-display" id="stat-special-section">
-    <div class="special-container">
+    <div class="menu-container special-container">
         <div class="special-attributes">
             <div class="special-attribute-box special-attribute-box-active" id="special-attribute-box-strength">
                 <p class="special-attribute">Strength</p>

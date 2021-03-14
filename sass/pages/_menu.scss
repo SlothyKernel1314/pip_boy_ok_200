@@ -4,9 +4,7 @@
 
 @use "../abstracts/variables" as v;
 
-.special-container,
-.perk-container,
-.job-container {
+.menu-container {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;

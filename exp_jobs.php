@@ -1,5 +1,5 @@
 <section class="core-display" id="exp-jobs-section">
-    <div class="job-container">
+    <div class="menu-container job-container">
         <div class="job-attributes">
             <div class="job-attribute-box job-attribute-box-active" id="job-attribute-box-job_1">
                 <p class="job-attribute">DEV FULL STACK</p>
@@ -38,11 +38,10 @@
             </p>
             <p class="job-attribute-description" id="job-attribute-description-job_4">
                 UNIS CITÉ<br />
-                MAI 2017 - JUIN 2017<br />
+                SEPT 2008 - JUIL 2009<br />
                 Relais Formation Emploi - Évry (91) : création d’ateliers santé sur le thème des addictions. <br />
                 Nouvelles Voies - Île-de-France : constitution et suivi de dossiers administratifs et juridiques,
                 création d’outils pédagogiques destinés à des ateliers santé.
-
             </p>
         </div>
     </div>
