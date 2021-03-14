@@ -29,15 +29,11 @@
   cursor: default;
 }
 
-.special-attribute-box-active,
-.perk-attribute-box-active,
-.job-attribute-box-active {
+div[class$="-attribute-box-active"] {
   background-color: v.$pip-boy-primary-color;
 }
 
-.special-attribute-box-active > p,
-.perk-attribute-box-active > p,
-.job-attribute-box-active > p {
+div[class$="-attribute-box-active"] > p {
   color: v.$pip-boy-secondary-color;
 }
 
