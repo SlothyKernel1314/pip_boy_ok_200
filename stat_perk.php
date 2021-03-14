@@ -20,7 +20,7 @@
                 <p class="perk-attribute">Chasseur de bugs</p>
             </div>
         </div>
-        <div class="perk-right-column">
+        <div class="menu-right-column perk-right-column">
             <!-- images ----------------------------------------------------------------------------------------------->
             <img src="img/perk/chemist.png"
                  class="perk-attribute-image perk-attribute-image-active"

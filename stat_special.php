@@ -30,7 +30,7 @@
                 <p class="special-value">10</p>
             </div>
         </div>
-        <div class="special-right-column">
+        <div class="menu-right-column special-right-column">
         <!-- images --------------------------------------------------------------------------------------------------->
             <img src="img/special/strength.gif"
                  class="special-attribute-image special-attribute-image-active"

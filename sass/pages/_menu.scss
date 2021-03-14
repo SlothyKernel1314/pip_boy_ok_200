@@ -11,9 +11,7 @@
 }
 
 .menu-attributes,
-.special-right-column,
-.perk-right-column,
-.job-right-column {
+.menu-right-column {
   width: 50%;
 }
 
@@ -54,9 +52,7 @@
   font-size: 2rem;
 }
 
-.special-right-column,
-.perk-right-column,
-.job-right-column {
+.menu-right-column {
   margin: 0 0 0 0.5rem;
   display: flex;
   flex-direction: column;

@@ -14,7 +14,7 @@
                 <p class="job-attribute">SERVICE CIVIQUE</p>
             </div>
         </div>
-        <div class="job-right-column">
+        <div class="menu-right-column job-right-column">
             <p class="job-attribute-description job-attribute-description-active"
                id="job-attribute-description-job_1">
                 25 MARS 2019 - 17 MAI 2019<br />
