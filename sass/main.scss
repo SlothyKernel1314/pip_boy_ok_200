@@ -33,7 +33,7 @@
 //}
 // TEST TODO:remove
 p {
-  color: v.$pip-boy-primary-color;
+  color: var(--pip-boy-primary-color);
 }
 
 #vault-boy-walking {

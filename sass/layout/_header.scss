@@ -23,7 +23,7 @@ header {
 .tabs li > a,
 .sub-tabs li > a {
   font-size: 2.2rem;
-  color: v.$pip-boy-primary-color;
+  color: var(--pip-boy-primary-color);
 }
 
 .tabs li > a {

@@ -15,12 +15,12 @@
 }
 
 .info-icon {
-  background-color: v.$pip-boy-secondary-color;
+  background-color: var(--pip-boy-secondary-color);
   margin-right: 0.4rem;
 }
 
 .info-icon > p {
-  color: v.$pip-boy-primary-color;
+  color: var(--pip-boy-secondary-color);
 }
 
 .info-icon-large {
@@ -61,7 +61,7 @@
 .identity-container > p {
   font-family: "Monofonto", serif;
   font-size: 1.4rem;
-  color: v.$pip-boy-primary-color;
+  color: var(--pip-boy-primary-color);
   text-align: center;
   width: v.$header-width*1rem;
   margin: 1rem 0 1rem 0;

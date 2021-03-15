@@ -1,6 +1,9 @@
-$pip-boy-background-color: #10170f;
-$pip-boy-primary-color: #18dc0c;
-$pip-boy-secondary-color: #11291b;
+:root {
+  --pip-boy-background-color: #10170f;
+  --pip-boy-primary-color: #18dc0c;
+  --pip-boy-secondary-color: #11291b;
+}
+
 
 $header-width: 37.8; //rem
 $health-gauge-width: 3.8; //rem

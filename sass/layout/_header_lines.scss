@@ -8,7 +8,7 @@
 
 .header-line-bottom {
   position: fixed;
-  border-bottom: 0.2rem solid v.$pip-boy-primary-color;
+  border-bottom: 0.2rem solid var(--pip-boy-primary-color);
   padding-bottom: 0.2rem;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .header-line-vertical {
-  border-left: 0.2rem solid v.$pip-boy-primary-color;
+  border-left: 0.2rem solid var(--pip-boy-primary-color);
   height: 2.3rem;
   bottom: 3.4rem;
   position: absolute;
@@ -38,7 +38,7 @@
 }
 
 .header-line-hook {
-  border-bottom: 0.2rem solid v.$pip-boy-primary-color;
+  border-bottom: 0.2rem solid var(--pip-boy-primary-color);
   position: absolute;
   width: 0.7rem;
   margin-top: -2rem;

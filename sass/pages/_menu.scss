@@ -33,11 +33,11 @@
 }
 
 div[class$="-attribute-box-active"] {
-  background-color: v.$pip-boy-primary-color;
+  background-color: var(--pip-boy-primary-color);
 }
 
 div[class$="-attribute-box-active"] > p {
-  color: v.$pip-boy-secondary-color;
+  color: var(--pip-boy-secondary-color);
 }
 
 .menu-attribute,
