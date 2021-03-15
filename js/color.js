@@ -8,7 +8,10 @@ let orange_mojave = ['orange_mojave', '#ffb641', '#11291b'];
 let purple = ['purple', '#8438f5', '#11291b'];
 let red = ['red', '#bb313d', '#11291b'];
 let green_mutant = ['green_mutant', '#1aff80', '#11291b'];
-let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red, green_mutant];
+let pink_boy = ['pink_boy', '#ff00ff', '#11291b'];
+let night_blue = ['night_blue', '#0897ff', '#11291b'];
+
+let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red, green_mutant, pink_boy, night_blue];
 
 function activeColor(box, boxes, color_themes,
                      box_class_basename, active_box_class) {

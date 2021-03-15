@@ -19,11 +19,11 @@
             <div class="color-box" id="color-box-green_mutant">
                 <p class="color-name">Green Mutant</p>
             </div>
-            <div class="color-box" id="color-box-color_7">
-                <p class="color-name">Color 7</p>
+            <div class="color-box" id="color-box-pink_boy">
+                <p class="color-name">Pink Boy</p>
             </div>
-            <div class="color-box" id="color-box-color_8">
-                <p class="color-name">Color 8</p>
+            <div class="color-box" id="color-box-night_blue">
+                <p class="color-name">Night Blue</p>
             </div>
             <div class="color-box" id="color-box-color_9">
                 <p class="color-name">Color 9</p>
