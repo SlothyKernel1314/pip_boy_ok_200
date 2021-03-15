@@ -21,7 +21,7 @@ function activeColor(box, boxes, attribute_names,
 
 // processing execution when a mouseover is detected on a color box
 for (let i=0 ; i < color_boxes.length ; i++) {
-    color_boxes[i].addEventListener('mouseover', function (evt) {
+    color_boxes[i].addEventListener('click', function (evt) {
         activeColor(this, color_boxes, color_names,
             color_class_basename, color_class_active_name)
 
