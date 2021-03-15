@@ -1,10 +1,10 @@
 <section class="core-display" id="color-section">
     <div class="color-container">
         <div class="color-boxes">
-            <div class="color-box color-box-active" id="color-box-color_1">
+            <div class="color-box color-box-active" id="color-box-green_default">
                 <p class="color-name">Color 1</p>
             </div>
-            <div class="color-box" id="color-box-color_2">
+            <div class="color-box" id="color-box-blue_nuka_cola">
                 <p class="color-name">Color 2</p>
             </div>
             <div class="color-box" id="color-box-color_3">
