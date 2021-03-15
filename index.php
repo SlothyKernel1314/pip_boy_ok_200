@@ -37,6 +37,7 @@
 </div>
 <script src="js/tabs.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/color.js"></script>
 </body>
 </html>
 
