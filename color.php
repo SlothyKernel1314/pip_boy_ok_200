@@ -2,13 +2,13 @@
     <div class="color-container">
         <div class="color-boxes">
             <div class="color-box color-box-active" id="color-box-green_default">
-                <p class="color-name">Color 1</p>
+                <p class="color-name">Green Default</p>
             </div>
             <div class="color-box" id="color-box-blue_nuka_cola">
-                <p class="color-name">Color 2</p>
+                <p class="color-name">Blue Nuka Cola</p>
             </div>
-            <div class="color-box" id="color-box-color_3">
-                <p class="color-name">Color 3</p>
+            <div class="color-box" id="color-box-orange_mojave">
+                <p class="color-name">Orange Mojave</p>
             </div>
             <div class="color-box" id="color-box-color_4">
                 <p class="color-name">Color 4</p>

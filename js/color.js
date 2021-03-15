@@ -4,7 +4,9 @@ let color_class_active_name = 'color-box-active';
 
 let green_default_set_color = ['green_default', '#18dc0c', '#11291b'];
 let blue_nuka_cola = ['blue_nuka_cola', '#2eceff', '#11291b'];
-let color_themes = [green_default_set_color, blue_nuka_cola];
+let orange_mojave = ['orange_mojave', '#ffb641', '#11291b'];
+
+let color_themes = [green_default_set_color, blue_nuka_cola, orange_mojave];
 
 function activeColor(box, boxes, color_themes,
                      box_class_basename, active_box_class) {
