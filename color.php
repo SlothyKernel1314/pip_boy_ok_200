@@ -10,14 +10,14 @@
             <div class="color-box" id="color-box-orange_mojave">
                 <p class="color-name">Orange Mojave</p>
             </div>
-            <div class="color-box" id="color-box-color_4">
-                <p class="color-name">Color 4</p>
+            <div class="color-box" id="color-box-purple">
+                <p class="color-name">Purple</p>
             </div>
-            <div class="color-box" id="color-box-color_5">
-                <p class="color-name">Color 5</p>
+            <div class="color-box" id="color-box-red">
+                <p class="color-name">Red</p>
             </div>
-            <div class="color-box" id="color-box-color_6">
-                <p class="color-name">Color 6</p>
+            <div class="color-box" id="color-box-green_mutant">
+                <p class="color-name">Green Mutant</p>
             </div>
             <div class="color-box" id="color-box-color_7">
                 <p class="color-name">Color 7</p>
