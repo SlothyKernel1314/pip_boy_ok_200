@@ -10,8 +10,12 @@ let red = ['red', '#bb313d', '#11291b'];
 let green_mutant = ['green_mutant', '#1aff80', '#11291b'];
 let pink_boy = ['pink_boy', '#ff00ff', '#11291b'];
 let night_blue = ['night_blue', '#0897ff', '#11291b'];
+let ice = ['ice', '#dce0e1', '#11291b'];
+let gold = ['gold', '#ffd700', '#11291b'];
 
-let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red, green_mutant, pink_boy, night_blue];
+
+let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red,
+    green_mutant, pink_boy, night_blue, ice, gold];
 
 function activeColor(box, boxes, color_themes,
                      box_class_basename, active_box_class) {

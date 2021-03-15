@@ -25,11 +25,11 @@
             <div class="color-box" id="color-box-night_blue">
                 <p class="color-name">Night Blue</p>
             </div>
-            <div class="color-box" id="color-box-color_9">
-                <p class="color-name">Color 9</p>
+            <div class="color-box" id="color-box-ice">
+                <p class="color-name">Ice</p>
             </div>
-            <div class="color-box" id="color-box-color_10">
-                <p class="color-name">Color 10</p>
+            <div class="color-box" id="color-box-gold">
+                <p class="color-name">Gold</p>
             </div>
             <div class="color-box" id="color-box-color_11">
                 <p class="color-name">Color 11</p>
