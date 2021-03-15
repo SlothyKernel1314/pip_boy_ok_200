@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as v;
+
+.color-container {
+  margin-top: 1rem;
+}
+
+.color-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.color-box-active {
+  background-color: v.$pip-boy-primary-color;
+}
+
+.color-box-active > p {
+  color: v.$pip-boy-secondary-color;
+}
+
+.color-box {
+  margin: 1rem 1rem 0 0;
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+.color-box:hover {
+  cursor: default;
+}
+
+.color-name {
+  font-size: 2rem;
+}

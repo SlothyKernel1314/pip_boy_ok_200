@@ -1,18 +1,41 @@
 <section class="core-display" id="color-section">
-    <div class="menu-container color-container">
-        <div class="color-attributes">
-            <div class="color-attribute-box color-attribute-box-active"
-                 id="color-attribute-box-color_1">
-                <p class="color-attribute">Color 1</p>
+    <div class="color-container">
+        <div class="color-boxes">
+            <div class="color-box color-box-active" id="color-box-color_1">
+                <p class="color-name">Color 1</p>
             </div>
-            <div class="color-attribute-box" id="color-attribute-box-color_2">
-                <p class="color-attribute">Color 2</p>
+            <div class="color-box" id="color-box-color_2">
+                <p class="color-name">Color 2</p>
             </div>
-            <div class="color-attribute-box" id="color-attribute-box-color_3">
-                <p class="color-attribute">Color 3</p>
+            <div class="color-box" id="color-box-color_3">
+                <p class="color-name">Color 3</p>
             </div>
-            <div class="color-attribute-box" id="color-attribute-box-color_4">
-                <p class="color-attribute">Color 4</p>
+            <div class="color-box" id="color-box-color_4">
+                <p class="color-name">Color 4</p>
+            </div>
+            <div class="color-box" id="color-box-color_5">
+                <p class="color-name">Color 5</p>
+            </div>
+            <div class="color-box" id="color-box-color_6">
+                <p class="color-name">Color 6</p>
+            </div>
+            <div class="color-box" id="color-box-color_7">
+                <p class="color-name">Color 7</p>
+            </div>
+            <div class="color-box" id="color-box-color_8">
+                <p class="color-name">Color 8</p>
+            </div>
+            <div class="color-box" id="color-box-color_9">
+                <p class="color-name">Color 9</p>
+            </div>
+            <div class="color-box" id="color-box-color_10">
+                <p class="color-name">Color 10</p>
+            </div>
+            <div class="color-box" id="color-box-color_11">
+                <p class="color-name">Color 11</p>
+            </div>
+            <div class="color-box" id="color-box-color_12">
+                <p class="color-name">Color 12</p>
             </div>
         </div>
     </div>
