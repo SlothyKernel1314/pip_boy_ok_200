@@ -44,6 +44,7 @@ function activeColor(box, boxes, color_themes,
             document.documentElement.style.setProperty('--pip-boy-background-color', color_themes[i][3]);
             if(box.id !== 'color-box-green_default') {
                 for (let j=0 ; j < info_images.length ; j++) {
+                    info_images[j].style.removeProperty('filter');
                     info_images[j].style.setProperty('filter', color_themes[i][4]);
                 }
             } else {
