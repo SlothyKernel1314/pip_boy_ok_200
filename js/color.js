@@ -25,8 +25,10 @@ let pink_boy = ['pink_boy', '#ff00ff', '#330033',
                         'grayscale(100%) brightness(70%) sepia(100%) hue-rotate(220deg) saturate(1000%) contrast(0.8)'];
 let night_blue = ['night_blue', '#0897ff', '#001e33',
                         'grayscale(100%) brightness(70%) sepia(100%) hue-rotate(180deg) saturate(1000%) contrast(0.8)'];
-let ice = ['ice', '#dce0e1', '#171b1c'];
-let gold = ['gold', '#ffd700', '#332b00'];
+let ice = ['ice', '#dce0e1', '#171b1c',
+                        'grayscale(100%) brightness(100%) sepia(0%) hue-rotate(100deg) saturate(10%) contrast(0.9)'];
+let gold = ['gold', '#ffd700', '#332b00',
+                        'grayscale(100%) brightness(90%) sepia(100%) hue-rotate(10deg) saturate(1000%) contrast(0.8)'];
 
 
 let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red,
