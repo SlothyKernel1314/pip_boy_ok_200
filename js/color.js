@@ -30,7 +30,8 @@ let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red,
 
 
 function activeColor(box, boxes, color_themes,
-                     box_class_basename, active_box_class) {
+                     box_class_basename, active_box_class,
+                     info_images) {
     for (let i=0 ; i < boxes.length ; i++) {
         boxes[i].classList.remove(active_box_class);
     }
@@ -42,7 +43,9 @@ function activeColor(box, boxes, color_themes,
             document.documentElement.style.setProperty('--pip-boy-secondary-color', color_themes[i][2]);
             document.documentElement.style.setProperty('--pip-boy-background-color', color_themes[i][3]);
             if(box.id !== 'color-box-green_default') {
-
+                for (let j=0 ; j < info_images.length ; j++) {
+                    info_images[j].style.setProperty('filter', color_themes[i][4]);
+                }
             } else {
 
             }
@@ -55,6 +58,7 @@ function activeColor(box, boxes, color_themes,
 for (let i=0 ; i < color_boxes.length ; i++) {
     color_boxes[i].addEventListener('click', function (evt) {
         activeColor(this, color_boxes, color_themes,
-            color_class_basename, color_class_active_name)
+            color_class_basename, color_class_active_name,
+            info_images)
     })
 }
