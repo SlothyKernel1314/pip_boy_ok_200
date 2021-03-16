@@ -19,7 +19,8 @@ let purple = ['purple', '#8438f5', '#150330',
                         'grayscale(100%) brightness(50%) sepia(100%) hue-rotate(200deg) saturate(1000%) contrast(0.8)'];
 let red = ['red', '#bb313d', '#280b0d',
                         'grayscale(100%) brightness(50%) sepia(100%) hue-rotate(310deg) saturate(1000%) contrast(0.8)'];
-let green_mutant = ['green_mutant', '#1aff80', '#003317'];
+let green_mutant = ['green_mutant', '#1aff80', '#003317',
+                        'grayscale(100%) brightness(60%) sepia(100%) hue-rotate(470deg) saturate(1000%) contrast(0.8)'];
 let pink_boy = ['pink_boy', '#ff00ff', '#330033'];
 let night_blue = ['night_blue', '#0897ff', '#001e33'];
 let ice = ['ice', '#dce0e1', '#171b1c'];
