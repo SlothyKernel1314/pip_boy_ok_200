@@ -9,10 +9,12 @@ let color_class_active_name = 'color-box-active';
  * @var 1: color name
  * @var 2: --pip-boy-primary-color
  * @var 3: --pip-boy-secondary-color
- * @var 4: CCS filter property
+ * @var 4: CCS filter property for info_images
+ * @var 5: CCS filter property for menu_images
  */
 let green_default = ['green_default', '#18dc0c', '#11291b',
-                        'grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);'];
+                        'grayscale(100%) brightness(80%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8)',
+                        'grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8)'];
 let blue_nuka_cola = ['blue_nuka_cola', '#2eceff', '#002733',
                         'grayscale(100%) brightness(60%) sepia(100%) hue-rotate(500deg) saturate(1000%) contrast(0.8)'];
 let orange_mojave = ['orange_mojave', '#ffb641', '#1a1000',
@@ -32,14 +34,13 @@ let ice = ['ice', '#dce0e1', '#171b1c',
 let gold = ['gold', '#ffd700', '#332b00',
                         'grayscale(100%) brightness(90%) sepia(100%) hue-rotate(10deg) saturate(1000%) contrast(0.8)'];
 
-
 let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red,
     green_mutant, pink_boy, night_blue, ice, gold];
 
 
 function activeColor(box, boxes, color_themes,
                      box_class_basename, active_box_class,
-                     info_images) {
+                     info_images, menu_images) {
     for (let i=0 ; i < boxes.length ; i++) {
         boxes[i].classList.remove(active_box_class);
     }
@@ -50,16 +51,16 @@ function activeColor(box, boxes, color_themes,
             // setting text colors
             document.documentElement.style.setProperty('--pip-boy-primary-color', color_themes[i][1]);
             document.documentElement.style.setProperty('--pip-boy-secondary-color', color_themes[i][2]);
-            // setting image colors with filter CSS property
-            if(box.id !== 'color-box-green_default') {
-                for (let j=0 ; j < info_images.length ; j++) {
-                    info_images[j].style.removeProperty('filter');
-                    info_images[j].style.setProperty('filter', color_themes[i][3]);
-                }
-            } else {
-                for (let j=0 ; j < info_images.length ; j++) {
-                    info_images[j].style.removeProperty('filter');
-                }
+            // setting info_images colors with filter CSS property
+            for (let j=0 ; j < info_images.length ; j++) {
+                info_images[j].style.removeProperty('filter');
+                info_images[j].style.setProperty('filter', color_themes[i][3]);
+            }
+            // setting menu_images colors with filter CSS property
+            for (let j=0 ; j < menu_images.length ; j++) {
+                menu_images[j].style.removeProperty('filter');
+                // TODO 3--> 4
+                menu_images[j].style.setProperty('filter', color_themes[i][3]);
             }
         }
     }
@@ -71,6 +72,6 @@ for (let i=0 ; i < color_boxes.length ; i++) {
     color_boxes[i].addEventListener('click', function (evt) {
         activeColor(this, color_boxes, color_themes,
             color_class_basename, color_class_active_name,
-            info_images)
+            info_images, menu_images)
     })
 }
