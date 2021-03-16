@@ -81,8 +81,7 @@ div[class$="-attribute-box-active"] > p {
   display: none;
 }
 
-.special-attribute-image-active,
-.perk-attribute-image-active {
+.menu-attribute-image {
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
 }
 
