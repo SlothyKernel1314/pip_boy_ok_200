@@ -31,12 +31,6 @@
             <div class="color-box" id="color-box-gold">
                 <p class="color-name">Gold</p>
             </div>
-            <div class="color-box" id="color-box-color_11">
-                <p class="color-name">Color 11</p>
-            </div>
-            <div class="color-box" id="color-box-color_12">
-                <p class="color-name">Color 12</p>
-            </div>
         </div>
     </div>
 </section>
