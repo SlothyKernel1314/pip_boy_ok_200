@@ -41,6 +41,14 @@ let skill_attribute_class_active_names = ['skill-attribute-box-active',
     'skill-attribute-description-active'];
 let skill_attribute_names = ['skill_1', 'skill_2', 'skill_3', 'skill_4', 'skill_5', 'skill_6', 'skill_7'];
 
+let data_attribute_boxes = document.querySelectorAll('.data-attribute-box');
+let data_attribute_descriptions = document.querySelectorAll('.data-attribute-description');
+let data_attribute_class_basenames = ['data-attribute-box',
+    'data-attribute-description'];
+let data_attribute_class_active_names = ['data-attribute-box-active',
+    'data-attribute-description-active'];
+let data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
+
 
 function activeMenuWithImages(box,
                     boxes, descriptions, images,
@@ -169,5 +177,19 @@ for (let i=0 ; i < skill_attribute_boxes.length ; i++) {
             skill_attribute_class_basenames[1],
             skill_attribute_class_active_names[0],
             skill_attribute_class_active_names[1])
+    })
+}
+
+// processing execution when a mouseover is detected on a skill attribute box
+for (let i=0 ; i < data_attribute_boxes.length ; i++) {
+    data_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+        activeMenu(this,
+            data_attribute_boxes,
+            data_attribute_descriptions,
+            data_attribute_names,
+            data_attribute_class_basenames[0],
+            data_attribute_class_basenames[1],
+            data_attribute_class_active_names[0],
+            data_attribute_class_active_names[1])
     })
 }

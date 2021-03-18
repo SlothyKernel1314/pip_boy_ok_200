@@ -54,11 +54,13 @@ div[class$="-attribute-box-active"] > p {
   height: 28rem;
 }
 
+// TODO refactoring (boucle ?)
 .special-attribute-description.special-attribute-description-active,
 .perk-attribute-description.perk-attribute-description-active,
 .job-attribute-description.job-attribute-description-active,
 .study-attribute-description.study-attribute-description-active,
-.skill-attribute-description.skill-attribute-description-active {
+.skill-attribute-description.skill-attribute-description-active,
+.data-attribute-description.data-attribute-description-active {
   display: block;
 }
 
@@ -69,7 +71,8 @@ div[class$="-attribute-box-active"] > p {
 
 .job-attribute-description.job-attribute-description-active,
 .study-attribute-description.study-attribute-description-active,
-.skill-attribute-description.skill-attribute-description-active {
+.skill-attribute-description.skill-attribute-description-active,
+.data-attribute-description.data-attribute-description-active {
   font-size: 1.4rem;
 }
 
@@ -77,7 +80,8 @@ div[class$="-attribute-box-active"] > p {
 .perk-attribute-description,
 .job-attribute-description,
 .study-attribute-description,
-.skill-attribute-description {
+.skill-attribute-description,
+.data-attribute-description {
   display: none;
 }
 

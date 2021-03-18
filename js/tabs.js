@@ -178,5 +178,7 @@ if(a !== null && !a.classList.contains('active')) {
 
 // TODO : read me
 
+// TODO : animations
+
 // TODO : hebergement
 
