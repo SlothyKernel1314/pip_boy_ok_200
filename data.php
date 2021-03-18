@@ -38,7 +38,8 @@
             </p>
             <p class="data-attribute-description" id="data-attribute-description-data_3">
                 Adresse : 94000 CRETEIL<br /><br />
-                Email<br /><br />
+                Email : cyrilberthout[at]gmail[dot]com<br /><br />
+                Linkedin : www.linkedin.com/in/cyril-berthout/<br /><br />
             </p>
             <p class="data-attribute-description" id="data-attribute-description-data_4">
                 Français<br />
