@@ -3,16 +3,16 @@
         <div class="menu-attributes data-attributes">
             <div class="menu-attribute-box data-attribute-box data-attribute-box-active"
                  id="data-attribute-box-data_1">
-                <p class="menu-attribute data-attribute">Data 1</p>
+                <p class="menu-attribute data-attribute">Profil</p>
             </div>
             <div class="menu-attribute-box data-attribute-box" id="data-attribute-box-data_2">
-                <p class="menu-attribute data-attribute">Data 2</p>
+                <p class="menu-attribute data-attribute">Poste</p>
             </div>
             <div class="menu-attribute-box data-attribute-box" id="data-attribute-box-data_3">
-                <p class="menu-attribute data-attribute">Data 3</p>
+                <p class="menu-attribute data-attribute">Contact</p>
             </div>
             <div class="menu-attribute-box data-attribute-box" id="data-attribute-box-data_4">
-                <p class="menu-attribute data-attribute">Data 4</p>
+                <p class="menu-attribute data-attribute">Langues</p>
             </div>
             <div class="menu-attribute-box data-attribute-box" id="data-attribute-box-data_5">
                 <p class="menu-attribute data-attribute">Data 5</p>
@@ -27,17 +27,22 @@
         <div class="menu-right-column data-right-column">
             <p class="data-attribute-description data-attribute-description-active"
                id="data-attribute-description-data_1">
-                Desc 1
+                Cyril BERTHOUT, 37 ans<br /><br />
+                Rigoureux, logique et autonome, je suis un développeur Java / Spring
+                diplômé, à la recherche d’un emploi dans le domaine du développement
+                d’applications web. Curieux, je pratique aussi la programmation durant
+                mon temps libre afin de découvrir de nouveaux outils
             </p>
             <p class="data-attribute-description" id="data-attribute-description-data_2">
-                Desc 2
+                Concepteur développeur d'applications
             </p>
             <p class="data-attribute-description" id="data-attribute-description-data_3">
-                Desc 3
+                Adresse : 94000 CRETEIL<br /><br />
+                Email<br /><br />
             </p>
             <p class="data-attribute-description" id="data-attribute-description-data_4">
-                Desc 4
-            </p>
+                Français<br />
+                Anglais (B2 CECRL)</p>
             <p class="data-attribute-description" id="data-attribute-description-data_5">
                 Desc 5
             </p>
