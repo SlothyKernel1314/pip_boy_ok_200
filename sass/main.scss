@@ -7,9 +7,6 @@
 
 // Icons : https://freeicons.io/
 
-@use "abstracts/variables" as v;
-@use "abstracts/mixins";
-
 @use "base/animations";
 @use "base/base";
 @use "base/typograpy";
@@ -26,23 +23,6 @@
 @use "pages/stat_status";
 @use "pages/color";
 @use "pages/map";
-
-
-// TEST TODO:remove
-//.tab-active a {
-//  color: red;
-//}
-// TEST TODO:remove
-p {
-  color: var(--pip-boy-primary-color);
-}
-
-#vault-boy-walking {
-  position: absolute;
-  @include mixins.relative-center-element(v.$header-width, v.$vault-boy-img-width);
-  margin-top: 1rem;
-  filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(1500%) contrast(0.99);
-}
 
 
 

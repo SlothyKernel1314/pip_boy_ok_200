@@ -1,54 +1,58 @@
-// TODO : factorisation (payload unique)
 let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
 let special_attribute_images = document.querySelectorAll('.special-attribute-image');
+let special_attribute_names = ['strength', 'perception', 'endurance',
+    'charisma', 'intelligence', 'agility', 'luck'];
 let special_attribute_class_basenames = ['special-attribute-box',
     'special-attribute-description', 'special-attribute-image'];
 let special_attribute_class_active_names = ['special-attribute-box-active',
     'special-attribute-description-active', 'special-attribute-image-active'];
-let special_attribute_names = ['strength', 'perception', 'endurance',
-    'charisma', 'intelligence', 'agility', 'luck'];
+
 
 let perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
 let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
 let perk_attribute_images = document.querySelectorAll('.perk-attribute-image');
+let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_savant', 'nerd_rage', 'heavy-gunner'];
 let perk_attribute_class_basenames = ['perk-attribute-box',
     'perk-attribute-description', 'perk-attribute-image'];
 let perk_attribute_class_active_names = ['perk-attribute-box-active',
     'perk-attribute-description-active', 'perk-attribute-image-active'];
-let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_savant', 'nerd_rage', 'heavy-gunner'];
+
 
 let job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
 let job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
+let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
 let job_attribute_class_basenames = ['job-attribute-box',
     'job-attribute-description'];
 let job_attribute_class_active_names = ['job-attribute-box-active',
     'job-attribute-description-active'];
-let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
+
 
 let study_attribute_boxes = document.querySelectorAll('.study-attribute-box');
 let study_attribute_descriptions = document.querySelectorAll('.study-attribute-description');
+let study_attribute_names = ['study_1', 'study_2', 'study_3', 'study_4', 'study_5'];
 let study_attribute_class_basenames = ['study-attribute-box',
     'study-attribute-description'];
 let study_attribute_class_active_names = ['study-attribute-box-active',
     'study-attribute-description-active'];
-let study_attribute_names = ['study_1', 'study_2', 'study_3', 'study_4', 'study_5'];
+
 
 let skill_attribute_boxes = document.querySelectorAll('.skill-attribute-box');
 let skill_attribute_descriptions = document.querySelectorAll('.skill-attribute-description');
+let skill_attribute_names = ['skill_1', 'skill_2', 'skill_3', 'skill_4', 'skill_5', 'skill_6', 'skill_7'];
 let skill_attribute_class_basenames = ['skill-attribute-box',
     'skill-attribute-description'];
 let skill_attribute_class_active_names = ['skill-attribute-box-active',
     'skill-attribute-description-active'];
-let skill_attribute_names = ['skill_1', 'skill_2', 'skill_3', 'skill_4', 'skill_5', 'skill_6', 'skill_7'];
+
 
 let data_attribute_boxes = document.querySelectorAll('.data-attribute-box');
 let data_attribute_descriptions = document.querySelectorAll('.data-attribute-description');
+let data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
 let data_attribute_class_basenames = ['data-attribute-box',
     'data-attribute-description'];
 let data_attribute_class_active_names = ['data-attribute-box-active',
     'data-attribute-description-active'];
-let data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
 
 
 function activeMenuWithImages(box,

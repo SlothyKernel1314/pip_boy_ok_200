@@ -12,7 +12,7 @@ let color_class_active_name = 'color-box-active';
  * @var 2: --pip-boy-primary-color
  * @var 3: --pip-boy-secondary-color
  * @var 4: CCS filter property for info_images
- * @var 5: CCS filter property for menu_images
+ * @var 5: CCS filter property for menu_images + idf map image
  * @var 6: CCS filter property for vault boy walking image
  */
 let green_default = ['green_default', '#18dc0c', '#11291b',
