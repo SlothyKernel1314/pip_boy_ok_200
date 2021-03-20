@@ -164,5 +164,7 @@ if(a !== null && !a.classList.contains('active')) {
 
 // TODO : renommer Pip-Boy OK-200
 
+// TODO : remove warnings
+
 // TODO : hebergement
 
