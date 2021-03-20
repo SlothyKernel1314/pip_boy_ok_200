@@ -1,4 +1,10 @@
-#map-section {
+.map-container {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+#idf-map {
+  top: -20px;
+  position: absolute;
 }
