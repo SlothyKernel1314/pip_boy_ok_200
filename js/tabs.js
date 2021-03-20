@@ -14,10 +14,6 @@ let header_line_vertical_right = document.querySelector('.header-line-vertical-r
 let header_line_bottom_right = document.querySelector('.header-line-bottom-right');
 
 let tabs = document.querySelectorAll('.tabs a');
-// TODO : for tests purposes, remove in prod
-let sections = document.querySelectorAll(".core-display");
-// TODO : for tests purposes, remove in prod
-let lis = document.querySelectorAll('li');
 let current_active_section = document.querySelector('.core-display.core-display-active');
 
 /* management of tab navigation...
@@ -155,20 +151,6 @@ if(a !== null && !a.classList.contains('active')) {
     switchOpacitySubTabs(a);
     displayHeaderLines(a);
 }
-
-
-// TODO : structure
-// -- STAT
-// ----- STATUS
-// ----- SPECIAL
-// ----- PERKS
-// -- EXP
-// ----- JOBS
-// ----- STUDIES
-// ----- SKILLS
-// -- DATA (objectifs)
-// -- MAP : coordonnées
-// -- COLOR : changer la couleur du pip boy
 
 // TODO : responsive
 // -- détecter les formats tablettes + forcer le mode paysage
