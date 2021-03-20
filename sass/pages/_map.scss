@@ -8,4 +8,5 @@
 #idf-map {
   top: -6rem;
   position: absolute;
+  filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
 }

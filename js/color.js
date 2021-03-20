@@ -1,6 +1,7 @@
 let info_images = document.querySelectorAll('.info-icon > img');
 let menu_images = document.querySelectorAll('.menu-attribute-image');
 let vault_boy_walking_image = document.getElementById('vault-boy-walking');
+let idf_map_image = document.getElementById('idf-map');
 let color_boxes = document.querySelectorAll('.color-box');
 let color_class_basename = 'color-box';
 let color_class_active_name = 'color-box-active';
@@ -61,7 +62,7 @@ let color_themes = [green_default, blue_nuka_cola, orange_mojave, purple, red,
 
 function activeColor(box, boxes, color_themes,
                      box_class_basename, active_box_class,
-                     info_images, menu_images, vault_boy_walking_image) {
+                     info_images, menu_images, vault_boy_walking_image, idf_map_image) {
     for (let i=0 ; i < boxes.length ; i++) {
         boxes[i].classList.remove(active_box_class);
     }
@@ -85,6 +86,9 @@ function activeColor(box, boxes, color_themes,
             // setting vault boy image color with filter CSS property
             vault_boy_walking_image.style.removeProperty('filter');
             vault_boy_walking_image.style.setProperty('filter', color_themes[i][5]);
+            // setting idf map image color with filter CSS property
+            idf_map_image.style.removeProperty('filter');
+            idf_map_image.style.setProperty('filter', color_themes[i][4]);
         }
     }
 }
@@ -95,6 +99,6 @@ for (let i=0 ; i < color_boxes.length ; i++) {
     color_boxes[i].addEventListener('click', function (evt) {
         activeColor(this, color_boxes, color_themes,
             color_class_basename, color_class_active_name,
-            info_images, menu_images, vault_boy_walking_image)
+            info_images, menu_images, vault_boy_walking_image, idf_map_image)
     })
 }
