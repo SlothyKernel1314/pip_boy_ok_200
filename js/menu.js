@@ -1,3 +1,4 @@
+// TODO : factorisation (payload unique)
 let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
 let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
 let special_attribute_images = document.querySelectorAll('.special-attribute-image');
