@@ -34,7 +34,7 @@
                 MAI 2017 - JUIN 2017<br />
                 Lycée Champlain – Chennevières-sur-Marne (94) : dans le cadre d’un stage
                 professionnel, j’ai participé à la conception d’une application destinée à gérer les
-                conventions de stage des élèves d’un lycée
+                conventions de stage des élèves d’un lycée.
             </p>
             <p class="job-attribute-description" id="job-attribute-description-job_4">
                 UNIS CITÉ<br />

@@ -180,5 +180,7 @@ if(a !== null && !a.classList.contains('active')) {
 
 // TODO : animations
 
+// TODO : renommer Pip-Boy OK-200
+
 // TODO : hebergement
 
