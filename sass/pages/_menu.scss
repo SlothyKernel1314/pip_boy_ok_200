@@ -98,3 +98,19 @@ div[class$="-attribute-box-active"] > p {
   display: none;
 }
 
+/** RESPONSIVE ********************************************************************************************************/
+@media screen and (max-width: 960px) {
+  .special-attribute-image.special-attribute-image-active, .perk-attribute-image.perk-attribute-image-active {
+    display: block;
+    max-height: 90px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .special-attribute-image.special-attribute-image-active, .perk-attribute-image.perk-attribute-image-active {
+    display: block;
+    max-height: 60px;
+  }
+}
+
+
