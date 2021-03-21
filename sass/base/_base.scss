@@ -23,6 +23,8 @@ body {
   box-sizing: border-box;
 }
 
+/** RESPONSIVE ********************************************************************************************************/
+// TODO : boucle
 @media screen and (max-width: 1370px) {
   html {
     font-size: v.$font-size * 0.9;
