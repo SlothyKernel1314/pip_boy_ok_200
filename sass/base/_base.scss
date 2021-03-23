@@ -24,58 +24,13 @@ body {
 }
 
 /** RESPONSIVE ********************************************************************************************************/
-// TODO : boucle
-@media screen and (max-width: 1370px) {
-  html {
-    font-size: v.$font-size * 0.9;
-  }
-  body {
-    background-size: v.$background-width * 0.9;
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  html {
-    font-size: v.$font-size * 0.8;
-  }
-  body {
-    background-size: v.$background-width * 0.8;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  html {
-    font-size: v.$font-size * 0.7;
-  }
-  body {
-    background-size: v.$background-width * 0.7;
-  }
-}
-
-
-@media screen and (max-width: 960px) {
-  html {
-    font-size: v.$font-size * 0.6;
-  }
-  body {
-    background-size: v.$background-width * 0.6;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  html {
-    font-size: v.$font-size * 0.5;
-  }
-  body {
-    background-size: v.$background-width * 0.5;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  html {
-    font-size: v.$font-size * 0.4;
-  }
-  body {
-    background-size: v.$background-width * 0.4;
+@each $breakpoint, $factor in v.$responsive-width-breakpoints {
+  @media screen and (max-width: $breakpoint) {
+    html {
+      font-size: v.$font-size * $factor;
+    }
+    body {
+      background-size: v.$background-width * $factor;
+    }
   }
 }

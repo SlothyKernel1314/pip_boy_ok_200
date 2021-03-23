@@ -1,5 +1,3 @@
-// inspiration for tab management : https://www.youtube.com/watch?v=wKatvNTAPVA
-
 let stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
 let exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
 let data_tab_id = 'data-section';
@@ -152,17 +150,11 @@ if(a !== null && !a.classList.contains('active')) {
     displayHeaderLines(a);
 }
 
-// TODO : responsive
-// -- détecter les formats tablettes + forcer le mode paysage
-// -- réduction du font.size adaptée aux différents formats d'écran
-
 // TODO : retirer les classes inutiles
 
 // TODO : read me
 
 // TODO : animations
-
-// TODO : renommer Pip-Boy OK-200
 
 // TODO : remove warnings
 
