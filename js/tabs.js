@@ -150,10 +150,3 @@ if(a !== null && !a.classList.contains('active')) {
     displayHeaderLines(a);
 }
 
-
-// TODO : read me
-
-// TODO: improvements animations
-
-// TODO : hebergement
-
