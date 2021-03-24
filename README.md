@@ -24,7 +24,7 @@ Finally, still in a learning process, some parts of the code are clearly "overki
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/IAmTerror/slimer_script_python/master/img/ghostbusters_logo.png" />
+  <img src="https://raw.githubusercontent.com/IAmTerror/pip_boy_ok_200/master/img/fallout_vault_boy_readme.png?token=AHXXFAL3ZXIPDULYUOTL73DALMTW4" />
 
 </p>
 
