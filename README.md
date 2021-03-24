@@ -22,9 +22,9 @@ In particular, the CSS positioning is open to criticism, and must therefore be v
 
 Finally, still in a learning process, some parts of the code are clearly "overkill". The "header-lines" part for example, whose positioning is complex only because I wanted to use some relatively advanced SASS concepts. It was possible to make it much simpler with some ::before and ::after...
 
-[comment]: <> (<p align="center">)
+<p align="center">
 
-[comment]: <> (  <img src="https://raw.githubusercontent.com/IAmTerror/slimer_script_python/master/img/ghostbusters_logo.png" />)
+  <img src="https://raw.githubusercontent.com/IAmTerror/slimer_script_python/master/img/ghostbusters_logo.png" />
 
-[comment]: <> (</p>)
+</p>
 
