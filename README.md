@@ -1,10 +1,10 @@
 # Pip-Boy OK-200
 
-[comment]: <> (<p align="center">)
+<p align="center">
 
-[comment]: <> (  <img src="https://raw.githubusercontent.com/IAmTerror/slimer_script_python/master/img/slimer.png" />)
+  <img src="https://raw.githubusercontent.com/IAmTerror/pip_boy_ok_200/master/img/pip_boy_github_animation.gif?token=AHXXFALKBGHQJDPWWFBJ343ALMZQS" />
 
-[comment]: <> (</p>)
+</p>
 
 [![GNU GPL v3.0](https://img.shields.io/badge/licence-GNU%20GPL%20v3.0-blue)](https://github.com/IAmTerror/phoenix_down_script/blob/master/LICENSE)
 
