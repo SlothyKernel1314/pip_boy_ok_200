@@ -150,13 +150,10 @@ if(a !== null && !a.classList.contains('active')) {
     displayHeaderLines(a);
 }
 
-// TODO : retirer les classes inutiles
 
 // TODO : read me
 
-// TODO : animations
-
-// TODO : remove warnings
+// TODO: improvements animations
 
 // TODO : hebergement
 
