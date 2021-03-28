@@ -35,7 +35,16 @@ body {
   }
 }
 
-@media screen and (max-height: 740px), screen and (max-width: 340px) {
+@media screen and (max-height: 740px) and (min-width: 960px) {
+  html {
+    font-size: v.$font-size * 0.6;
+  }
+  body {
+    background-size: v.$background-width * 0.6;
+  }
+}
+
+@media screen and (max-height: 500px), screen and(max-width: 340px) {
   .screen {
     display: none;
   }
