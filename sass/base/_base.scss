@@ -35,14 +35,14 @@ body {
   }
 }
 
-@media screen and (max-height: 830px) and (min-width: 960px) {
-  html {
-    font-size: v.$font-size * 0.7;
-  }
-  body {
-    background-size: v.$background-width * 0.7;
-  }
-}
+//@media screen and (max-height: 830px) and (min-width: 960px) {
+//  html {
+//    font-size: v.$font-size * 0.7;
+//  }
+//  body {
+//    background-size: v.$background-width * 0.7;
+//  }
+//}
 
 @media screen and (max-height: 740px) and (min-width: 960px) {
   html {
