@@ -35,12 +35,21 @@ body {
   }
 }
 
-@media screen and (max-height: 740px) and (min-width: 960px) {
+@media screen and (max-height: 830px) and (min-width: 960px) {
   html {
-    font-size: v.$font-size * 0.6;
+    font-size: v.$font-size * 0.7;
   }
   body {
-    background-size: v.$background-width * 0.6;
+    background-size: v.$background-width * 0.7;
+  }
+}
+
+@media screen and (max-height: 740px) and (min-width: 960px) {
+  html {
+    font-size: v.$font-size * 0.5;
+  }
+  body {
+    background-size: v.$background-width * 0.5;
   }
 }
 
