@@ -34,3 +34,10 @@ body {
     }
   }
 }
+
+@media screen and (max-height: 740px), screen and (max-width: 340px) {
+  .screen {
+    display: none;
+  }
+}
+
