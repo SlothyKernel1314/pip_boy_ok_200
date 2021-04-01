@@ -19,8 +19,16 @@ html, body {
 }
 
 body {
-  background: var(--pip-boy-background-color) url("../../img/pip-boy_overlay.png") no-repeat fixed top left;
+  background: var(--pip-boy-background-color);
   box-sizing: border-box;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: v.$overlay-width;
 }
 
 /** RESPONSIVE ********************************************************************************************************/
@@ -29,8 +37,8 @@ body {
     html {
       font-size: v.$font-size * $factor;
     }
-    body {
-      background-size: v.$background-width * $factor;
+    #overlay {
+      width: v.$overlay-width * $factor;
     }
   }
 }
@@ -48,8 +56,8 @@ body {
   html {
     font-size: v.$font-size * 0.5;
   }
-  body {
-    background-size: v.$background-width * 0.5;
+  #overlay {
+    width: v.$overlay-width * 0.5;
   }
 }
 
