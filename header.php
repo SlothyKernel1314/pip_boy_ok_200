@@ -8,15 +8,10 @@
             <li><a href="#color-section">COLOR</a></li>
         </ul>
     </div>
-<!--    TODO: header lines WIP-->
-<!--    <div class="header-lines">-->
-<!--        <div class="header-line-bottom header-line-bottom-left"></div>-->
-<!--        <div class="header-line-vertical header-line-vertical-left"></div>-->
-<!--        <div class="header-line-hook header-line-hook-left"></div>-->
-<!--        <div class="header-line-hook header-line-hook-right"></div>-->
-<!--        <div class="header-line-vertical header-line-vertical-right"></div>-->
-<!--        <div class="header-line-bottom header-line-bottom-right"></div>-->
-<!--    </div>-->
+    <div class="header-lines">
+        <img class="header-line-before" src="img/header_line_before.png">
+        <img class="header-line-after" src="img/header_line_after.png">
+    </div>
     <div>
         <ul class="tabs sub-tabs sub-header-stat sub-tabs-active">
             <li class=""><a href="#stat-status-section" class="sub-header-active-tab">STATUS</a></li>

@@ -1,0 +1,18 @@
+.header-lines {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: -2.7rem;
+  opacity: 0.8;
+  z-index: -3;
+}
+
+.header-line-before {
+  position: absolute;
+  left: -51.5rem;
+}
+
+.header-line-after {
+  position: absolute;
+  left: 5rem;
+}
