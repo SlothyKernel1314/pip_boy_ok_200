@@ -31,6 +31,20 @@ header {
   margin-right: 4rem;
 }
 
+.tab-active::before {
+  content:url(../../img/header_line_left.png) ;
+  position:absolute;
+  left: -515px;
+  top: 10px;
+}
+
+.tab-active::after {
+  content: url(../../img/header_line_right.png);
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
 .sub-tabs {
   display: none; //only the .sub-tabs-active should be displayed
 }
