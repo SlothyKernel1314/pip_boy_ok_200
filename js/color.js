@@ -1,5 +1,6 @@
 let info_images = document.querySelectorAll('.info-icon > img');
 let menu_images = document.querySelectorAll('.menu-attribute-image');
+let header_lines = document.querySelectorAll('.header-lines');
 let vault_boy_walking_image = document.getElementById('vault-boy-walking');
 let idf_map_image = document.getElementById('idf-map');
 let color_boxes = document.querySelectorAll('.color-box');
@@ -11,7 +12,7 @@ let color_class_active_name = 'color-box-active';
  * @var 1: color name
  * @var 2: --pip-boy-primary-color
  * @var 3: --pip-boy-secondary-color
- * @var 4: CCS filter property for info_images
+ * @var 4: CCS filter property for info_images + header lines
  * @var 5: CCS filter property for menu_images + idf map image
  * @var 6: CCS filter property for vault boy walking image
  */
@@ -82,6 +83,11 @@ function activeColor(box, boxes, color_themes,
             for (let j=0 ; j < menu_images.length ; j++) {
                 menu_images[j].style.removeProperty('filter');
                 menu_images[j].style.setProperty('filter', color_themes[i][4]);
+            }
+            // setting menu_images colors with filter CSS property
+            for (let j=0 ; j < header_lines.length ; j++) {
+                header_lines[j].style.removeProperty('filter');
+                header_lines[j].style.setProperty('filter', color_themes[i][3]);
             }
             // setting vault boy image color with filter CSS property
             vault_boy_walking_image.style.removeProperty('filter');
