@@ -36,6 +36,7 @@ header {
   position:absolute;
   left: -515px;
   top: 10px;
+  z-index: -2;
 }
 
 .tab-active::after {
@@ -43,6 +44,7 @@ header {
   position: absolute;
   left: 50px;
   top: 10px;
+  z-index: -2;
 }
 
 .sub-tabs {
