@@ -4,12 +4,8 @@ let data_tab_id = 'data-section';
 let map_tab_id = 'map-section';
 let color_tab_id = 'color-section';
 
-let header_line_bottom_left = document.querySelector('.header-line-bottom-left');
-let header_line_vertical_left = document.querySelector('.header-line-vertical-left');
-let header_line_hook_left = document.querySelector('.header-line-hook-left');
-let header_line_hook_right = document.querySelector('.header-line-hook-right');
-let header_line_vertical_right = document.querySelector('.header-line-vertical-right');
-let header_line_bottom_right = document.querySelector('.header-line-bottom-right');
+let header_line_before = document.getElementById('header-line-before');
+let header_line_after = document.getElementById('header-line-after');
 
 let tabs = document.querySelectorAll('.tabs a');
 let current_active_section = document.querySelector('.core-display.core-display-active');
@@ -85,20 +81,6 @@ function switchOpacitySubTabs(a) {
 }
 
 
-// TODO: header lines WIP
-/* css positioner for header lines / displayHeaderLines() refactoring */
-function positioner(pos1, pos2, pos3, pos4, pos5, pos6, pos7) {
-    header_line_vertical_left.style.left = pos1;
-    header_line_hook_left.style.marginLeft = pos2;
-    header_line_vertical_right.style.left = pos3;
-    header_line_hook_right.style.marginLeft = pos4;
-    header_line_bottom_right.style.marginLeft = pos5;
-    header_line_bottom_right.style.width = pos6;
-    header_line_bottom_left.style.width = pos7;
-}
-
-
-// TODO: header lines WIP
 /* management of header lines display */
 function displayHeaderLines(a) {
     let section = a.getAttribute('href').substring(1);
@@ -106,44 +88,42 @@ function displayHeaderLines(a) {
         case stat_tabs_ids[0]:
         case stat_tabs_ids[1]:
         case stat_tabs_ids[2]:
-            positioner('-1rem', '-1rem','5.58rem', '5.1rem',
-                '5.6rem', '37.5rem', '4.7rem')
+            header_line_before.style.left = '-51.5rem';
+            header_line_after.style.left = '5rem';
             break;
         case exp_tabs_ids[0]:
         case exp_tabs_ids[1]:
         case exp_tabs_ids[2]:
-            positioner('7.50rem', '7.50rem','13.00rem', '12.52rem',
-                '13rem', '30.1rem', '13.3rem')
+            header_line_before.style.left = '0rem';
+            header_line_after.style.left = '0rem';
             break;
         case data_tab_id:
-            positioner('15rem', '15rem','21.7rem', '21.22rem',
-                '21.8rem', '21.3rem', '20.8rem')
+            header_line_before.style.left = '0rem';
+            header_line_after.style.left = '0rem';
             break;
         case map_tab_id:
-            positioner('23.5rem', '23.5rem','29rem', '28.52rem',
-                '29.1rem', '14.1rem', '29.3rem')
+            header_line_before.style.left = '0rem';
+            header_line_after.style.left = '0rem';
             break;
         case color_tab_id:
-            positioner('30.9rem', '30.9rem','38.8rem', '38.32rem',
-                '38.9rem', '4.1rem', '36.7rem')
+            header_line_before.style.left = '0rem';
+            header_line_after.style.left = '0rem';
             break;
     }
 }
 
 
-// TODO: header lines WIP
 // execution of navigation tabs
 for (let i=0 ; i < tabs.length ; i++) {
     tabs[i].addEventListener('click', function (evt) {
         displayTabs(this);
         switchSubTabs();
         switchOpacitySubTabs(this);
-        // displayHeaderLines(this);
+        displayHeaderLines(this);
     })
 }
 
 
-// TODO: header lines WIP
 // in case of page refresh (we want to keep the current display !)
 let hash = window.location.hash;
 let a = document.querySelector('a[href="' + hash + '"]')
@@ -151,6 +131,6 @@ if(a !== null && !a.classList.contains('active')) {
     displayTabs(a);
     switchSubTabs();
     switchOpacitySubTabs(a);
-    // displayHeaderLines(a);
+    displayHeaderLines(a);
 }
 

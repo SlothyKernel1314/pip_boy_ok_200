@@ -9,8 +9,8 @@
         </ul>
     </div>
     <div class="header-lines">
-        <img class="header-line-before" src="img/header_line_before.png">
-        <img class="header-line-after" src="img/header_line_after.png">
+        <img id="header-line-before" src="img/header_line_before.png" alt="graphical stuff">
+        <img id="header-line-after" src="img/header_line_after.png" alt="graphical stuff">
     </div>
     <div>
         <ul class="tabs sub-tabs sub-header-stat sub-tabs-active">
