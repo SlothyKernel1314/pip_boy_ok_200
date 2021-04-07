@@ -94,20 +94,20 @@ function displayHeaderLines(a) {
         case exp_tabs_ids[0]:
         case exp_tabs_ids[1]:
         case exp_tabs_ids[2]:
-            header_line_before.style.left = '0rem';
-            header_line_after.style.left = '0rem';
+            header_line_before.style.left = '-43rem';
+            header_line_after.style.left = '12.5rem';
             break;
         case data_tab_id:
-            header_line_before.style.left = '0rem';
-            header_line_after.style.left = '0rem';
+            header_line_before.style.left = '-35.5rem';
+            header_line_after.style.left = '21rem';
             break;
         case map_tab_id:
-            header_line_before.style.left = '0rem';
-            header_line_after.style.left = '0rem';
+            header_line_before.style.left = '-27rem';
+            header_line_after.style.left = '28.5rem';
             break;
         case color_tab_id:
-            header_line_before.style.left = '0rem';
-            header_line_after.style.left = '0rem';
+            header_line_before.style.left = '-19.5rem';
+            header_line_after.style.left = '38.3rem';
             break;
     }
 }
