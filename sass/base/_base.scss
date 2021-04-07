@@ -40,6 +40,9 @@ body {
     #overlay {
       width: v.$overlay-width * $factor;
     }
+    #header-line-before, #header-line-after {
+      width: v.$header-line-width * $factor;
+    }
   }
 }
 
