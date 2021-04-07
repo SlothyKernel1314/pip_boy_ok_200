@@ -53,6 +53,9 @@ body {
   #overlay {
     width: v.$overlay-width * 0.5;
   }
+  #header-line-before, #header-line-after {
+    width: v.$header-line-width * 0.5;
+  }
 }
 
 @media screen and (max-height: 500px), screen and(max-width: 340px) {
