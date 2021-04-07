@@ -32,18 +32,16 @@ header {
 }
 
 .tab-active::before {
-  content:url(../../img/header_line_left.png) ;
+  content:url(../../img/header_line_before.png) ;
   position:absolute;
   left: -515px;
-  top: 10px;
   z-index: -2;
 }
 
 .tab-active::after {
-  content: url(../../img/header_line_right.png);
+  content: url(../../img/header_line_after.png);
   position: absolute;
   left: 50px;
-  top: 10px;
   z-index: -2;
 }
 
