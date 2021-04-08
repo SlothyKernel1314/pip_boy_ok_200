@@ -78,8 +78,7 @@
                 préfère coder proprement.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-intelligence">
-                Moins que ça, ce serait certes plus modeste, mais aussi nettement insuffisant pour
-                copy/paste Stack Overflow.
+                Comprend ses copy/paste de Stack Overflow... enfin, c'est ce qu'il dit.
             </p>
             <p class="special-attribute-description" id="special-attribute-description-agility">
                 Tombe parfois de sa chaise, mais retrouve toujours son poste de travail.
