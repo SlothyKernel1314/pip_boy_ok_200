@@ -11,6 +11,11 @@
 Pip-Boy OK-200 is a personal project aiming at reproducing the Pip-Boy from the video game Fallout 4 in a web browser,
 while making it the support of my curriculum vitae.
 
+The project is hosted here : https://iat1984.com/
+
+The rendering is much better on a desktop or laptop. The smallest screens (some smartphones for example) are not
+supported, the pip-boy screen will stay off (or the display will be broken if you manage to make it buggy...).
+
 ## Potential improvements
 
 In order to make the Pip-Boy screen more "realistic", it would be possible to add CSS animations in order to reproduce
