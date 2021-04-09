@@ -28,6 +28,13 @@ possible, but it is still a reflection of a learning process, so it looks very i
 
 In particular, the CSS positioning is open to criticism, and must therefore be viewed with a critical eye.
 
+## Licence
+
+This project is licensed under the GPL-3.0 License. You can freely fork this project, study it, modify it, etc. If you
+want to publish your own fork, you must publish the source code of this one, under the same GPL-3.0 License.
+
+Crediting the original author of the project (me) is not formally required, but it would obviously make me happy. :)
+
 <p align="center">
 
   <img src="https://raw.githubusercontent.com/IAmTerror/pip_boy_ok_200/master/img/fallout_vault_boy_readme.png?token=AHXXFAL3ZXIPDULYUOTL73DALMTW4" />
