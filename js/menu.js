@@ -48,7 +48,7 @@ const skill_attribute_class_active_names = ['skill-attribute-box-active',
 
 const data_attribute_boxes = document.querySelectorAll('.data-attribute-box');
 const data_attribute_descriptions = document.querySelectorAll('.data-attribute-description');
-const data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
+const data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7', 'data_8'];
 const data_attribute_class_basenames = ['data-attribute-box',
     'data-attribute-description'];
 const data_attribute_class_active_names = ['data-attribute-box-active',
