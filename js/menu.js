@@ -1,57 +1,57 @@
-let special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
-let special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
-let special_attribute_images = document.querySelectorAll('.special-attribute-image');
-let special_attribute_names = ['strength', 'perception', 'endurance',
+const special_attribute_boxes = document.querySelectorAll('.special-attribute-box');
+const special_attribute_descriptions = document.querySelectorAll('.special-attribute-description');
+const special_attribute_images = document.querySelectorAll('.special-attribute-image');
+const special_attribute_names = ['strength', 'perception', 'endurance',
     'charisma', 'intelligence', 'agility', 'luck'];
-let special_attribute_class_basenames = ['special-attribute-box',
+const special_attribute_class_basenames = ['special-attribute-box',
     'special-attribute-description', 'special-attribute-image'];
-let special_attribute_class_active_names = ['special-attribute-box-active',
+const special_attribute_class_active_names = ['special-attribute-box-active',
     'special-attribute-description-active', 'special-attribute-image-active'];
 
 
-let perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
-let perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
-let perk_attribute_images = document.querySelectorAll('.perk-attribute-image');
-let perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_savant', 'nerd_rage', 'heavy-gunner'];
-let perk_attribute_class_basenames = ['perk-attribute-box',
+const perk_attribute_boxes = document.querySelectorAll('.perk-attribute-box');
+const perk_attribute_descriptions = document.querySelectorAll('.perk-attribute-description');
+const perk_attribute_images = document.querySelectorAll('.perk-attribute-image');
+const perk_attribute_names = ['chemist', 'cannibal', 'fortune_finder', 'idiot_savant', 'nerd_rage', 'heavy-gunner'];
+const perk_attribute_class_basenames = ['perk-attribute-box',
     'perk-attribute-description', 'perk-attribute-image'];
-let perk_attribute_class_active_names = ['perk-attribute-box-active',
+const perk_attribute_class_active_names = ['perk-attribute-box-active',
     'perk-attribute-description-active', 'perk-attribute-image-active'];
 
 
-let job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
-let job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
-let job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
-let job_attribute_class_basenames = ['job-attribute-box',
+const job_attribute_boxes = document.querySelectorAll('.job-attribute-box');
+const job_attribute_descriptions = document.querySelectorAll('.job-attribute-description');
+const job_attribute_names = ['job_1', 'job_2', 'job_3', 'job_4'];
+const job_attribute_class_basenames = ['job-attribute-box',
     'job-attribute-description'];
-let job_attribute_class_active_names = ['job-attribute-box-active',
+const job_attribute_class_active_names = ['job-attribute-box-active',
     'job-attribute-description-active'];
 
 
-let study_attribute_boxes = document.querySelectorAll('.study-attribute-box');
-let study_attribute_descriptions = document.querySelectorAll('.study-attribute-description');
-let study_attribute_names = ['study_1', 'study_2', 'study_3', 'study_4', 'study_5'];
-let study_attribute_class_basenames = ['study-attribute-box',
+const study_attribute_boxes = document.querySelectorAll('.study-attribute-box');
+const study_attribute_descriptions = document.querySelectorAll('.study-attribute-description');
+const study_attribute_names = ['study_1', 'study_2', 'study_3', 'study_4', 'study_5'];
+const study_attribute_class_basenames = ['study-attribute-box',
     'study-attribute-description'];
-let study_attribute_class_active_names = ['study-attribute-box-active',
+const study_attribute_class_active_names = ['study-attribute-box-active',
     'study-attribute-description-active'];
 
 
-let skill_attribute_boxes = document.querySelectorAll('.skill-attribute-box');
-let skill_attribute_descriptions = document.querySelectorAll('.skill-attribute-description');
-let skill_attribute_names = ['skill_1', 'skill_2', 'skill_3', 'skill_4', 'skill_5', 'skill_6', 'skill_7'];
-let skill_attribute_class_basenames = ['skill-attribute-box',
+const skill_attribute_boxes = document.querySelectorAll('.skill-attribute-box');
+const skill_attribute_descriptions = document.querySelectorAll('.skill-attribute-description');
+const skill_attribute_names = ['skill_1', 'skill_2', 'skill_3', 'skill_4', 'skill_5', 'skill_6', 'skill_7'];
+const skill_attribute_class_basenames = ['skill-attribute-box',
     'skill-attribute-description'];
-let skill_attribute_class_active_names = ['skill-attribute-box-active',
+const skill_attribute_class_active_names = ['skill-attribute-box-active',
     'skill-attribute-description-active'];
 
 
-let data_attribute_boxes = document.querySelectorAll('.data-attribute-box');
-let data_attribute_descriptions = document.querySelectorAll('.data-attribute-description');
-let data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
-let data_attribute_class_basenames = ['data-attribute-box',
+const data_attribute_boxes = document.querySelectorAll('.data-attribute-box');
+const data_attribute_descriptions = document.querySelectorAll('.data-attribute-description');
+const data_attribute_names = ['data_1', 'data_2', 'data_3', 'data_4', 'data_5', 'data_6', 'data_7'];
+const data_attribute_class_basenames = ['data-attribute-box',
     'data-attribute-description'];
-let data_attribute_class_active_names = ['data-attribute-box-active',
+const data_attribute_class_active_names = ['data-attribute-box-active',
     'data-attribute-description-active'];
 
 
@@ -173,7 +173,7 @@ for (let i=0 ; i < study_attribute_boxes.length ; i++) {
 
 // processing execution when a mouseover is detected on a skill attribute box
 for (let i=0 ; i < skill_attribute_boxes.length ; i++) {
-    skill_attribute_boxes[i].addEventListener('mouseover', function (evt) {
+    skill_attribute_boxes[i].addEventListener('mouseover', function (evtconst) {
         activeMenu(this,
             skill_attribute_boxes,
             skill_attribute_descriptions,
