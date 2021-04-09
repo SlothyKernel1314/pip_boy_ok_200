@@ -1,0 +1,2 @@
+; fix to prevent PHP files from being detected as Hack files by Github
+*.php linguist-language=php
