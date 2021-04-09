@@ -1,13 +1,13 @@
-let stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
-let exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
-let data_tab_id = 'data-section';
-let map_tab_id = 'map-section';
-let color_tab_id = 'color-section';
+const stat_tabs_ids = ['stat-status-section', 'stat-special-section', 'stat-perk-section'];
+const exp_tabs_ids = ['exp-jobs-section', 'exp-studies-section', 'exp-skills-section'];
+const data_tab_id = 'data-section';
+const map_tab_id = 'map-section';
+const color_tab_id = 'color-section';
 
-let header_line_before = document.getElementById('header-line-before');
-let header_line_after = document.getElementById('header-line-after');
+const header_line_before = document.getElementById('header-line-before');
+const header_line_after = document.getElementById('header-line-after');
 
-let tabs = document.querySelectorAll('.tabs a');
+const tabs = document.querySelectorAll('.tabs a');
 let current_active_section = document.querySelector('.core-display.core-display-active');
 
 /* management of tab navigation...
