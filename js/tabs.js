@@ -125,8 +125,8 @@ for (let i=0 ; i < tabs.length ; i++) {
 
 
 // in case of page refresh (we want to keep the current display !)
-let hash = window.location.hash;
-let a = document.querySelector('a[href="' + hash + '"]')
+const hash = window.location.hash;
+const a = document.querySelector('a[href="' + hash + '"]')
 if(a !== null && !a.classList.contains('active')) {
     displayTabs(a);
     switchSubTabs();
