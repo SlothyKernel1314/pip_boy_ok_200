@@ -1,9 +1,9 @@
 <section class="bottom-display">
     <div class="hp-container side-bottom-display">
-        <p>HP 37/999</p>
+        <p>HP 1/999</p>
     </div>
     <div class="level-container center-bottom-display">
-        <p>LEVEL 60</p>
+        <p>LEVEL 37</p>
         <div class="level-progress-bar"></div>
     </div>
     <div class="action-points-container side-bottom-display">
