@@ -35,6 +35,16 @@ want to publish your own fork, you must publish the source code of this one, und
 
 Crediting the original author of the project (me) is not formally required, but it would obviously make me happy. :)
 
+## Issues / Bugs
+
+The layout is completely broken on some iPhones (6 / 7 in particular) + Safari browser.
+
+Some "header-lines" positioning issues on some configurations whose perimeter remains to be identified.
+
+Bad positioning of the map which causes an overflow on the header.
+
+Work in progress...
+
 <p align="center">
 
   <img src="https://raw.githubusercontent.com/IAmTerror/pip_boy_ok_200/master/img/fallout_vault_boy_readme.png?token=AHXXFAL3ZXIPDULYUOTL73DALMTW4" />
