@@ -39,6 +39,8 @@ Crediting the original author of the project (me) is not formally required, but 
 
 The layout is completely broken on some iPhones (6 / 7 in particular) + Safari browser.
 
+The layout is disturbed when zooming via the browser.
+
 Some "header-lines" positioning issues on some configurations whose perimeter remains to be identified.
 
 Bad positioning of the map which causes an overflow on the header.
