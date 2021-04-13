@@ -16,9 +16,14 @@
   z-index: -2;
 }
 
+.cores-display {
+  min-height: 28rem;
+}
+
 .core-display {
   display: none; //only the .section-active should be displayed
 }
+
 
 .core-display-active {
   display: block;
