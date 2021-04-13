@@ -107,7 +107,7 @@ function displayHeaderLines(a) {
             break;
         case color_tab_id:
             header_line_before.style.left = '-19.5rem';
-            header_line_after.style.left = '38.3rem';
+            header_line_after.style.left = '38.0rem';
             break;
     }
 }
