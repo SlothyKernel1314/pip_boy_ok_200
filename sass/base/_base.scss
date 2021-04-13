@@ -15,7 +15,7 @@ html {
 }
 
 html, body {
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 body {
@@ -46,17 +46,17 @@ body {
   }
 }
 
-@media screen and (max-height: 740px) and (min-width: 960px) {
-  html {
-    font-size: v.$font-size * 0.5;
-  }
-  #overlay {
-    width: v.$overlay-width * 0.5;
-  }
-  #header-line-before, #header-line-after {
-    width: v.$header-line-width * 0.5;
-  }
-}
+//@media screen and (max-height: 740px) and (min-width: 960px) {
+//  html {
+//    font-size: v.$font-size * 0.5;
+//  }
+//  #overlay {
+//    width: v.$overlay-width * 0.5;
+//  }
+//  #header-line-before, #header-line-after {
+//    width: v.$header-line-width * 0.5;
+//  }
+//}
 
 @media screen and (max-height: 500px), screen and(max-width: 340px) {
   .screen {
